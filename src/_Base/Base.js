@@ -1,1 +1,1 @@
-export { default } from "vendor/@material-ui/base"
+export { default } from 'vendor/@material-ui/base';

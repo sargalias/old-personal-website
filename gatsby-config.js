@@ -28,12 +28,12 @@ module.exports = {
       },
     },
     `gatsby-alias-imports`, // by default aliases all direct children of src/*
-    "gatsby-plugin-sass",
+    'gatsby-plugin-sass',
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ["Roboto:300,400,500,700&display=swap"],
+          families: ['Roboto:300,400,500,700&display=swap'],
         },
       },
     },
@@ -42,4 +42,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
