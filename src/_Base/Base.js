@@ -1,1 +1,3 @@
-export { default } from 'vendor/@material-ui/base';
+const Base = () => null;
+
+export default Base;
