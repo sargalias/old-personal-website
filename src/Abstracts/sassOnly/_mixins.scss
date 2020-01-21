@@ -1,0 +1,15 @@
+@mixin media-up($breakpoint: xsm) {
+  $minWidth: 57.6rem;
+
+  @if ($breakpoint == sm) {
+    $minWidth: 76.8rem;
+  } @else if ($breakpoint == md) {
+    $minWidth: 99.2rem;
+  }
+
+  $normalisedWidth: $minWidth / 1.6; // because apparently html font-size is ignored in media queries
+
+  @media screen and (min-width: $normalisedWidth) {
+    @content;
+  }
+}
