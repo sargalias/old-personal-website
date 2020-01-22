@@ -10,21 +10,13 @@
   }
 
   &_heading {
-    color: #303d4e;
-    font-size: 3.6rem;
     margin-bottom: 2rem;
-  }
-
-  &_subheading {
-    color: #303d4e;
-    font-size: 2.8rem;
-    margin-bottom: 2rem;
+    @include font-size-declarations(h2);
   }
 
   &_text {
-    font-size: 2rem;
-    color: #303d4e;
     line-height: 1.625;
+    @include font-size-declarations(base);
 
     &:not(:last-child) {
       margin-bottom: 3rem;
@@ -38,6 +30,7 @@
 
   @include media-up(sm) {
     flex-direction: row;
+    align-items: center;
     justify-content: center;
 
     &_content {
@@ -51,11 +44,6 @@
       flex-basis: 50%;
       margin-left: 2rem;
       margin-bottom: 0;
-      align-self: center;
-    }
-
-    &_text {
-      font-size: 2.2rem;
     }
   }
 }
