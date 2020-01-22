@@ -2,7 +2,12 @@ const path = require('path');
 
 const createBlogPostPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
-  const blogPostTemplate = path.resolve('src', 'templates', 'blogPost.jsx');
+  const blogPostTemplate = path.resolve(
+    'src',
+    'templates',
+    'blogPost',
+    'index.jsx',
+  );
 
   const result = await graphql(`
     {
