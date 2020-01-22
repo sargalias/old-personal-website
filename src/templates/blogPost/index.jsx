@@ -1,28 +1,14 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import Post from 'components/post/Post';
 
-export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark } = data; // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark;
-  return (
-    <div className="blog-post-container">
-      <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
-        {frontmatter.featuredImage && (
-          <Img fluid={frontmatter.featuredImage.childImageSharp.fluid} />
-        )}
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </div>
-    </div>
-  );
-}
+const BlogPostContainer = ({
+  data: {
+    markdownRemark: { frontmatter, html },
+  },
+}) => <Post frontmatter={frontmatter} html={html} />;
+
+export default BlogPostContainer;
 
 export const pageQuery = graphql`
   query($path: String!) {
@@ -31,9 +17,10 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path
-        title
+        heading: title
+        author
         featuredImage {
-          childImageSharp {
+          data: childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid
             }
