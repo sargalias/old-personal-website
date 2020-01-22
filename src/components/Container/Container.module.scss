@@ -1,0 +1,17 @@
+@import 'sassAbstracts';
+
+.Container {
+  max-width: var(--container-max-width);
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  box-sizing: content-box;
+
+  @include media-up(sm) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}

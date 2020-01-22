@@ -28,12 +28,17 @@ module.exports = {
       },
     },
     `gatsby-alias-imports`, // by default aliases all direct children of src/*
-    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        includePaths: ['./src/Abstracts'],
+      },
+    },
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Roboto:300,400,500,700&display=swap'],
+          families: ['Raleway:400,700'],
         },
       },
     },
