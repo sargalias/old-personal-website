@@ -1,3 +1,75 @@
 body {
   font-family: 'Raleway', sans-serif;
 }
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-align: center;
+
+  + * {
+    margin-top: 0.7rem;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 400;
+
+  + * {
+    margin-top: 0.9rem;
+  }
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-weight: 400;
+
+  + * {
+    margin-top: 0.9rem;
+  }
+}
+
+ul,
+ol {
+  padding-left: 4rem;
+
+  + ul,
+  + ol {
+    padding-left: 4rem;
+  }
+}
+
+p,
+time,
+span,
+ul,
+ol,
+li {
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  line-height: 1.9;
+}
+
+pre {
+  overflow: scroll;
+  max-width: 100%;
+}
+code {
+  font-family: monospace;
+  font-size: 1.8rem;
+  line-height: 1.9rem;
+}
+
+p,
+time,
+span,
+ul,
+pre,
+ol {
+  + *:not(ul):not(ol) {
+    margin-top: 2.5rem;
+  }
+}
