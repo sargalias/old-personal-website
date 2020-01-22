@@ -1,0 +1,8 @@
+@import 'sassAbstracts';
+
+.TextContainer {
+  max-width: var(--breakpoint-md);
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: content-box;
+}
