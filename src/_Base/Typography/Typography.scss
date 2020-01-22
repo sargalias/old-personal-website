@@ -1,3 +1,97 @@
+@import 'sassAbstracts';
+
 body {
   font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+span,
+ul,
+ol,
+li {
+  color: var(--color-primary);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+h1 {
+  text-align: center;
+  @include font-size-declarations(h1);
+
+  + * {
+    margin-top: 0.7rem;
+  }
+}
+
+h2 {
+  line-height: 1.2;
+  @include font-size-declarations(h2);
+
+  + * {
+    margin-top: 0.9rem;
+  }
+}
+
+h3 {
+  line-height: 1.2;
+  @include font-size-declarations(h3);
+
+  + * {
+    margin-top: 0.9rem;
+  }
+}
+
+p,
+time,
+span,
+ul,
+ol,
+li {
+  letter-spacing: 1px;
+  line-height: 1.9;
+
+  @include font-size-declarations(base);
+}
+
+ul,
+ol {
+  padding-left: 4rem;
+
+  + ul,
+  + ol {
+    padding-left: 4rem;
+  }
+}
+
+p,
+time,
+span,
+ul,
+pre,
+ol {
+  + *:not(ul):not(ol) {
+    margin-top: 2.5rem;
+  }
+}
+
+pre {
+  overflow: scroll;
+  max-width: 100%;
+}
+
+code {
+  font-family: monospace;
+  font-size: 1.8rem;
+  line-height: 1.9rem;
 }
