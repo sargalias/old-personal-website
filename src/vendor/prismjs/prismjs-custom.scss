@@ -1,0 +1,16 @@
+code {
+  span {
+    color: white;
+  }
+}
+
+.gatsby-highlight {
+  + * {
+    margin-top: 2.5rem;
+  }
+}
+
+.language-text.language-text {
+  background-color: #424e5e;
+  padding: 0.1em 0.2em;
+}
