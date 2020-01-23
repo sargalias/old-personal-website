@@ -1,9 +1,8 @@
 import React from 'react';
 import Img from 'gatsby-image';
-import styles from './PostHeader.module.scss';
 import PostHeading from '../PostHeading';
-
-const defaultAuthor = 'Spyros Argalias';
+import PostMetadata from '../PostMetadata';
+import styles from './PostHeader.module.scss';
 
 const PostHeader = ({ heading, date, author, category, featuredImageData }) => (
   <header className={styles.PostHeader}>
@@ -12,12 +11,7 @@ const PostHeader = ({ heading, date, author, category, featuredImageData }) => (
       heading={heading}
       parentClass={styles.PostHeader_postHeading}
     />
-    <div className={styles.PostHeader_metadata}>
-      <time className={styles.PostHeader_postedOn}>{date}</time>
-      <span className={styles.PostHeader_author}>
-        By {author || defaultAuthor}
-      </span>
-    </div>
+    <PostMetadata author={author} date={date} />
     {featuredImageData && (
       <div className={styles.PostHeader_imgWrapper}>
         <Img fluid={featuredImageData.fluid} />
