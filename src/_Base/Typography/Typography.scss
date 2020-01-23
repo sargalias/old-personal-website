@@ -1,8 +1,8 @@
 @import 'sassAbstracts';
 
 body {
-  font-family: 'Raleway', sans-serif;
   @include font-size-declarations(base);
+  font-family: 'Raleway', sans-serif;
 }
 
 h1,
@@ -26,8 +26,8 @@ h3 {
 }
 
 h1 {
-  text-align: center;
   @include font-size-declarations(h1);
+  text-align: center;
 
   + * {
     margin-top: 0.7rem;
@@ -35,8 +35,8 @@ h1 {
 }
 
 h2 {
-  line-height: 1.2;
   @include font-size-declarations(h2);
+  line-height: 1.2;
 
   + * {
     margin-top: 0.9rem;
@@ -44,8 +44,8 @@ h2 {
 }
 
 h3 {
-  line-height: 1.2;
   @include font-size-declarations(h3);
+  line-height: 1.2;
 
   + * {
     margin-top: 0.9rem;
@@ -58,10 +58,9 @@ span,
 ul,
 ol,
 li {
+  @include font-size-declarations(base);
   letter-spacing: 1px;
   line-height: 1.9;
-
-  @include font-size-declarations(base);
 }
 
 ul,
