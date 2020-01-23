@@ -1,14 +1,6 @@
 .PostHeader {
-  $metadata-font-size: 1.6rem;
-
   margin-left: auto;
   margin-right: auto;
-
-  &_category {
-    text-align: center;
-    margin-bottom: 0;
-    font-size: $metadata-font-size;
-  }
 
   &_postHeading {
     margin-top: 0;
