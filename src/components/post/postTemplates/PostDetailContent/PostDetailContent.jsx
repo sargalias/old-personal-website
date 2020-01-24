@@ -1,7 +1,7 @@
 import React from 'react';
 
-const PostContent = ({ html, parentClass }) => (
+const PostDetailContent = ({ html, parentClass }) => (
   <div className={parentClass} dangerouslySetInnerHTML={{ __html: html }} />
 );
 
-export default PostContent;
+export default PostDetailContent;
