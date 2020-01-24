@@ -2,15 +2,15 @@ import React from 'react';
 import TextContainer from 'components/TextContainer';
 import PostDetailHeader from '../PostDetailHeader';
 import PostDetailContent from '../PostDetailContent';
-import styles from './Post.module.scss';
+import styles from './PostDetail.module.scss';
 
-const Post = ({ frontmatter, html }) => (
+const PostDetail = ({ frontmatter, html }) => (
   <TextContainer>
-    <article className={styles.Post}>
+    <article className={styles.PostDetail}>
       <PostDetailHeader frontmatter={frontmatter} />
-      <PostDetailContent html={html} parentClass={styles.Post_content} />
+      <PostDetailContent html={html} parentClass={styles.PostDetail_content} />
     </article>
   </TextContainer>
 );
 
-export default Post;
+export default PostDetail;

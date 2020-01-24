@@ -1,12 +1,12 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Post from 'components/post/postTemplates/Post';
+import PostDetail from 'components/post/postTemplates/PostDetail';
 
 const BlogPostContainer = ({
   data: {
     markdownRemark: { frontmatter, html },
   },
-}) => <Post frontmatter={frontmatter} html={html} />;
+}) => <PostDetail frontmatter={frontmatter} html={html} />;
 
 export default BlogPostContainer;
 
