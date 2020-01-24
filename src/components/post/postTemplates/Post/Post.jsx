@@ -1,7 +1,7 @@
 import React from 'react';
-import PostHeader from 'components/post/PostHeader';
-import PostContent from 'components/post/PostContent';
 import TextContainer from 'components/TextContainer';
+import PostHeader from '../PostHeader';
+import PostContent from '../PostContent';
 import styles from './Post.module.scss';
 
 const Post = ({ frontmatter, html }) => (

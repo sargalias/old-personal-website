@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Post from 'components/post/Post';
+import Post from 'components/post/postTemplates/Post';
 
 const BlogPostContainer = ({
   data: {

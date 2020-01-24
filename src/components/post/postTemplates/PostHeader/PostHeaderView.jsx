@@ -1,8 +1,8 @@
 import React from 'react';
-import PostCategory from '../postAtoms/PostCategory';
-import PostHeading from '../postAtoms/PostHeading';
-import PostMetadata from '../postAtoms/PostMetadata';
-import PostFeaturedImage from '../postAtoms/PostFeaturedImage';
+import PostCategory from '../../postAtoms/PostCategory';
+import PostHeading from '../../postAtoms/PostHeading';
+import PostMetadata from '../../postAtoms/PostMetadata';
+import PostFeaturedImage from '../../postAtoms/PostFeaturedImage';
 import styles from './PostHeader.module.scss';
 
 const PostHeader = ({ heading, date, author, category, featuredImageData }) => (
