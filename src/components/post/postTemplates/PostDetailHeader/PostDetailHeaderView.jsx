@@ -3,14 +3,20 @@ import PostCategory from '../../postAtoms/PostCategory';
 import PostHeading from '../../postAtoms/PostHeading';
 import PostMetadata from '../../postAtoms/PostMetadata';
 import PostFeaturedImage from '../../postAtoms/PostFeaturedImage';
-import styles from './PostHeader.module.scss';
+import styles from './PostDetailHeader.module.scss';
 
-const PostHeader = ({ heading, date, author, category, featuredImageData }) => (
-  <header className={styles.PostHeader}>
+const PostDetailHeader = ({
+  heading,
+  date,
+  author,
+  category,
+  featuredImageData,
+}) => (
+  <header className={styles.PostDetailHeader}>
     {category && <PostCategory category={category} />}
     <PostHeading
       heading={heading}
-      parentClass={styles.PostHeader_postHeading}
+      parentClass={styles.PostDetailHeader_postHeading}
     />
     <PostMetadata author={author} date={date} />
     {featuredImageData && (
@@ -19,4 +25,4 @@ const PostHeader = ({ heading, date, author, category, featuredImageData }) => (
   </header>
 );
 
-export default PostHeader;
+export default PostDetailHeader;

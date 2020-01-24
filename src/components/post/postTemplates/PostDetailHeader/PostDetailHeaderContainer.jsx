@@ -1,11 +1,11 @@
 import React from 'react';
-import PostHeader from './PostHeaderView';
+import PostDetailHeader from './PostDetailHeaderView';
 
 const Container = ({ frontmatter }) => {
   const { heading, date, author, featuredImage, category } = frontmatter;
 
   return (
-    <PostHeader
+    <PostDetailHeader
       heading={heading}
       date={date}
       author={author}
