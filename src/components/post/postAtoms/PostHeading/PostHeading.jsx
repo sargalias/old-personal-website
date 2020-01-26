@@ -1,12 +1,26 @@
 import React from 'react';
+import WithLink from 'components/wrappers/WithLink';
 
-const testId = 'PostHeading_heading';
-
-const PostHeading = ({ heading, parentClass, headingLevel = 1 }) =>
-  React.createElement(
-    `h${headingLevel}`,
-    { className: parentClass, 'data-testid': testId },
-    heading,
-  );
+const PostHeading = ({
+  heading,
+  parentClass,
+  headingTag = 'h1',
+  path = undefined,
+}) => (
+  <div className={parentClass} data-testid="PostHeading">
+    {React.createElement(
+      headingTag,
+      {
+        'data-testid': 'PostHeading_heading',
+      },
+      path
+        ? WithLink({
+            children: heading,
+            path,
+          })
+        : heading,
+    )}
+  </div>
+);
 
 export default PostHeading;
