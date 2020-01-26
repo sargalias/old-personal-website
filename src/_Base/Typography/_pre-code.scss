@@ -1,0 +1,14 @@
+@import 'sassAbstracts';
+
+pre {
+  @include font-size-declarations(base);
+  overflow: scroll;
+  max-width: 100%;
+}
+
+code {
+  font-family: monospace;
+  line-height: 1.9;
+  @include font-size-declarations(base);
+  overflow-wrap: break-word;
+}
