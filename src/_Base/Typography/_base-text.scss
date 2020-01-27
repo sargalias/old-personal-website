@@ -1,0 +1,24 @@
+@import 'sassAbstracts';
+
+p,
+time,
+span,
+ul,
+ol,
+li,
+button {
+  @include font-size-declarations(base);
+  letter-spacing: 1px;
+  line-height: 1.9;
+}
+
+p,
+time,
+span,
+ul,
+pre,
+ol {
+  + *:not(ul):not(ol) {
+    margin-top: 2.5rem;
+  }
+}

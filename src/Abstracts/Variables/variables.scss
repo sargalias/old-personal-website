@@ -9,9 +9,15 @@
   --color-primary: #303d4d;
   --color-primary-text: #2c3847;
 
+  --color-secondary: #0091ba;
+  --color-link: var(--color-secondary);
+
   --font-mul-sm: 1.1;
   --font-size-h1: 3.6rem;
   --font-size-h2: 3rem;
   --font-size-h3: 2.4rem;
   --font-size-base: 1.8rem;
+  --font-size-button: 1.3rem;
+
+  --font-family: 'Raleway', sans-serif;
 }

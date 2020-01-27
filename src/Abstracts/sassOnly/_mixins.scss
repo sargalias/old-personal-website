@@ -23,6 +23,8 @@
     $original-font-size: var(--font-size-h2);
   } @else if ($tag == h3) {
     $original-font-size: var(--font-size-h3);
+  } @else if($tag == button) {
+    $original-font-size: var(--font-size-button);
   }
 
   font-size: #{$original-font-size};

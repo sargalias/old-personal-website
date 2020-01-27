@@ -1,0 +1,6 @@
+@import 'sassAbstracts';
+
+body {
+  @include font-size-declarations(base);
+  font-family: var(--font-family);
+}
