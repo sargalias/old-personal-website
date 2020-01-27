@@ -5,7 +5,8 @@ time,
 span,
 ul,
 ol,
-li {
+li,
+button {
   @include font-size-declarations(base);
   letter-spacing: 1px;
   line-height: 1.9;
