@@ -1,0 +1,11 @@
+@import 'sassAbstracts';
+
+.Layout {
+  &_content {
+    margin-top: 2rem;
+
+    @include media-up(sm) {
+      margin-top: 3rem;
+    }
+  }
+}
