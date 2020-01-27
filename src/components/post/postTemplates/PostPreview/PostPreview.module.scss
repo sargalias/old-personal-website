@@ -1,0 +1,43 @@
+@import 'sassAbstracts';
+
+.PostPreview {
+  $block: &;
+  text-align: center;
+
+  &_postHeading {
+    margin-top: 0;
+  }
+
+  &_postFeaturedImageLink {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 3.2rem;
+    max-width: 76rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &_excerpt {
+    margin-top: 1rem;
+  }
+
+  &_readMore {
+    margin-top: 2.5rem;
+    display: inline-block;
+  }
+
+  /* Variation with image on the side */
+  @include media-up(sm) {
+    display: flex;
+    align-items: center;
+
+    #{$block}_postFeaturedImageLink {
+      flex-basis: 35%;
+    }
+
+    #{$block}_content {
+      flex-basis: 65%;
+      margin-left: 5%;
+    }
+  }
+}
