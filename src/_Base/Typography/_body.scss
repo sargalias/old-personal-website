@@ -2,5 +2,5 @@
 
 body {
   @include font-size-declarations(base);
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--font-family);
 }
