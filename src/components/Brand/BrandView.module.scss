@@ -1,0 +1,19 @@
+@import 'sassAbstracts';
+
+.Brand {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  &_logo {
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &_name {
+    @include font-size-declarations(brand);
+
+    padding-left: 1rem;
+    font-weight: 700;
+  }
+}
