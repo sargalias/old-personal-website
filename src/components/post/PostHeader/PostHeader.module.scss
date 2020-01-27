@@ -1,34 +1,8 @@
 .PostHeader {
-  $metadata-font-size: 1.6rem;
-
   margin-left: auto;
   margin-right: auto;
 
-  &_category {
-    text-align: center;
-    margin-bottom: 0;
-    font-size: $metadata-font-size;
-  }
-
-  &_heading {
+  &_postHeading {
     margin-top: 0;
-  }
-
-  &_metadata {
-    text-align: center;
-  }
-
-  &_postedOn {
-    font-size: $metadata-font-size;
-
-    &::after {
-      content: '|';
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
-  }
-
-  &_author {
-    font-size: $metadata-font-size;
   }
 }

@@ -1,0 +1,19 @@
+.PostMetadata {
+  $metadata-font-size: 1.6rem;
+
+  text-align: center;
+
+  &_postedOn {
+    font-size: $metadata-font-size;
+
+    &::after {
+      content: '|';
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+
+  &_author {
+    font-size: $metadata-font-size;
+  }
+}
