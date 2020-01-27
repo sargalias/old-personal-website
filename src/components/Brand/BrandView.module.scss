@@ -8,12 +8,12 @@
   &_logo {
     height: 100%;
     object-fit: contain;
-    padding-right: 1rem;
   }
 
   &_name {
     @include font-size-declarations(brand);
 
+    padding-left: 1rem;
     font-weight: 700;
   }
 }
