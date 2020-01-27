@@ -14,18 +14,8 @@
   }
 }
 
-@mixin font-size-declarations($tag) {
-  $original-font-size: var(--font-size-base);
-
-  @if ($tag == h1) {
-    $original-font-size: var(--font-size-h1);
-  } @else if ($tag == h2) {
-    $original-font-size: var(--font-size-h2);
-  } @else if ($tag == h3) {
-    $original-font-size: var(--font-size-h3);
-  } @else if($tag == button) {
-    $original-font-size: var(--font-size-button);
-  }
+@mixin font-size-declarations($var: base) {
+  $original-font-size: var(--font-size-#{$var});
 
   font-size: #{$original-font-size};
 
