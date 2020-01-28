@@ -3,4 +3,10 @@ const getModifierClasses = (modifiers, baseClass) => {
   return modifiers.map(appendModifier);
 };
 
-export { getModifierClasses };
+const getCssModuleClasses = (styles, baseClass, modifiers) => [
+  _getCssModuleClass(styles, baseClass),
+];
+
+const _getCssModuleClass = (styles, className) => styles[className];
+
+export { getModifierClasses, getCssModuleClasses };
