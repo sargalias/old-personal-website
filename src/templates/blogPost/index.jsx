@@ -1,14 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import Layout from 'layout';
 import PostDetail from 'components/post/postTemplates/PostDetail';
-
-const BlogPostContainer = ({
-  data: {
-    markdownRemark: { frontmatter, html },
-  },
-}) => <PostDetail frontmatter={frontmatter} html={html} />;
-
-export default BlogPostContainer;
 
 export const pageQuery = graphql`
   query($path: String!) {
@@ -31,3 +24,15 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+const BlogPostContainer = ({
+  data: {
+    markdownRemark: { frontmatter, html },
+  },
+}) => (
+  <Layout>
+    <PostDetail frontmatter={frontmatter} html={html} />
+  </Layout>
+);
+
+export default BlogPostContainer;
