@@ -21,44 +21,30 @@ describe('cssHelpers', () => {
   });
 
   describe('getCssModuleClasses', () => {
-    test('should return correct classes for no modifiers', () => {
-      const baseClass = 'baseClass';
-      const stylesSpy = { [baseClass]: `hash-${baseClass}` };
+    each`
+      modifiers             | expected
+      ${[]}                 | ${['hash-baseClass']}
+      ${['mod']}            | ${['hash-baseClass-mod', 'hash-baseClass']}
+      ${['mod1', 'mod2']}   | ${[
+      'hash-baseClass-mod1',
+      'hash-baseClass-mod2',
+      'hash-baseClass',
+    ]}
+    `.test(
+      'should return $expected when modifiers are $modifiers',
+      ({ modifiers, expected }) => {
+        const baseClass = 'baseClass';
+        const stylesSpy = {
+          [baseClass]: `hash-${baseClass}`,
+          baseClass___mod: `hash-baseClass-mod`,
+          baseClass___mod1: `hash-baseClass-mod1`,
+          baseClass___mod2: `hash-baseClass-mod2`,
+        };
 
-      const result = getCssModuleClasses(stylesSpy, baseClass);
+        const result = getCssModuleClasses(stylesSpy, baseClass, modifiers);
 
-      expect(result).toStrictEqual(['hash-baseClass']);
-    });
-
-    test('should return correct classes for one modifier', () => {
-      const baseClass = 'baseClass';
-      const modifiers = ['mod'];
-      const stylesSpy = {
-        [baseClass]: `hash-${baseClass}`,
-        baseClass___mod: `hash-baseClass-mod`,
-      };
-
-      const result = getCssModuleClasses(stylesSpy, baseClass, modifiers);
-
-      expect(result).toStrictEqual(['hash-baseClass-mod', 'hash-baseClass']);
-    });
-
-    test('should return correct classes for two modifiers', () => {
-      const baseClass = 'baseClass';
-      const modifiers = ['mod1', 'mod2'];
-      const stylesSpy = {
-        [baseClass]: `hash-${baseClass}`,
-        baseClass___mod1: `hash-baseClass-mod1`,
-        baseClass___mod2: `hash-baseClass-mod2`,
-      };
-
-      const result = getCssModuleClasses(stylesSpy, baseClass, modifiers);
-
-      expect(result).toStrictEqual([
-        'hash-baseClass-mod1',
-        'hash-baseClass-mod2',
-        'hash-baseClass',
-      ]);
-    });
+        expect(result).toStrictEqual(expected);
+      },
+    );
   });
 });
