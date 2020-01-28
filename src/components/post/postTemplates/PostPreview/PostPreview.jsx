@@ -10,6 +10,7 @@ import styles from './PostPreview.module.scss';
 const PostPreview = ({
   frontmatter: { heading, path, category, featuredImage },
   excerpt,
+  headingTag = 'h2',
 }) => (
   <TextContainer>
     <article className={styles.PostPreview}>
@@ -35,7 +36,7 @@ const PostPreview = ({
           heading={heading}
           path={path}
           parentClass={styles.PostPreview_postHeading}
-          headingTag={'h2'}
+          headingTag={headingTag}
         />
         <p className={styles.PostPreview_excerpt}>{excerpt}</p>
         <Button path={path}>Continue reading</Button>
