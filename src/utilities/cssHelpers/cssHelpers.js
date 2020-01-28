@@ -1,4 +1,4 @@
-import { curry, append } from 'ramda';
+import { compose, curry, append, map } from 'ramda';
 
 const getModifierClasses = curry((baseClass, modifiers) => {
   const appendModifier = modifier => `${baseClass}___${modifier}`;
@@ -6,9 +6,12 @@ const getModifierClasses = curry((baseClass, modifiers) => {
 });
 
 const getCssModuleClasses = (styles, baseClass, modifiers = []) => {
-  const modifierClasses = getModifierClasses(baseClass, modifiers);
-  const allClasses = append(baseClass)(modifierClasses);
-  return allClasses.map(_getCssModuleClass(styles));
+  const getModifierClassesWithBaseClass = getModifierClasses(baseClass);
+  return compose(
+    map(_getCssModuleClass(styles)),
+    append(baseClass),
+    getModifierClassesWithBaseClass,
+  )(modifiers);
 };
 
 const _getCssModuleClass = curry((styles, className) => styles[className]);
