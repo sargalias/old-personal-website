@@ -1,15 +1,3 @@
-import React from 'react';
+import Home from '_pages/Home';
 
-import Layout from 'layout';
-import Container from 'components/Container';
-import Hero from 'components/Hero';
-
-const IndexPage = () => (
-  <Layout>
-    <Container>
-      <Hero />
-    </Container>
-  </Layout>
-);
-
-export default IndexPage;
+export default Home;

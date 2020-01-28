@@ -6,6 +6,9 @@ $color-secondary: #0091ba;
 $color-secondary-lighter: #419fb9;
 $color-link: $color-secondary;
 
+$color-gradient-start: #73e1ff;
+$color-gradient-end: #c7ffcd;
+
 $colorsMap: (
   'color-primary': $color-primary,
   'color-primary-text': $color-primary-text,
@@ -13,4 +16,6 @@ $colorsMap: (
   'color-secondary': $color-secondary,
   'color-secondary-lighter': $color-secondary-lighter,
   'color-link': $color-link,
+  'color-gradient-start': $color-gradient-start,
+  'color-gradient-end': $color-gradient-end,
 );
