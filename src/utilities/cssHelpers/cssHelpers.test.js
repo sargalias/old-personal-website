@@ -19,5 +19,14 @@ describe('cssHelpers', () => {
 
       expect(result).toStrictEqual(['base___mod']);
     });
+
+    test('should return correct result with two modifiers', () => {
+      const modifiers = ['mod1', 'mod2'];
+      const baseClass = 'base';
+
+      const result = getModifierClasses(modifiers, baseClass);
+
+      expect(result).toStrictEqual(['base___mod1', 'base___mod2']);
+    });
   });
 });

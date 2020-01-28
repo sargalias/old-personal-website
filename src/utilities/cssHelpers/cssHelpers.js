@@ -1,4 +1,6 @@
-const getModifierClasses = (modifiers, baseClass) =>
-  modifiers.length ? [`${baseClass}___${modifiers[0]}`] : [];
+const getModifierClasses = (modifiers, baseClass) => {
+  const appendModifier = modifier => `${baseClass}___${modifier}`;
+  return modifiers.map(appendModifier);
+};
 
 export { getModifierClasses };
