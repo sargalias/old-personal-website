@@ -12,6 +12,7 @@ module.exports = {
     '^images(.*)$': '<rootDir>/src/images$1',
     '^layout(.*)$': '<rootDir>/src/layout$1',
     '^uiComponents(.*)$': '<rootDir>/src/uiComponents$1',
+    '^utilities(.*)$': '<rootDir>/src/utilities$1',
     '^vendor(.*)$': '<rootDir>/src/vendor$1',
   },
   testPathIgnorePatterns: [`node_modules`, `\\.cache`, `<rootDir>.*/public`],
