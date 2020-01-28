@@ -29,5 +29,36 @@ describe('cssHelpers', () => {
 
       expect(result).toStrictEqual(['hash-baseClass']);
     });
+
+    test('should return correct classes for one modifier', () => {
+      const baseClass = 'baseClass';
+      const modifiers = ['mod'];
+      const stylesSpy = {
+        [baseClass]: `hash-${baseClass}`,
+        baseClass___mod: `hash-baseClass-mod`,
+      };
+
+      const result = getCssModuleClasses(stylesSpy, baseClass, modifiers);
+
+      expect(result).toStrictEqual(['hash-baseClass-mod', 'hash-baseClass']);
+    });
+
+    test('should return correct classes for two modifiers', () => {
+      const baseClass = 'baseClass';
+      const modifiers = ['mod1', 'mod2'];
+      const stylesSpy = {
+        [baseClass]: `hash-${baseClass}`,
+        baseClass___mod1: `hash-baseClass-mod1`,
+        baseClass___mod2: `hash-baseClass-mod2`,
+      };
+
+      const result = getCssModuleClasses(stylesSpy, baseClass, modifiers);
+
+      expect(result).toStrictEqual([
+        'hash-baseClass-mod1',
+        'hash-baseClass-mod2',
+        'hash-baseClass',
+      ]);
+    });
   });
 });
