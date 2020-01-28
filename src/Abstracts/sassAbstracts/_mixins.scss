@@ -1,0 +1,32 @@
+@import './variables/breakpoints';
+
+@mixin media-up($breakpoint: xsm) {
+  $minWidth: $breakpoint-xsm;
+  @if ($breakpoint == sm) {
+    $minWidth: $breakpoint-sm;
+  } @else if ($breakpoint == md) {
+    $minWidth: $breakpoint-md;
+  }
+
+  $normalizedWidth: $minWidth / 1.6; // to calibrate for html font-size
+
+  @media screen and (min-width: $normalizedWidth) {
+    @content;
+  }
+}
+
+@mixin font-size-declarations($var: base) {
+  $original-font-size: var(--font-size-#{$var});
+
+  font-size: #{$original-font-size};
+
+  @include media-up(sm) {
+    font-size: calc(#{$original-font-size} * var(--font-mul-sm));
+  }
+}
+
+@mixin sass-variables-to-css-custom-properties($variablesNameValueMap) {
+  @each $name, $value in $variablesNameValueMap {
+    --#{$name}: #{$value};
+  }
+}

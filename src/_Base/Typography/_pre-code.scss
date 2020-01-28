@@ -7,8 +7,8 @@ pre {
 }
 
 code {
-  font-family: monospace;
-  line-height: 1.9;
   @include font-size-declarations(base);
+  font-family: monospace;
+  line-height: var(--line-height-base);
   overflow-wrap: break-word;
 }

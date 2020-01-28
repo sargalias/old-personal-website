@@ -1,0 +1,32 @@
+$space-1: 0.1rem;
+$space-2: 0.2rem;
+$space-3: 0.5rem;
+$space-4: 1rem;
+$space-5: 1.5rem;
+$space-6: 2rem;
+$space-7: 2.5rem;
+$space-8: 3rem;
+$space-9: 4rem;
+$space-10: 5rem;
+
+$space-xsm: $space-3;
+$space-sm: $space-4;
+$space-md: $space-6;
+$space-lg: $space-8;
+$space-xlg: $space-9;
+
+$spacings: (
+  'space-1': $space-1,
+  'space-2': $space-2,
+  'space-3': $space-3,
+  'space-4': $space-4,
+  'space-5': $space-5,
+  'space-6': $space-6,
+  'space-7': $space-7,
+  'space-8': $space-8,
+  'space-9': $space-9,
+  'space-sm': $space-sm,
+  'space-md': $space-md,
+  'space-lg': $space-lg,
+  'space-xlg': $space-xlg,
+);

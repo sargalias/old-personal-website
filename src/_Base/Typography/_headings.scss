@@ -11,24 +11,24 @@ h1 {
   text-align: center;
 
   + * {
-    margin-top: 0.7rem;
+    margin-top: var(--space-h1);
   }
 }
 
 h2 {
   @include font-size-declarations(h2);
-  line-height: 1.2;
+  line-height: var(--line-height-h2);
 
   + * {
-    margin-top: 0.9rem;
+    margin-top: var(--space-h2);
   }
 }
 
 h3 {
   @include font-size-declarations(h3);
-  line-height: 1.2;
+  line-height: var(--line-height-h3);
 
   + * {
-    margin-top: 0.9rem;
+    margin-top: var(--space-h3);
   }
 }
