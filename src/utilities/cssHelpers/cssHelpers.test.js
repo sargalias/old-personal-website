@@ -13,7 +13,7 @@ describe('cssHelpers', () => {
       ({ modifiers, expected }) => {
         const baseClass = 'base';
 
-        const result = getModifierClasses(modifiers, baseClass);
+        const result = getModifierClasses(baseClass, modifiers);
 
         expect(result).toStrictEqual(expected);
       },
