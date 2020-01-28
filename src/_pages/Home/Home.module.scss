@@ -1,0 +1,13 @@
+.Home {
+  &_blogFeatureSection {
+    margin-top: var(--space-xlg);
+    padding-top: var(--space-xlg);
+    padding-bottom: var(--space-xlg);
+    background-color: var(--color-gradient-start);
+    background-image: linear-gradient(
+      to bottom right,
+      var(--color-gradient-start),
+      var(--color-gradient-end)
+    );
+  }
+}

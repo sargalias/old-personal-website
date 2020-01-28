@@ -1,0 +1,29 @@
+@import 'sassAbstracts';
+
+.BlogFeatureView {
+  &_prelude {
+    text-align: right;
+    font-style: italic;
+  }
+
+  &_heading {
+    text-align: center;
+    margin-top: var(--space-md);
+  }
+
+  &_postPreview {
+    margin-top: var(--space-lg);
+  }
+
+  &_cta {
+    margin-top: var(--space-lg);
+    text-align: center;
+    font-style: italic;
+  }
+
+  @include media-up(sm) {
+    &_heading {
+      margin-top: var(--space-sm);
+    }
+  }
+}
