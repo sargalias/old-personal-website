@@ -1,3 +1,5 @@
+@import './spacings';
+
 $font-mul-sm: 1.1;
 $font-size-h1: 3.6rem;
 $font-size-h2: 3rem;
@@ -9,7 +11,16 @@ $font-size-navbar: 2rem;
 
 $font-family: 'Raleway', sans-serif;
 
-$fonts: (
+$letter-spacing-base: 1px;
+$line-height-h2: 1.2;
+$line-height-h3: 1.2;
+$line-height-base: 1.9;
+$list-padding: 4rem;
+$space-h1: $space-sm;
+$space-h2: $space-md;
+$space-h3: $space-md;
+
+$typography: (
   'font-mul-sm': $font-mul-sm,
   'font-size-h1': $font-size-h1,
   'font-size-h2': $font-size-h2,
@@ -19,4 +30,12 @@ $fonts: (
   'font-size-brand': $font-size-brand,
   'font-size-navbar': $font-size-navbar,
   'font-family': $font-family,
+  'letter-spacing-base': $letter-spacing-base,
+  'line-height-h2': $line-height-h2,
+  'line-height-h3': $line-height-h3,
+  'line-height-base': $line-height-base,
+  'list-padding': $list-padding,
+  'space-h1': $space-h1,
+  'space-h2': $space-h2,
+  'space-h3': $space-h3,
 );

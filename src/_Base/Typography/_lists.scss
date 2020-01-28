@@ -1,9 +1,9 @@
 ul,
 ol {
-  padding-left: 4rem;
+  padding-left: var(--list-padding);
 
   + ul,
   + ol {
-    padding-left: 4rem;
+    padding-left: var(--list-padding);
   }
 }
