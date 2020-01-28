@@ -1,32 +1,22 @@
 import { getModifierClasses } from './cssHelpers';
+import each from 'jest-each';
 
 describe('cssHelpers', () => {
   describe('getModifierClasses', () => {
-    test('should return empty string with no modifiers', () => {
-      const modifiers = [];
-      const baseClass = 'base';
+    each`
+      modifiers             | expected
+      ${[]}                 | ${[]}
+      ${['mod']}            | ${['base___mod']}
+      ${['mod1', 'mod2']}   | ${['base___mod1', 'base___mod2']}
+    `.test(
+      'should return $expected when modifiers are $modifiers',
+      ({ modifiers, expected }) => {
+        const baseClass = 'base';
 
-      const result = getModifierClasses(modifiers, baseClass);
+        const result = getModifierClasses(modifiers, baseClass);
 
-      expect(result).toStrictEqual([]);
-    });
-
-    test('should return correct result with one modifier', () => {
-      const modifiers = ['mod'];
-      const baseClass = 'base';
-
-      const result = getModifierClasses(modifiers, baseClass);
-
-      expect(result).toStrictEqual(['base___mod']);
-    });
-
-    test('should return correct result with two modifiers', () => {
-      const modifiers = ['mod1', 'mod2'];
-      const baseClass = 'base';
-
-      const result = getModifierClasses(modifiers, baseClass);
-
-      expect(result).toStrictEqual(['base___mod1', 'base___mod2']);
-    });
+        expect(result).toStrictEqual(expected);
+      },
+    );
   });
 });
