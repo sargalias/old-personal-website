@@ -1,0 +1,9 @@
+$breakpoint-xsm: 57.6rem;
+$breakpoint-sm: 76.8rem;
+$breakpoint-md: 99.2rem;
+
+$breakpoints: (
+  'breakpoint-xsm': $breakpoint-xsm,
+  'breakpoint-sm': $breakpoint-sm,
+  'breakpoint-md': $breakpoint-md,
+);

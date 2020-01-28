@@ -23,3 +23,9 @@
     font-size: calc(#{$original-font-size} * var(--font-mul-sm));
   }
 }
+
+@mixin sass-variables-to-css-custom-properties($variablesNameValueMap) {
+  @each $name, $value in $variablesNameValueMap {
+    --#{$name}: #{$value};
+  }
+}

@@ -1,0 +1,16 @@
+$color-primary: #303d4d;
+$color-primary-text: #2c3847;
+$color-primary-divider: #d5d9dc;
+
+$color-secondary: #0091ba;
+$color-secondary-lighter: #419fb9;
+$color-link: $color-secondary;
+
+$colorsMap: (
+  'color-primary': $color-primary,
+  'color-primary-text': $color-primary-text,
+  'color-primary-divider': $color-primary-divider,
+  'color-secondary': $color-secondary,
+  'color-secondary-lighter': $color-secondary-lighter,
+  'color-link': $color-link,
+);
