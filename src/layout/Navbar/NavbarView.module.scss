@@ -37,7 +37,6 @@
     // Active modifier needs to override hover styles
     &___isActive#{&}___isActive {
       #{$block}_linkText {
-        font-weight: 700;
         border-bottom: 2px solid var(--color-link);
       }
     }
