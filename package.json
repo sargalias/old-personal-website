@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Spyros Argalias <sargalias@gmail.com>",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
     "bulma": "^0.8.0",
     "gatsby": "^2.18.12",
     "gatsby-alias-imports": "^1.0.4",
