@@ -15,8 +15,9 @@ const BlogView = ({ nodes }) => (
           className={`${styles.BlogView} ${
             !isFirst(i) ? styles.BlogView___hasDivider : ''
           }`}
+          key={id}
         >
-          <PostPreview frontmatter={frontmatter} excerpt={excerpt} key={id} />
+          <PostPreview frontmatter={frontmatter} excerpt={excerpt} />
         </div>
       ))}
     </Container>
