@@ -1,4 +1,8 @@
-import { getModifierClasses, getCssModuleClasses } from './cssHelpers';
+import {
+  getModifierClasses,
+  getCssModuleClasses,
+  getCssClasses,
+} from './cssHelpers';
 import each from 'jest-each';
 
 describe('cssHelpers', () => {
@@ -46,5 +50,22 @@ describe('cssHelpers', () => {
         expect(result).toStrictEqual(expected);
       },
     );
+  });
+
+  describe('getCssClasses', () => {
+    test('should return correct class string', () => {
+      const stylesMock = {
+        baseClass: `hash-baseClass`,
+        baseClass___mod: `hash-baseClass-mod`,
+        baseClass___mod1: `hash-baseClass-mod1`,
+        baseClass___mod2: `hash-baseClass-mod2`,
+      };
+
+      const result = getCssClasses(stylesMock, 'baseClass', ['mod1', 'mod2']);
+
+      expect(result).toBe(
+        `${stylesMock.baseClass___mod1} ${stylesMock.baseClass___mod2} ${stylesMock.baseClass}`,
+      );
+    });
   });
 });
