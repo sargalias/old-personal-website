@@ -1,11 +1,33 @@
 @import 'sassAbstracts';
 
 .Layout {
+  $block: &;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
   &_content {
     margin-top: 2rem;
 
     @include media-up(sm) {
       margin-top: 3rem;
+    }
+  }
+
+  &_stickyFooterFooterWrapper {
+    margin-top: auto;
+  }
+
+  &_footer {
+    margin-top: var(--space-xlg);
+    margin-top: 10rem;
+  }
+
+  &___hasColoredFinalSection {
+    #{$block}_footer {
+      margin-top: 0;
     }
   }
 }
