@@ -1,0 +1,24 @@
+@import 'sassAbstracts';
+
+.BrandIcons {
+  margin-top: var(--space-sm);
+  @include font-size-declarations(base);
+
+  &_iconContainer {
+    width: 5rem;
+    height: 5rem;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &_icon {
+    color: var(--color-primary);
+    transition: color 0.2s;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+}
