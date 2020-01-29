@@ -1,5 +1,3 @@
-@import 'sassAbstracts';
-
 .Navbar {
   $block: &;
   $navbar-height: 5rem;
@@ -19,7 +17,7 @@
   }
 
   &_link {
-    @include font-size-declarations(navbar);
+    font-size: var(--font-size-navbar);
 
     height: 100%;
     line-height: $navbar-height;

@@ -1,8 +1,5 @@
-@import 'sassAbstracts';
-
 .Button {
-  @include font-size-declarations(button);
-
+  font-size: var(--font-size-button);
   height: initial;
   border-radius: 0.4em;
   padding: 0.5em 1em;

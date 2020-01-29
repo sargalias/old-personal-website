@@ -14,7 +14,7 @@
   }
 
   &_content {
-    @include font-size-declarations(base);
+    font-size: var(--font-size-base);
     text-align: center;
     display: flex;
     flex-direction: column;

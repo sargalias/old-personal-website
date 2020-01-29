@@ -15,16 +15,6 @@
   }
 }
 
-@mixin font-size-declarations($var: base) {
-  $original-font-size: var(--font-size-#{$var});
-
-  font-size: #{$original-font-size};
-
-  @include media-up(sm) {
-    font-size: calc(#{$original-font-size} * var(--font-mul-sm));
-  }
-}
-
 @mixin sass-variables-to-css-custom-properties($variablesNameValueMap) {
   @each $name, $value in $variablesNameValueMap {
     --#{$name}: #{$value};

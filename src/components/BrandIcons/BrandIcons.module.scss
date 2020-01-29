@@ -1,8 +1,6 @@
-@import 'sassAbstracts';
-
 .BrandIcons {
   margin-top: var(--space-sm);
-  @include font-size-declarations(base);
+  font-size: var(--font-size-base);
 
   &_iconContainer {
     width: 5rem;

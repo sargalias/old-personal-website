@@ -1,9 +1,10 @@
 @import 'sassAbstracts';
 
+@import './variables/typography';
+
 :root {
   @include sass-variables-to-css-custom-properties($breakpoints);
   @include sass-variables-to-css-custom-properties($components);
   @include sass-variables-to-css-custom-properties($colorsMap);
   @include sass-variables-to-css-custom-properties($spacings);
-  @include sass-variables-to-css-custom-properties($typography);
 }
