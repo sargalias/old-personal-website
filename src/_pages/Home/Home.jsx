@@ -6,7 +6,7 @@ import BlogFeature from 'components/BlogFeature';
 import styles from './Home.module.scss';
 
 const Home = () => (
-  <Layout>
+  <Layout styleModifiers={['hasColoredFinalSection']}>
     <Container>
       <Hero />
     </Container>
