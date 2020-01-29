@@ -1,0 +1,24 @@
+@import 'sassAbstracts/mixins';
+@import 'sassAbstracts/variables/typography';
+
+:root {
+  @include sass-variables-to-css-custom-properties(
+    map-get($typography, 'typography-rest')
+  );
+
+  $font-sizes-info: map-get($typography, 'font-sizes-info');
+  $font-sizes: map-get($font-sizes-info, 'font-sizes');
+
+  @each $tag, $font-size in $font-sizes {
+    --font-size-#{$tag}: calc(#{$font-size} * var(--font-size-multiplier));
+  }
+
+  $font-size-multipliers: map-get($font-sizes-info, 'font-size-multipliers');
+  $font-size-multiplier-base: map-get($font-size-multipliers, 'base');
+  $font-size-multiplier-sm: map-get($font-size-multipliers, 'sm');
+
+  --font-size-multiplier: #{$font-size-multiplier-base};
+  @include media-up(sm) {
+    --font-size-multiplier: #{$font-size-multiplier-sm};
+  }
+}

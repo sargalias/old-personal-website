@@ -1,6 +1,8 @@
 @import './spacings';
 
-$font-mul-sm: 1.1;
+$font-size-multiplier-base: 1;
+$font-size-multiplier-sm: 1.1;
+
 $font-size-h1: 3.6rem;
 $font-size-h2: 3rem;
 $font-size-h3: 2.4rem;
@@ -20,22 +22,33 @@ $space-h1: $space-sm;
 $space-h2: $space-md;
 $space-h3: $space-md;
 
+// Exports
+
 $typography: (
-  'font-mul-sm': $font-mul-sm,
-  'font-size-h1': $font-size-h1,
-  'font-size-h2': $font-size-h2,
-  'font-size-h3': $font-size-h3,
-  'font-size-base': $font-size-base,
-  'font-size-button': $font-size-button,
-  'font-size-brand': $font-size-brand,
-  'font-size-navbar': $font-size-navbar,
-  'font-family': $font-family,
-  'letter-spacing-base': $letter-spacing-base,
-  'line-height-h2': $line-height-h2,
-  'line-height-h3': $line-height-h3,
-  'line-height-base': $line-height-base,
-  'list-padding': $list-padding,
-  'space-h1': $space-h1,
-  'space-h2': $space-h2,
-  'space-h3': $space-h3,
+  'typography-rest': (
+    'font-family': $font-family,
+    'letter-spacing-base': $letter-spacing-base,
+    'line-height-h2': $line-height-h2,
+    'line-height-h3': $line-height-h3,
+    'line-height-base': $line-height-base,
+    'list-padding': $list-padding,
+    'space-h1': $space-h1,
+    'space-h2': $space-h2,
+    'space-h3': $space-h3,
+  ),
+  'font-sizes-info': (
+    'font-sizes': (
+      h1: $font-size-h1,
+      h2: $font-size-h2,
+      h3: $font-size-h3,
+      base: $font-size-base,
+      button: $font-size-button,
+      brand: $font-size-brand,
+      navbar: $font-size-navbar,
+    ),
+    'font-size-multipliers': (
+      base: $font-size-multiplier-base,
+      sm: $font-size-multiplier-sm,
+    ),
+  ),
 );
