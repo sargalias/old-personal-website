@@ -1,11 +1,20 @@
 @import 'sassAbstracts';
 
 .Layout {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
   &_content {
     margin-top: 2rem;
 
     @include media-up(sm) {
       margin-top: 3rem;
     }
+  }
+
+  &_stickyFooterFooter {
+    margin-top: auto;
   }
 }
