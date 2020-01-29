@@ -5,6 +5,13 @@ import {
 } from './cssHelpers';
 import each from 'jest-each';
 
+const stylesMock = {
+  baseClass: `hash-baseClass`,
+  baseClass___mod: `hash-baseClass-mod`,
+  baseClass___mod1: `hash-baseClass-mod1`,
+  baseClass___mod2: `hash-baseClass-mod2`,
+};
+
 describe('cssHelpers', () => {
   describe('getModifierClasses', () => {
     each`
@@ -19,7 +26,7 @@ describe('cssHelpers', () => {
 
         const result = getModifierClasses(baseClass, modifiers);
 
-        expect(result).toStrictEqual(expected);
+        expect(result).toIncludeSameMembers(expected);
       },
     );
   });
@@ -38,34 +45,24 @@ describe('cssHelpers', () => {
       'should return $expected when modifiers are $modifiers',
       ({ modifiers, expected }) => {
         const baseClass = 'baseClass';
-        const stylesSpy = {
-          [baseClass]: `hash-${baseClass}`,
-          baseClass___mod: `hash-baseClass-mod`,
-          baseClass___mod1: `hash-baseClass-mod1`,
-          baseClass___mod2: `hash-baseClass-mod2`,
-        };
 
-        const result = getCssModuleClasses(stylesSpy, baseClass, modifiers);
+        const result = getCssModuleClasses(stylesMock, baseClass, modifiers);
 
-        expect(result).toStrictEqual(expected);
+        expect(result).toIncludeSameMembers(expected);
       },
     );
   });
 
   describe('getCssClasses', () => {
     test('should return correct class string', () => {
-      const stylesMock = {
-        baseClass: `hash-baseClass`,
-        baseClass___mod: `hash-baseClass-mod`,
-        baseClass___mod1: `hash-baseClass-mod1`,
-        baseClass___mod2: `hash-baseClass-mod2`,
-      };
-
       const result = getCssClasses(stylesMock, 'baseClass', ['mod1', 'mod2']);
 
-      expect(result).toBe(
-        `${stylesMock.baseClass___mod1} ${stylesMock.baseClass___mod2} ${stylesMock.baseClass}`,
-      );
+      const resultClasses = result.split(' ');
+      expect(resultClasses).toIncludeSameMembers([
+        stylesMock.baseClass,
+        stylesMock.baseClass___mod1,
+        stylesMock.baseClass___mod2,
+      ]);
     });
   });
 });
