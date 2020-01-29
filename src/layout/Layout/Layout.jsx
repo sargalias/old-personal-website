@@ -4,9 +4,10 @@ import Abstracts from 'Abstracts';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import styles from './Layout.module.scss';
+import { getCssClasses } from 'utilities/cssHelpers';
 
-const Layout = ({ children }) => (
-  <div className={styles.Layout}>
+const Layout = ({ children, styleModifiers = [] }) => (
+  <div className={getCssClasses(styles, 'Layout', styleModifiers)}>
     <div className={styles.Layout_stickyFooterContentWrapper}>
       <Base />
       <Abstracts />
@@ -15,7 +16,9 @@ const Layout = ({ children }) => (
         {children}
       </div>
     </div>
-    <Footer parentClass={styles.Layout_stickyFooterFooter} />
+    <div className={styles.Layout_stickyFooterFooterWrapper}>
+      <Footer parentClass={styles.Layout_footer} />
+    </div>
   </div>
 );
 
