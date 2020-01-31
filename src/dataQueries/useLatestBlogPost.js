@@ -14,7 +14,6 @@ const useLatestBlogPost = () => {
           frontmatter {
             category
             heading: title
-            path
             featuredImage {
               data: childImageSharp {
                 fluid {
@@ -22,6 +21,9 @@ const useLatestBlogPost = () => {
                 }
               }
             }
+          }
+          fields {
+            path
           }
         }
       }
