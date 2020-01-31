@@ -1,4 +1,5 @@
 {
+  "siteUrl": "https://sargalias.com",
   "blogPostPathPrefix": "/blog/",
   "doesUrlHaveTrailingSlash": true
 }
