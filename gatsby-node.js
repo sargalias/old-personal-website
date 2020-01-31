@@ -22,7 +22,7 @@ const createBlogPostPages = async ({ actions, graphql, reporter }) => {
     'src',
     'templates',
     'blogPost',
-    'index.jsx',
+    'index.js',
   );
 
   const result = await graphql(`
