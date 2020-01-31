@@ -4,6 +4,7 @@ import BlogPostContainer from './BlogPostContainer';
 export const pageQuery = graphql`
   query($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+      id
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
@@ -17,6 +18,9 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+      fields {
+        path
       }
     }
   }

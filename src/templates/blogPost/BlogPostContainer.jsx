@@ -3,8 +3,15 @@ import BlogPostView from './BlogPostView';
 
 const BlogPostContainer = ({
   data: {
-    markdownRemark: { frontmatter, html },
+    markdownRemark: {
+      id,
+      frontmatter,
+      html,
+      fields: { path },
+    },
   },
-}) => <BlogPostView frontmatter={frontmatter} html={html} />;
+}) => (
+  <BlogPostView html={html} id={id} path={path} frontmatter={frontmatter} />
+);
 
 export default BlogPostContainer;
