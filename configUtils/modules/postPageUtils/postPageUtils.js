@@ -6,4 +6,7 @@ const formSeoTitle = (seoTitle, config = blogPostPageConfig) => {
   return `${prefix} ${titleDelimiter} ${titleSuffix}`;
 };
 
-export { formSeoTitle };
+const formSeoDescription = ({ seoDescription, excerpt }) =>
+  seoDescription || excerpt;
+
+export { formSeoTitle, formSeoDescription };

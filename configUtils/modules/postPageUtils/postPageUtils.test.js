@@ -1,4 +1,4 @@
-import { formSeoTitle } from './postPageUtils';
+import { formSeoTitle, formSeoDescription } from './postPageUtils';
 import each from 'jest-each';
 
 const config = {
@@ -17,6 +17,21 @@ describe('postPageUtils', () => {
       `should return '$expected' when {seoTitle: '$seoTitle', config: $config}`,
       ({ seoTitle, config, expected }) => {
         const result = formSeoTitle(seoTitle, config);
+
+        expect(result).toBe(expected);
+      },
+    );
+  });
+
+  describe('formSeoDescription', () => {
+    each`
+      seoDescription        | excerpt      | expected
+      ${'Seo description'}  | ${'Excerpt'} | ${'Seo description'}
+      ${undefined}          | ${'Excerpt'} | ${'Excerpt'}
+    `.test(
+      `should return '$expected' when {seoDescription: '$seoDescription', excerpt: $excerpt}`,
+      ({ seoDescription, excerpt, expected }) => {
+        const result = formSeoDescription({ seoDescription, excerpt });
 
         expect(result).toBe(expected);
       },
