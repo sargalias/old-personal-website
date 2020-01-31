@@ -1,3 +1,73 @@
+const gatsbySourceFilesystemConfig = [
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `images`,
+      path: `${__dirname}/src/images`,
+    },
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      name: 'posts',
+      path: `${__dirname}/posts`,
+    },
+  },
+];
+
+const gatsbyPluginDisqusConfig = {
+  resolve: `gatsby-plugin-disqus`,
+  options: {
+    shortname: `sargalias`,
+  },
+};
+
+const gatsbyAliasImportsConfig = {
+  resolve: `gatsby-alias-imports`, // by default aliases all direct children of src/*
+  options: {
+    aliases: {
+      config: './config',
+      configUtils: './configUtils',
+    },
+  },
+};
+
+const gatsbyPluginManifestConfig = {
+  resolve: `gatsby-plugin-manifest`,
+  options: {
+    name: `gatsby-starter-default`,
+    short_name: `starter`,
+    start_url: `/`,
+    background_color: `#663399`,
+    theme_color: `#663399`,
+    display: `minimal-ui`,
+    icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+  },
+};
+
+const gatsbyPluginSassConfig = {
+  resolve: 'gatsby-plugin-sass',
+  options: {
+    includePaths: ['./src/Abstracts'],
+  },
+};
+
+const gatsbyPluginWebFontLoaderConfig = {
+  resolve: 'gatsby-plugin-web-font-loader',
+  options: {
+    google: {
+      families: ['Raleway:400,700'],
+    },
+  },
+};
+
+const gatsbyTransformerRemarkConfig = {
+  resolve: 'gatsby-transformer-remark',
+  options: {
+    plugins: ['gatsby-remark-prismjs'],
+  },
+};
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -6,69 +76,15 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
+    ...gatsbySourceFilesystemConfig,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-    {
-      resolve: `gatsby-alias-imports`, // by default aliases all direct children of src/*
-      options: {
-        aliases: {
-          config: './config',
-          configUtils: './configUtils',
-        },
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-sass',
-      options: {
-        includePaths: ['./src/Abstracts'],
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Raleway:400,700'],
-        },
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'posts',
-        path: `${__dirname}/posts`,
-      },
-    },
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: ['gatsby-remark-prismjs'],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-disqus`,
-      options: {
-        shortname: `sargalias`,
-      },
-    },
+    gatsbyPluginManifestConfig,
+    gatsbyAliasImportsConfig,
+    gatsbyPluginSassConfig,
+    gatsbyPluginWebFontLoaderConfig,
+    gatsbyTransformerRemarkConfig,
+    gatsbyPluginDisqusConfig,
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
