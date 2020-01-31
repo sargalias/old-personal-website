@@ -9,4 +9,9 @@ const formSeoTitle = (seoTitle, config = blogPostPageConfig) => {
 const formSeoDescription = ({ seoDescription, excerpt }) =>
   seoDescription || excerpt;
 
-export { formSeoTitle, formSeoDescription };
+const formCanonicalUrl = (slug, config = blogPostPageConfig) => {
+  const { canonicalUrlPrefix, doesUrlHaveTrailingSlash } = config;
+  return `${canonicalUrlPrefix}${slug}${doesUrlHaveTrailingSlash ? '/' : ''}`;
+};
+
+export { formSeoTitle, formSeoDescription, formCanonicalUrl };
