@@ -24,6 +24,7 @@ describe('pathUtils', () => {
     slug          | blogPostPathPrefix  | doesUrlHaveTrailingSlash  | expected
     ${'foo-bar'}  | ${'/blog-foo/'}     | ${true}                   | ${'/blog-foo/foo-bar/'}
     ${'foo-bar'}  | ${'/blog-foo/'}     | ${false}                  | ${'/blog-foo/foo-bar'}
+    ${'foo-bar'}  | ${'/'}              | ${true}                  | ${'/foo-bar/'}
     `.test(
       `should return $expected when {
         blogPostPathPrefix: $blogPostPathPrefix,
