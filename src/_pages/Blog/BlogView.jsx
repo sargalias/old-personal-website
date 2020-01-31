@@ -10,14 +10,18 @@ const isFirst = equals(0);
 const BlogView = ({ nodes }) => (
   <Layout>
     <Container>
-      {nodes.map(({ id, excerpt, frontmatter }, i) => (
+      {nodes.map(({ id, excerpt, frontmatter, fields }, i) => (
         <div
           className={`${styles.BlogView} ${
             !isFirst(i) ? styles.BlogView___hasDivider : ''
           }`}
           key={id}
         >
-          <PostPreview frontmatter={frontmatter} excerpt={excerpt} />
+          <PostPreview
+            frontmatter={frontmatter}
+            excerpt={excerpt}
+            fields={fields}
+          />
         </div>
       ))}
     </Container>

@@ -1,4 +1,20 @@
 const path = require('path');
+const { formBlogPostPathFromSlug } = require('./configUtils/pathUtils');
+
+const populatePathFieldOnPosts = ({ node, actions }) => {
+  if (
+    node.internal.type === 'MarkdownRemark' &&
+    node.fileAbsolutePath.includes('posts')
+  ) {
+    const postPath = formBlogPostPathFromSlug(node.frontmatter.slug);
+
+    actions.createNodeField({
+      node,
+      name: 'path',
+      value: postPath,
+    });
+  }
+};
 
 const createBlogPostPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
@@ -19,6 +35,9 @@ const createBlogPostPages = async ({ actions, graphql, reporter }) => {
         edges {
           node {
             frontmatter {
+              slug
+            }
+            fields {
               path
             }
           }
@@ -35,13 +54,14 @@ const createBlogPostPages = async ({ actions, graphql, reporter }) => {
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: node.frontmatter.path,
+      path: node.fields.path,
       component: blogPostTemplate,
-      context: {}, // additional data can be passed via context
+      context: { slug: node.frontmatter.slug }, // additional data can be passed via context
     });
   });
 };
 
 module.exports = {
   createPages: createBlogPostPages,
+  onCreateNode: populatePathFieldOnPosts,
 };

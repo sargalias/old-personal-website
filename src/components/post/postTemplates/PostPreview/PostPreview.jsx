@@ -8,7 +8,8 @@ import PostFeaturedImage from '../../postAtoms/PostFeaturedImage';
 import styles from './PostPreview.module.scss';
 
 const PostPreview = ({
-  frontmatter: { heading, path, category, featuredImage },
+  frontmatter: { heading, category, featuredImage },
+  fields: { path },
   excerpt,
   headingTag = 'h2',
   parentClass,
