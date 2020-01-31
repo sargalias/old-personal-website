@@ -32,6 +32,7 @@ module.exports = {
       options: {
         aliases: {
           config: './config',
+          configUtils: './configUtils',
         },
       },
     },
