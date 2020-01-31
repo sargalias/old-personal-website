@@ -14,6 +14,7 @@ module.exports = {
     '^uiComponents(.*)$': '<rootDir>/src/uiComponents$1',
     '^utilities(.*)$': '<rootDir>/src/utilities$1',
     '^vendor(.*)$': '<rootDir>/src/vendor$1',
+    '^config(.*)$': '<rootDir>/config$1',
   },
   testPathIgnorePatterns: [`node_modules`, `\\.cache`, `<rootDir>.*/public`],
   transformIgnorePatterns: [`node_modules/(?!(gatsby)/)`],

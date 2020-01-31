@@ -27,7 +27,14 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-alias-imports`, // by default aliases all direct children of src/*
+    {
+      resolve: `gatsby-alias-imports`, // by default aliases all direct children of src/*
+      options: {
+        aliases: {
+          config: './config',
+        },
+      },
+    },
     {
       resolve: 'gatsby-plugin-sass',
       options: {
