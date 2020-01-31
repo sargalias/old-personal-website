@@ -12,7 +12,6 @@ const useBlogPosts = () => {
             author
             category
             date
-            path
             featuredImage {
               data: childImageSharp {
                 fluid {
@@ -20,6 +19,9 @@ const useBlogPosts = () => {
                 }
               }
             }
+          }
+          fields {
+            path
           }
         }
       }

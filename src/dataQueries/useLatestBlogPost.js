@@ -4,7 +4,6 @@ const useLatestBlogPost = () => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
-        filter: {}
         sort: { order: DESC, fields: frontmatter___date }
         limit: 1
       ) {
