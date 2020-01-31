@@ -1,20 +1,10 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import useHeroImageData from 'dataQueries/useHeroImageData';
 import styles from './Hero.module.scss';
 
 const Hero = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "spyros-argalias.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
+  const heroImageData = useHeroImageData();
 
   return (
     <div className={styles.Hero}>
@@ -34,7 +24,7 @@ const Hero = () => {
         </p>
       </div>
       <div className={styles.Hero_imgWrapper}>
-        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+        <Img fluid={heroImageData.fluid} />
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Container from 'components/Container';
 import Brand from 'components/Brand';
-import styles from './NavbarView.module.scss';
+import styles from './Navbar.module.scss';
 
 const Navbar = () => (
   <Container>
