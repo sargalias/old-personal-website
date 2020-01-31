@@ -1,5 +1,3 @@
-// !!!Important: Duplicated from src/configUtils/pathUtils
-
 const {
   blogPostPathPrefix,
   doesUrlHaveTrailingSlash,
