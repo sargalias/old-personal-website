@@ -35,6 +35,9 @@ const createBlogPostPages = async ({ actions, graphql, reporter }) => {
         edges {
           node {
             frontmatter {
+              slug
+            }
+            fields {
               path
             }
           }
@@ -51,9 +54,9 @@ const createBlogPostPages = async ({ actions, graphql, reporter }) => {
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: node.frontmatter.path,
+      path: node.fields.path,
       component: blogPostTemplate,
-      context: {}, // additional data can be passed via context
+      context: { slug: node.frontmatter.slug }, // additional data can be passed via context
     });
   });
 };
