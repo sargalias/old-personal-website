@@ -1,8 +1,9 @@
-// !!!Important: Duplicated at root/configUtils/pathUtils
+// !!!Important: Duplicated from src/configUtils/pathUtils
 
-import paths from 'config/paths.json';
-
-const { blogPostPathPrefix, doesUrlHaveTrailingSlash } = paths;
+const {
+  blogPostPathPrefix,
+  doesUrlHaveTrailingSlash,
+} = require('../config/paths.json');
 
 const formBlogPostPathFromSlug = slug => {
   if (!slug) {
@@ -11,4 +12,4 @@ const formBlogPostPathFromSlug = slug => {
   return `${blogPostPathPrefix}${slug}${doesUrlHaveTrailingSlash ? '/' : ''}`;
 };
 
-export { formBlogPostPathFromSlug };
+module.exports = { formBlogPostPathFromSlug };
