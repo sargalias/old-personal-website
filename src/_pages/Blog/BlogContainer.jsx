@@ -1,34 +1,9 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import useBlogPosts from 'dataQueries/useBlogPosts';
 import BlogView from './BlogView';
 
 const BlogContainer = () => {
-  const {
-    allMarkdownRemark: { nodes },
-  } = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-        nodes {
-          id
-          excerpt
-          frontmatter {
-            heading: title
-            author
-            category
-            date
-            path
-            featuredImage {
-              data: childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `);
+  const nodes = useBlogPosts();
 
   return <BlogView nodes={nodes} />;
 };
