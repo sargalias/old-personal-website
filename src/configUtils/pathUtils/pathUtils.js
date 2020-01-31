@@ -6,7 +6,7 @@ const formBlogPostPathFromSlug = slug => {
   if (!slug) {
     throw new TypeError('slug needs to be provided');
   }
-  return `${blogPostPathPrefix}${slug}/`;
+  return `${blogPostPathPrefix}${slug}${doesUrlHaveTrailingSlash ? '/' : ''}`;
 };
 
 export { formBlogPostPathFromSlug };
