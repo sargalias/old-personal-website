@@ -1,10 +1,12 @@
 ---
-slug: separation-of-concerns
-date: '2020-01-22'
-title: 'Separation of concerns'
-category: 'Programming principles'
-seoTitle: 'SEO TITLE'
-seoDescription: 'SEO DESCRITION'
+title: 'Programming first principles - 11. First principle - Separation of concerns'
+slug: 'programming-first-principles-first-principle-separation-of-concerns'
+date: 2020-02-02
+author: 'Spyros Argalias'
+featuredImage: './programming-first-principles-first-principle-separation-of-concerns.png'
+category: ''
+seoTitle: ''
+seoDescription: ''
 ---
 
 Along with the other first principles, this is one of the most important things in a complex system.
