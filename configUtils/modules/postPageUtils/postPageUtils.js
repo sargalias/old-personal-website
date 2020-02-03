@@ -14,4 +14,11 @@ const formCanonicalUrl = (slug, config = blogPostPageConfig) => {
   return `${canonicalUrlPrefix}${slug}${doesUrlHaveTrailingSlash ? '/' : ''}`;
 };
 
-export { formSeoTitle, formSeoDescription, formCanonicalUrl };
+const formatExcerptOnNode = node => node;
+
+export {
+  formSeoTitle,
+  formSeoDescription,
+  formCanonicalUrl,
+  formatExcerptOnNode,
+};

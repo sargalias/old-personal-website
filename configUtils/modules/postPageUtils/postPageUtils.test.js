@@ -2,6 +2,7 @@ import {
   formSeoTitle,
   formSeoDescription,
   formCanonicalUrl,
+  formatExcerptOnNode,
 } from './postPageUtils';
 import each from 'jest-each';
 
@@ -65,5 +66,18 @@ describe('postPageUtils', () => {
         expect(result).toBe(expected);
       },
     );
+  });
+
+  describe('formatExcerptOnNode', () => {
+    test('should return same object with same data if frontmatter.excerpt is undefined', () => {
+      const mockNode = {
+        excerpt: 'Yo',
+        frontmatter: {},
+      };
+
+      const result = formatExcerptOnNode(mockNode);
+
+      expect(result).toEqual(mockNode);
+    });
   });
 });
