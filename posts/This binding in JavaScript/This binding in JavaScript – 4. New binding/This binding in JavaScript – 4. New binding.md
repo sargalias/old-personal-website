@@ -1,6 +1,6 @@
 ---
 title: 'This binding in JavaScript – 4. New binding'
-slug: this-binding-in-javascript-4-new-binding
+slug: this-binding-in-javascript-new-binding
 date: 2019-11-03
 author: 'Spyros Argalias'
 featuredImage: './this-binding-in-javascript-4-new-binding.png'

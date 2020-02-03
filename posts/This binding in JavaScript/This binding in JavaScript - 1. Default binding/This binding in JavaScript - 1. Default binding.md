@@ -1,6 +1,6 @@
 ---
 title: 'This binding in JavaScript - 1. Default binding'
-slug: this-binding-in-javascript-1-default-binding
+slug: this-binding-in-javascript-default-binding
 date: 2019-10-26
 author: 'Spyros Argalias'
 featuredImage: './this-binding-in-javascript-1-default-binding.png'
