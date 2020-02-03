@@ -28,7 +28,7 @@ And here they are in more detail.
 
 ## Design skills are encouraged
 
-I would consider this a very minor con... depending on the job.
+I would consider this a very minor con... depending on the job. However some people may actually consider it a positive thing. It depends on what you're into.
 
 Some jobs require a mixture between design skills and development skills, however many jobs only require development skills without any design.
 

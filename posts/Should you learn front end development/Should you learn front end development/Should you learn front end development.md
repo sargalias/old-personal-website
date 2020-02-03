@@ -53,7 +53,7 @@ A general tip you'll hear often when deciding on what to learn next is (somethin
 
 It basically means to spend something like a few days on a topic, then spend a few more days on a different topic, and so on. At the end of a week or two, you've tried out a couple of things and have a better idea of what you like and don't like.
 
-For example you may try out front end development by doing a very crash course on it for a couple of days. Afterwards you may do the same for back end. You may even do a small computer science taster course or something. At the end you'll have a better idea of what you're likely to enjoy in the long run.
+For example you may try out front end development by doing a very small crash course on it for a couple of days. Afterwards you may do the same for back end. You may even do a small computer science taster course or something. At the end you'll have a better idea of what you're likely to enjoy in the long run.
 
 The thing is that learning a type of programming takes a long time, so spending a week or two upfront to make a better decision is something that could save you many months later (by helping you make a better choice).
 
