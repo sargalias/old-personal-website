@@ -14,12 +14,13 @@ seoDescription: We start off with default binding, which is what happens if no o
 Video version of this article: [https://youtu.be/bEcODp35k8I](https://youtu.be/bEcODp35k8I)
 
 Posts in this series:
-1. [Default binding](/blog/this-binding-in-javascript-1-default-binding/) (this post)
-2. [Implicit binding](/blog/this-binding-in-javascript-2-implicit-binding/)
-3. [Explicit binding](/blog/this-binding-in-javascript-3-explicit-binding/)
-4. [New binding](/blog/this-binding-in-javascript-4-new-binding/)
-5. [Arrow functions](/blog/this-binding-in-javascript-5-arrow-functions/)
-6. [Gotchas and final notes](/blog/this-binding-in-javascript-6-gotchas-and-final-notes/)
+
+1. [Default binding](/blog/this-binding-in-javascript-default-binding/) (this post)
+2. [Implicit binding](/blog/this-binding-in-javascript-implicit-binding/)
+3. [Explicit binding](/blog/this-binding-in-javascript-explicit-binding/)
+4. [New binding](/blog/this-binding-in-javascript-new-binding/)
+5. [Arrow functions](/blog/this-binding-in-javascript-arrow-functions/)
+6. [Gotchas and final notes](/blog/this-binding-in-javascript-gotchas-and-final-notes/)
 
 In this series we talk about `this` binding in JavaScript.
 
@@ -28,6 +29,7 @@ This is a very important topic. It's also something that even experienced develo
 Basically in JavaScript there are 4 modes for `this` binding. Make that 5 if we include arrow functions.
 
 In order of lowest priority to highest priority, here they are:
+
 1. Default binding
 2. Implicit binding
 3. Explicit binding
@@ -36,9 +38,7 @@ In order of lowest priority to highest priority, here they are:
 
 In this post we'll talk about default binding.
 
-
 ---
-
 
 ## How default binding works
 
@@ -54,18 +54,16 @@ In the plain function call `foo()`, default binding applies.
 
 When default binding applies, `this` is the `window` object in normal mode and `undefined` in strict mode.
 
-
 ## Examples for default binding
 
 Here are some examples for default binding to illustrate the point a bit more.
-
 
 ### Plain function call
 
 Consider the following code.
 
 ```js
-'use strict'
+'use strict';
 function foo() {
   console.log(this);
 }
@@ -85,8 +83,6 @@ The code `foo()` is a plain function call. It does not have a "`.`" before it. T
 
 As we are in strict mode, the answer is `undefined`.
 
-
-
 ### Synchronous function reference call
 
 Consider the following code.
@@ -97,8 +93,8 @@ Consider the following code.
 const obj = {
   foo() {
     console.log(this);
-  }
-}
+  },
+};
 
 const foo = obj.foo;
 foo();
@@ -129,15 +125,15 @@ However that's not what happens. The only thing that matters is the function cal
 
 Therefore we are using default binding and `this` becomes undefined.
 
-
 ## Next up
 
 Next up we have implicit binding.
 
 Posts in this series:
-1. [Default binding](/blog/this-binding-in-javascript-1-default-binding/) (this post)
-2. [Implicit binding](/blog/this-binding-in-javascript-2-implicit-binding/)
-3. [Explicit binding](/blog/this-binding-in-javascript-3-explicit-binding/)
-4. [New binding](/blog/this-binding-in-javascript-4-new-binding/)
-5. [Arrow functions](/blog/this-binding-in-javascript-5-arrow-functions/)
-6. [Gotchas and final notes](/blog/this-binding-in-javascript-6-gotchas-and-final-notes/)
+
+1. [Default binding](/blog/this-binding-in-javascript-default-binding/) (this post)
+2. [Implicit binding](/blog/this-binding-in-javascript-implicit-binding/)
+3. [Explicit binding](/blog/this-binding-in-javascript-explicit-binding/)
+4. [New binding](/blog/this-binding-in-javascript-new-binding/)
+5. [Arrow functions](/blog/this-binding-in-javascript-arrow-functions/)
+6. [Gotchas and final notes](/blog/this-binding-in-javascript-gotchas-and-final-notes/)

@@ -12,6 +12,7 @@ seoDescription: What is separation of concerns and why do we need it for softwar
 ---
 
 This article is part of the "Programming first principles series":
+
 1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/)
 2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/)
 3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/)
@@ -25,7 +26,6 @@ This article is part of the "Programming first principles series":
 11. [First principle - Separation of concerns](/blog/programming-first-principles-first-principle-separation-of-concerns/) (this article)
 
 ---
-
 
 Along with the other first principles, this is one of the most important things in a complex system.
 
@@ -665,6 +665,7 @@ This breaks the principle of abstraction, which breaks our requirement that code
 ---
 
 This article is part of the "Programming first principles series":
+
 1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/)
 2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/)
 3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/)

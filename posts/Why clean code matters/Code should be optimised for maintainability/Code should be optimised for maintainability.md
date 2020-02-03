@@ -14,12 +14,12 @@ seoDescription: Why code should be optimised for maintainability and common obje
 Video version of this article: [https://youtu.be/hF2E6QCORug](https://youtu.be/hF2E6QCORug)
 
 This is a short series of posts on clean code:
+
 - [A tale of unclean code](/blog/tale-of-unclean-code/)
 - [Why clean code matters](/blog/why-clean-code-matters/)
 - [Code should be optimised for maintainability](/blog/code-should-be-optimised-for-maintainability/) (this post)
 
 ---
-
 
 In my opinion this is the second most important principle in all programming: Code should be optimised for maintainability.
 
@@ -27,21 +27,20 @@ The first principle, which is even more important, is that [code must work](/blo
 
 So as long as optimising code for maintainability still allows the code to work as intended, then you should do it.
 
-
 ## Why optimise for maintainability
 
 I've written blog posts about this before, so the majority of the why is there. Check them out for more information:
+
 - For reasons in general why clean code matters (read: maintainable code matters), see [why clean code matters](/blog/why-clean-code-matters/).
 - For an example of what bad code can do to your codebase and how much it can slow you down, see [a tale of unclean code](/blog/tale-of-unclean-code/).
 
-
 However people do provide counter-arguments to writing maintainable code. Here are some of them:
+
 - Projects with messy code still make a lot of money.
 - It takes significantly longer to write clean code, which is a waste of time.
 - Unclean code doesn't slow you down very much anyway.
 
 Let's tackle them one by one.
-
 
 ## Objection - Projects with messy code still make a lot of money
 
@@ -58,7 +57,6 @@ Now obviously there are many more reasons for projects failing than code quality
 So I suppose the jury is still out on whether code quality is important or not.
 
 However I believe it still matters. After all my personal experience clearly tells me that bad code is very difficult to work with in terms of adding features and fixing bugs, whereas clean code is very easy to work with.
-
 
 ## Objection - Writing clean code takes significantly longer
 
@@ -83,7 +81,6 @@ If the code is already well structured, making clean changes to it seems fairly 
 Maybe I'm biased, and maybe it's because I've practiced so much and I regard clean code as being very important. However writing what I consider to be clean code takes me pretty much the same amount of time as writing unclean code on a good project.
 
 The only difference is that at the end of it all, I spend some time refactoring. I do this pretty much always. Probably 10% more time or something?
-
 
 ## Unclean code doesn't slow you down very much anyway
 
@@ -129,15 +126,14 @@ In general, slowdown of this kind appears in weeks, not months.
 
 So no... I don't buy it that unclean code doesn't slow you down very much, it can slow you down significantly. In some cases, it slows you down a crazy amount.
 
-
 ## Overall
 
 I believe that code should be optimised for maintainability, except in the very rare cases that it can't be.
 
 In my personal experience, the objections to writing clean code don't really hold weight. Let me emphasize however that this is just my personal experience. At the end of the day I could be wrong, so please consider your personal experience as well.
 
-
 This is a short series of posts on clean code:
+
 - [A tale of unclean code](/blog/tale-of-unclean-code/)
 - [Why clean code matters](/blog/why-clean-code-matters/)
 - [Code should be optimised for maintainability](/blog/code-should-be-optimised-for-maintainability/) (this post)

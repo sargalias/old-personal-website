@@ -12,6 +12,7 @@ seoDescription: 'The principle of least knowledge is an essential software devel
 ---
 
 This article is part of the "Programming first principles series":
+
 1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/)
 2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/)
 3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/)
@@ -25,7 +26,6 @@ This article is part of the "Programming first principles series":
 11. [First principle - Separation of concerns](/blog/programming-first-principles-first-principle-separation-of-concerns/)
 
 ---
-
 
 Video version of this article: [https://youtu.be/IIECT7Q5-Gk](https://youtu.be/IIECT7Q5-Gk)
 
@@ -364,6 +364,7 @@ On the other hand, if any changes we made to Y never affected X or anything else
 ---
 
 This article is part of the "Programming first principles series":
+
 1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/)
 2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/)
 3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/)

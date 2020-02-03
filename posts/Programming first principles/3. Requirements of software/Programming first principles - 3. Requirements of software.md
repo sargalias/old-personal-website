@@ -14,6 +14,7 @@ seoDescription: What is it that we want in software? Let's start with the defini
 Video version of this article: [https://youtu.be/tCdNyce-shQ](https://youtu.be/tCdNyce-shQ)
 
 This article is part of the "Programming first principles series":
+
 1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/)
 2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/)
 3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/) (this article)
@@ -98,6 +99,7 @@ Our requirements are:
 ---
 
 This article is part of the "Programming first principles series":
+
 1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/)
 2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/)
 3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/) (this article)

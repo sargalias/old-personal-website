@@ -31,7 +31,6 @@ Even if you find a solution on something like [Stack Overflow](https://stackover
 
 So the aim of this article is to introduce you to the top 5 CSS gotchas that will otherwise repeatedly frustrate you throughout your career. It also acts as a good checklist of things that you really should learn to really master CSS.
 
-
 ## Margin-collapsing
 
 If you’ve done CSS for any significant amount of time, you’ll definitely have encountered this concept. _Margin-collapsing_ concerns margins that are touching / are next to each other / are colliding… **but only vertically**. What happens is that instead of being added together, the margins combine into a single margin. **The resulting margin is the largest of the two margins, not the combination of both margins added together.** For example, notice the pen below:

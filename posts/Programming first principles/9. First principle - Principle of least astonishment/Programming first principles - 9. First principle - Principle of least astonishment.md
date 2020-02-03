@@ -13,8 +13,8 @@ seoDescription: 'The principle of least astonishment is one of the fundamental p
 
 Video version of this article: [https://youtu.be/hjJkIb1nX6g](https://youtu.be/hjJkIb1nX6g)
 
-
 This article is part of the "Programming first principles series":
+
 1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/)
 2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/)
 3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/)
@@ -97,6 +97,7 @@ At the end of the day the most important thing is focusing on the principle. If 
 ---
 
 This article is part of the "Programming first principles series":
+
 1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/)
 2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/)
 3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/)

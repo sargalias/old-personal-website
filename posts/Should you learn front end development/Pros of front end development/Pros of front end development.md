@@ -9,6 +9,7 @@ featuredImage: './pros-of-front-end-development.png'
 Video version of this article: [https://youtu.be/L4WErEXGY2E](https://youtu.be/L4WErEXGY2E)
 
 This is a series of posts on whether or not you should learn front end development
+
 - [Pros of front end development](/blog/pros-of-front-end-development/) (this post)
 - [Cons of front end development](/blog/cons-of-front-end-development/)
 - [Should you learn front end development?](/blog/should-you-learn-front-end-development/)
@@ -18,13 +19,13 @@ This is a series of posts on whether or not you should learn front end developme
 Front end development is an extremely popular field, and there are many more reasons people choose it as their main development practice.
 
 So here are some of the pros of front end development:
+
 - It's probably the easiest to get started with.
 - More and more applications today are web applications, (which includes front end development).
 - Back end can be replaced in simple web applications, but it's much more difficult to replace front end.
 - Front end development will make you a better programmer in general. The skills will transfer to any other type of programming you do in the future.
 
 Here are the reasons in a bit more detail.
-
 
 ## Easy to get started with
 
@@ -35,7 +36,6 @@ It's probably possible to find a job just with those two.
 Later, you can add JavaScript to the mix which is a fully-fledged programming language. It's also very forgiving and easy to use, making it a good choice for a beginner who wants to feel productive.
 
 In other words, you can build complete websites with little knowledge when using front end, compared to other types of programming.
-
 
 ## Web applications are very popular
 
@@ -48,7 +48,6 @@ Websites and progressive web applications (PWAs) are becoming more popular day b
 PWAs vs native apps may be a controversial topic, but what's certain is that they are very popular and only increasing in popularity.
 
 This makes front end development a very good field, as front end is necessary in web applications.
-
 
 ## Back end can be replaced / may not be needed
 
@@ -66,13 +65,11 @@ Long-story short: Back end can be replaced by third-party services, but front en
 
 Disclaimer: The above is just my opinion.
 
-
 ## Front end will teach you programming
 
 Any programming you do will make you a better programmer, front end development is no different. The skill you acquire as a programmer is transferable to any other kind of programming you do.
 
 So front end development will make you a better developer in general.
-
 
 ## Overall
 
@@ -82,8 +79,8 @@ However it's not all great, there are also reasons why front end development may
 
 See the next post for some of the downsides to learning front end development.
 
-
 This is a series of posts on whether or not you should learn front end development
+
 - [Pros of front end development](/blog/pros-of-front-end-development/) (this post)
 - [Cons of front end development](/blog/cons-of-front-end-development/)
 - [Should you learn front end development?](/blog/should-you-learn-front-end-development/)

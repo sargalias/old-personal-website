@@ -14,6 +14,7 @@ seoDescription: 'Why do we need programming principles? Programming principles a
 Video version of this article: [https://youtu.be/7BGVhMDxxA4](https://youtu.be/7BGVhMDxxA4)
 
 This article is part of the "Programming first principles series":
+
 1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/) (this article)
 2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/)
 3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/)
@@ -151,6 +152,7 @@ It's not a standalone solution, and learning from experience is incredibly helpf
 ---
 
 This article is part of the "Programming first principles series":
+
 1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/) (this article)
 2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/)
 3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/)
