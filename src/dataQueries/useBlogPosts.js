@@ -6,6 +6,7 @@ const useBlogPosts = () => {
       allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
         nodes {
           id
+          excerpt
           frontmatter {
             heading: title
             author
@@ -18,15 +19,20 @@ const useBlogPosts = () => {
                 }
               }
             }
+            manualExcerpt: excerpt
           }
           fields {
             path
-            excerpt
           }
         }
       }
     }
   `);
+
+  data.allMarkdownRemark.nodes.forEach(node => {
+    const excerpt = node.frontmatter.excerpt || node.excerpt;
+    node.fields.excerpt = excerpt;
+  });
 
   return data.allMarkdownRemark.nodes;
 };
