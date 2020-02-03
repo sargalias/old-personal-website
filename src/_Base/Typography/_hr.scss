@@ -1,0 +1,17 @@
+@import 'sassAbstracts';
+
+hr {
+  margin-top: 3rem;
+
+  + * {
+    margin-top: 3rem;
+  }
+
+  @include media-up(sm) {
+    margin-top: 5rem;
+
+    + * {
+      margin-top: 5rem;
+    }
+  }
+}
