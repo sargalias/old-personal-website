@@ -1,6 +1,6 @@
 ---
 title: 'This binding in JavaScript – 5. Arrow functions'
-slug: this-binding-in-javascript-5-arrow-functions
+slug: this-binding-in-javascript-arrow-functions
 date: 2019-11-08
 author: 'Spyros Argalias'
 featuredImage: './this-binding-in-javascript-5-arrow-functions.png'

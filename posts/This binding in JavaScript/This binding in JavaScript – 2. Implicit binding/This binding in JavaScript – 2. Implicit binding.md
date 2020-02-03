@@ -1,6 +1,6 @@
 ---
 title: 'This binding in JavaScript - 2. Implicit binding'
-slug: this-binding-in-javascript-2-implicit-binding
+slug: this-binding-in-javascript-implicit-binding
 date: 2019-10-27
 author: 'Spyros Argalias'
 featuredImage: './this-binding-in-javascript-2-implicit-binding.png'

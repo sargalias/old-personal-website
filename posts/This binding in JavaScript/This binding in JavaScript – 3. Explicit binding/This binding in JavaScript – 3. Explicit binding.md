@@ -1,6 +1,6 @@
 ---
 title: 'This binding in JavaScript - 3. Explicit binding'
-slug: this-binding-in-javascript-3-explicit-binding
+slug: this-binding-in-javascript-explicit-binding
 date: 2019-11-01
 author: 'Spyros Argalias'
 featuredImage: './this-binding-in-javascript-3-explicit-binding.png'

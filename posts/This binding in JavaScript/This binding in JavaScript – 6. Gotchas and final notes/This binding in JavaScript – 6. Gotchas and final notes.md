@@ -1,6 +1,6 @@
 ---
 title: 'This binding in JavaScript – 6. Gotchas and final notes'
-slug: this-binding-in-javascript-6-gotchas-and-final-notes
+slug: this-binding-in-javascript-gotchas-and-final-notes
 date: 2019-11-10
 author: 'Spyros Argalias'
 featuredImage: './this-binding-in-javascript-6-gotchas-and-final-notes.png'
