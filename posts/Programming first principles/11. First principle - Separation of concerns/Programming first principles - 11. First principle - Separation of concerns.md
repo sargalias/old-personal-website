@@ -4,9 +4,11 @@ slug: 'programming-first-principles-first-principle-separation-of-concerns'
 date: 2020-02-02
 author: 'Spyros Argalias'
 featuredImage: './programming-first-principles-first-principle-separation-of-concerns.png'
-category: ''
-seoTitle: ''
-seoDescription: ''
+category: 'Programming principles'
+excerpt: What is separation of concerns and why do we need it for software that's safe and easy to work with?
+
+seoTitle: 'Programming first principles - 11. First principle - Separation of concerns'
+seoDescription: What is separation of concerns and why do we need it for software that's safe and easy to work with?
 ---
 
 This article is part of the "Programming first principles series":

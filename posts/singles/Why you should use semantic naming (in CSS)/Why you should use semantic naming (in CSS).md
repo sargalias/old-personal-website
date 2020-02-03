@@ -4,6 +4,11 @@ slug: why-you-should-use-semantic-naming-in-css
 date: 2019-09-18
 author: 'Spyros Argalias'
 featuredImage: './why-you-should-use-semantic-naming-in-css.png'
+category: CSS
+excerpt: In this article we examine what semantic naming is, and why it's essential in CSS.
+
+seoTitle: 'Why you should use semantic naming in CSS'
+seoDescription: In this article we examine what semantic naming is, and why it's essential in CSS.
 ---
 
 Video version of this article: [https://youtu.be/4Oo04kyM1Yg](https://youtu.be/4Oo04kyM1Yg).

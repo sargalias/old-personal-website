@@ -4,6 +4,11 @@ slug: programming-first-principles-first-principle-principle-of-least-astonishme
 date: 2020-01-06
 author: 'Spyros Argalias'
 featuredImage: './programming-first-principles-first-principle-principle-of-least-astonishment.png'
+category: 'Programming principles'
+excerpt: 'The principle of least astonishment is one of the fundamental principles in software development. Possibly the most important there is.'
+
+seoTitle: 'Programming first principles - First principle - Principle of least astonishment'
+seoDescription: 'The principle of least astonishment is one of the fundamental principles in software development. Possibly the most important there is.'
 ---
 
 Video version of this article: [https://youtu.be/hjJkIb1nX6g](https://youtu.be/hjJkIb1nX6g)

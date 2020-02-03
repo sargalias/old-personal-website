@@ -4,6 +4,11 @@ slug: programming-first-principles-requirements-of-software
 date: 2019-11-29
 author: 'Spyros Argalias'
 featuredImage: './programming-first-principles-requirements-of-software.png'
+category: 'Programming principles'
+excerpt: What is it that we want in software? Let's start with the definition. "Software" is a combination of two words. "Soft" means malleable, "ware" means product.
+
+seoTitle: 'Programming first principles - Requirements of software'
+seoDescription: What is it that we want in software? Let's start with the definition. "Software" is a combination of two words. "Soft" means malleable, "ware" means product.
 ---
 
 Video version of this article: [https://youtu.be/tCdNyce-shQ](https://youtu.be/tCdNyce-shQ)

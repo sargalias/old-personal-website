@@ -4,6 +4,11 @@ slug: top-5-css-gotschas
 date: 2019-01-09
 author: 'Spyros Argalias'
 featuredImage: './top-5-css-gotchas-and-a-few-bonus.png'
+category: CSS
+excerpt: It's very common to struggle with CSS. Often, things don't work how you may think they do. Here are some things that may catch you out.
+
+seoTitle: 'Top 5 CSS gotchas and a few bonus'
+seoDescription: It's very common to struggle with CSS. Often, things don't work how you may think they do. Here are some things that may catch you out.
 ---
 
 CSS, we all love it right? Truth be told, we owe a lot to CSS. Without it, websites would still look like Word documents. All in all, CSS is an ingrained component of the internet, it’s here to stay, and it’s what makes the internet today. So what’s this article about?

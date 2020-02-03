@@ -4,6 +4,11 @@ slug: this-binding-in-javascript-2-implicit-binding
 date: 2019-10-27
 author: 'Spyros Argalias'
 featuredImage: './this-binding-in-javascript-2-implicit-binding.png'
+category: 'JavaScript'
+excerpt: Implicit binding in JavaScript is probably the one we use most often. Let's see how it works.
+
+seoTitle: 'This binding in JavaScript - Implicit binding'
+seoDescription: Implicit binding in JavaScript is probably the one we use most often. Let's see how it works.
 ---
 
 Video version of this article: [https://youtu.be/CCuZmJhi_FA](https://youtu.be/CCuZmJhi_FA)

@@ -4,6 +4,11 @@ slug: layout-in-css
 date: 2019-01-20
 author: 'Spyros Argalias'
 featuredImage: './layout-in-css.png'
+category: CSS
+excerpt: How should we do layout in CSS? In this article we examine some prerequisite knowledge for layout, followed by suggestions on how to go about it.
+
+seoTitle: 'Layout in CSS'
+seoDescription: How should we do layout in CSS? In this article we examine some prerequisite knowledge for layout, followed by suggestions on how to go about it.
 ---
 
 This article is about how to create a good layout in CSS. We'll tackle layout in CSS from a few angles, specifically:

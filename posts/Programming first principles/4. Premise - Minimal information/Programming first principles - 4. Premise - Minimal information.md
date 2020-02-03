@@ -4,6 +4,11 @@ slug: programming-first-principles-premise-minimal-information
 date: 2019-12-01
 author: 'Spyros Argalias'
 featuredImage: './programming-first-principles-premise-minimal-information.png'
+category: 'Programming principles'
+excerpt: 'Our first premise is that as human beings we can only remember so much. To work effectively we need to minimize the information we need to keep in mind.'
+
+seoTitle: 'Programming first principles - Premise - Minimal information'
+seoDescription: 'Our first premise is that as human beings we can only remember so much. To work effectively we need to minimize the information we need to keep in mind.'
 ---
 
 Video version of this article: [https://youtu.be/PozIEc4IApM](https://youtu.be/PozIEc4IApM)

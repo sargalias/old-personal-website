@@ -4,6 +4,11 @@ slug: code-should-be-optimised-for-maintainability
 date: 2019-10-18
 author: 'Spyros Argalias'
 featuredImage: './code-should-be-optimised-for-maintainability.png'
+category: Programming principles
+excerpt: Why code should be optimised for maintainability and common objections around the topic.
+
+seoTitle: 'Code should be optimised for maintainability'
+seoDescription: Why code should be optimised for maintainability and common objections around the topic.
 ---
 
 Video version of this article: [https://youtu.be/hF2E6QCORug](https://youtu.be/hF2E6QCORug)
@@ -18,7 +23,7 @@ This is a short series of posts on clean code:
 
 In my opinion this is the second most important principle in all programming: Code should be optimised for maintainability.
 
-The first principle, which is even more important, is that [code must work](/blog/code-must-work) as intended in all ways (functionally, performance, security, etc.).
+The first principle, which is even more important, is that [code must work](/blog/code-must-work/) as intended in all ways (functionally, performance, security, etc.).
 
 So as long as optimising code for maintainability still allows the code to work as intended, then you should do it.
 
@@ -40,40 +45,44 @@ Let's tackle them one by one.
 
 ## Objection - Projects with messy code still make a lot of money
 
-I don't think there is any denying on this one.
+This one is interesting.
+
+From one point of view, there is no denying it. Some projects, particularly projects that are on the smaller side, definitely make money as long as they make it to market.
 
 Obviously as long a the correct product is delivered to the customer, the customer will pay for it. This is regardless of whether the code is clean or unclean.
 
-Writing clean code has more to do with development efficiency of the product and minimising bugs, rather than what the end product will be like.
+However the failure rate for software projects is very high. Apparently around 14% in 2017 (https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/pulse/pulse-of-the-profession-2017.pdf?sc_lang_temp=en). Statistics also show that larger projects have higher failure rates than smaller projects (https://www.gartner.com/en/documents/2034616).
 
-So in the end this is a neutral point in terms of whether you should have clean code or not.
+Now obviously there are many more reasons for projects failing than code quality.
+
+So I suppose the jury is still out on whether code quality is important or not.
+
+However I believe it still matters. After all my personal experience clearly tells me that bad code is very difficult to work with in terms of adding features and fixing bugs, whereas clean code is very easy to work with.
 
 
 ## Objection - Writing clean code takes significantly longer
 
-So, this one is probably true... for some people.
+So this one depends.
 
-### My personal experience with writing clean code
+Absolutely on a small scale, just pumping out some code is much faster. You'll build features much quicker this way.
 
-To be perfectly honest, personally, it hardly takes me any additional time to write clean code.
+It's large projects where the opposite is true.
 
-Maybe I'm biased, and maybe it's because I've practiced so much and I regard clean code as being very important. However writing what I consider to be clean code takes me pretty much the same amount of time as writing unclean code.
+As the project grows larger, complexity increases exponentially.
 
-The kind of code that I write is usually my "default" code.
+With a bunch of spaghetti code everywhere, adding new features becomes nearly impossible, especially without breaking anything.
 
-The only difference is that at the end of it all, I spend some time refactoring. I do this pretty much always.
+Imagine if you have a tight mesh of stuff and you need to add another string in there or modify one of the strings. That's what code without separation of concerns and other good principles is like. It becomes very difficult to modify things.
 
-Overall, the only extra time I spend compared to writing unclean code is the little amount of time that I spend refactoring. Probably 10% additional time or so.
+**My personal experience with writing clean code**
 
-### People who promote unclean code
+For me, at least when working on a large project, writing clean code doesn't feel like it takes any additional time.
 
-So again this is just my personal experience.
+If the code is already well structured, making clean changes to it seems fairly easy. Keeping those changes clean seems fairly easy as well.
 
-In a few cases, the people I usually hear this objection from tend to not be able to write very clean code even if given infinite time...
+Maybe I'm biased, and maybe it's because I've practiced so much and I regard clean code as being very important. However writing what I consider to be clean code takes me pretty much the same amount of time as writing unclean code on a good project.
 
-I don't know how much else I've got to say about this one. This is just my personal experience.
-
-I'll leave it up to you to consider whether it's important or not.
+The only difference is that at the end of it all, I spend some time refactoring. I do this pretty much always. Probably 10% more time or something?
 
 
 ## Unclean code doesn't slow you down very much anyway
@@ -110,9 +119,11 @@ Oh and things weren't even working. On the way here you already fixed three thin
 
 **Anyway, rant over...**
 
-And just for the record, I'm generally considered fast in terms of completing stories, so the problem is not just me being unable to handle unclean code. Plenty of people I've worked with have just as much difficulty.
+This is all based on my personal experience, however the majority of people I've spoken to have just as much difficulty working with unclean code.
 
-Finally, the slowdown happens pretty much immediately. From the first time you have to come back to the piece of code. It's even worse if a different developer has to work on the code (who didn't write it and doesn't know it as well as the original developer), or if a lot of time has passed and you've forgotten how the code works.
+Another quick point. I always hear new developers complain about how "awful this code is that the previous developers wrote"... I've always heard it on every project I've ever worked on. This seems to imply that developers are slowed down by unclean code.
+
+Finally, the slowdown happens very quickly. From the first time you have to come back to the piece of code. It's even worse if a different developer has to work on the code (who didn't write it and doesn't know it as well as the original developer), or if a lot of time has passed and you've forgotten how the code works.
 
 In general, slowdown of this kind appears in weeks, not months.
 
