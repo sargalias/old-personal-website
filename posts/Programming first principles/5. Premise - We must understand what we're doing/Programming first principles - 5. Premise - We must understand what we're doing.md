@@ -8,6 +8,21 @@ featuredImage: './programming-first-principles-premise-we-must-understand-what-w
 
 Video version of this article: [https://youtu.be/_SVpX6Q-6zs](https://youtu.be/_SVpX6Q-6zs)
 
+This article is part of the "Programming first principles series":
+1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/)
+2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/)
+3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/)
+4. [Premise - Minimal information](/blog/programming-first-principles-premise-minimal-information/)
+5. [Premise - We must understand what we're doing](/blog/programming-first-principles-premise-we-must-understand-what-were-doing/) (this article)
+6. [Premise - Minimize propagating changes throughout the system](/blog/programming-first-principles-premise-minimize-propagating-changes/)
+7. [Premise - Complexity increases exponentially with scale](/blog/programming-first-principles-premise-complexity-increases-exponentially-with-scale/)
+8. [First principle - Proof that code works](/blog/programming-first-principles-first-principle-proof-that-code-works/)
+9. [First principle - Principle of least astonishment](/blog/programming-first-principles-first-principle-principle-of-least-astonishment/)
+10. [First principle - Principle of least knowledge](/blog/programming-first-principles-first-principle-principle-of-least-knowledge/)
+11. [First principle - Separation of concerns](/blog/programming-first-principles-first-principle-separation-of-concerns/)
+
+---
+
 Our next premise is that we must understand what we're doing when programming.
 
 This is also mentioned in the book [The Pragmatic Programmer](https://pragprog.com/book/tpp20/the-pragmatic-programmer-20th-anniversary-edition). It's the tip "don't program by coincidence".
@@ -37,3 +52,18 @@ This goes against our requirement that we must create a working system. This is 
 However, if we understand what we're doing, it means our code is much more likely to work and we're much less likely to forget or miss something. This is closer to our requirement.
 
 Therefore ideally we should understand what we're doing at all times.
+
+---
+
+This article is part of the "Programming first principles series":
+1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/)
+2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/)
+3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/)
+4. [Premise - Minimal information](/blog/programming-first-principles-premise-minimal-information/)
+5. [Premise - We must understand what we're doing](/blog/programming-first-principles-premise-we-must-understand-what-were-doing/) (this article)
+6. [Premise - Minimize propagating changes throughout the system](/blog/programming-first-principles-premise-minimize-propagating-changes/)
+7. [Premise - Complexity increases exponentially with scale](/blog/programming-first-principles-premise-complexity-increases-exponentially-with-scale/)
+8. [First principle - Proof that code works](/blog/programming-first-principles-first-principle-proof-that-code-works/)
+9. [First principle - Principle of least astonishment](/blog/programming-first-principles-first-principle-principle-of-least-astonishment/)
+10. [First principle - Principle of least knowledge](/blog/programming-first-principles-first-principle-principle-of-least-knowledge/)
+11. [First principle - Separation of concerns](/blog/programming-first-principles-first-principle-separation-of-concerns/)

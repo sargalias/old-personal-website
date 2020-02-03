@@ -6,6 +6,22 @@ author: 'Spyros Argalias'
 featuredImage: './programming-first-principles-first-principle-principle-of-least-knowledge.png'
 ---
 
+This article is part of the "Programming first principles series":
+1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/)
+2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/)
+3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/)
+4. [Premise - Minimal information](/blog/programming-first-principles-premise-minimal-information/)
+5. [Premise - We must understand what we're doing](/blog/programming-first-principles-premise-we-must-understand-what-were-doing/)
+6. [Premise - Minimize propagating changes throughout the system](/blog/programming-first-principles-premise-minimize-propagating-changes/)
+7. [Premise - Complexity increases exponentially with scale](/blog/programming-first-principles-premise-complexity-increases-exponentially-with-scale/)
+8. [First principle - Proof that code works](/blog/programming-first-principles-first-principle-proof-that-code-works/)
+9. [First principle - Principle of least astonishment](/blog/programming-first-principles-first-principle-principle-of-least-astonishment/)
+10. [First principle - Principle of least knowledge](/blog/programming-first-principles-first-principle-principle-of-least-knowledge/) (this article)
+11. [First principle - Separation of concerns](/blog/programming-first-principles-first-principle-separation-of-concerns/)
+
+---
+
+
 Video version of this article: [https://youtu.be/IIECT7Q5-Gk](https://youtu.be/IIECT7Q5-Gk)
 
 The principle of least knowledge means that code should know as little as possible about other code.
@@ -339,3 +355,18 @@ On the other hand, if any changes we made to Y never affected X or anything else
 - Minimal knowledge required by the programmer for what code knows and depends on.
 - Minimal knowledge required between code.
 - Minimal (possibly none) propagating changes when changing code.
+
+---
+
+This article is part of the "Programming first principles series":
+1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/)
+2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/)
+3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/)
+4. [Premise - Minimal information](/blog/programming-first-principles-premise-minimal-information/)
+5. [Premise - We must understand what we're doing](/blog/programming-first-principles-premise-we-must-understand-what-were-doing/)
+6. [Premise - Minimize propagating changes throughout the system](/blog/programming-first-principles-premise-minimize-propagating-changes/)
+7. [Premise - Complexity increases exponentially with scale](/blog/programming-first-principles-premise-complexity-increases-exponentially-with-scale/)
+8. [First principle - Proof that code works](/blog/programming-first-principles-first-principle-proof-that-code-works/)
+9. [First principle - Principle of least astonishment](/blog/programming-first-principles-first-principle-principle-of-least-astonishment/)
+10. [First principle - Principle of least knowledge](/blog/programming-first-principles-first-principle-principle-of-least-knowledge/) (this article)
+11. [First principle - Separation of concerns](/blog/programming-first-principles-first-principle-separation-of-concerns/)

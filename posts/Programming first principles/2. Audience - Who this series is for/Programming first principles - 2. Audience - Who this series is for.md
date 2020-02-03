@@ -8,9 +8,22 @@ featuredImage: './programming-first-principles-audience-who-this-series-is-for.p
 
 Video version of this article: [https://youtu.be/TutgrBoQKSw](https://youtu.be/TutgrBoQKSw)
 
-In this post we'll talk about:
+This article is part of the "Programming first principles series":
+1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/)
+2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/) (this article)
+3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/)
+4. [Premise - Minimal information](/blog/programming-first-principles-premise-minimal-information/)
+5. [Premise - We must understand what we're doing](/blog/programming-first-principles-premise-we-must-understand-what-were-doing/)
+6. [Premise - Minimize propagating changes throughout the system](/blog/programming-first-principles-premise-minimize-propagating-changes/)
+7. [Premise - Complexity increases exponentially with scale](/blog/programming-first-principles-premise-complexity-increases-exponentially-with-scale/)
+8. [First principle - Proof that code works](/blog/programming-first-principles-first-principle-proof-that-code-works/)
+9. [First principle - Principle of least astonishment](/blog/programming-first-principles-first-principle-principle-of-least-astonishment/)
+10. [First principle - Principle of least knowledge](/blog/programming-first-principles-first-principle-principle-of-least-knowledge/)
+11. [First principle - Separation of concerns](/blog/programming-first-principles-first-principle-separation-of-concerns/)
 
-- Who this series is for / who will benefit from this series.
+---
+
+In this post we'll talk about who this series is for / who will benefit from this series.
 
 ## Table of contents
 
@@ -47,3 +60,18 @@ I feel intermediate developers will benefit most from this series, particularly 
 For advanced developers, I think it depends. If you're already very comfortable with programming principles, there will be less value for you in this series.
 
 However, there is probably something you'll pick up anyway. Also you may find the different approach in explaining these beneficial.
+
+---
+
+This article is part of the "Programming first principles series":
+1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/)
+2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/) (this article)
+3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/)
+4. [Premise - Minimal information](/blog/programming-first-principles-premise-minimal-information/)
+5. [Premise - We must understand what we're doing](/blog/programming-first-principles-premise-we-must-understand-what-were-doing/)
+6. [Premise - Minimize propagating changes throughout the system](/blog/programming-first-principles-premise-minimize-propagating-changes/)
+7. [Premise - Complexity increases exponentially with scale](/blog/programming-first-principles-premise-complexity-increases-exponentially-with-scale/)
+8. [First principle - Proof that code works](/blog/programming-first-principles-first-principle-proof-that-code-works/)
+9. [First principle - Principle of least astonishment](/blog/programming-first-principles-first-principle-principle-of-least-astonishment/)
+10. [First principle - Principle of least knowledge](/blog/programming-first-principles-first-principle-principle-of-least-knowledge/)
+11. [First principle - Separation of concerns](/blog/programming-first-principles-first-principle-separation-of-concerns/)
