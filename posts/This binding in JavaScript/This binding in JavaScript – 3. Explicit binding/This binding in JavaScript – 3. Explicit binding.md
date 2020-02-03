@@ -4,6 +4,11 @@ slug: this-binding-in-javascript-3-explicit-binding
 date: 2019-11-01
 author: 'Spyros Argalias'
 featuredImage: './this-binding-in-javascript-3-explicit-binding.png'
+category: 'JavaScript'
+excerpt: Next we have explicit binding. This has plenty of uses in JavaScript, including hard binding. It's important to know how it works.
+
+seoTitle: 'This binding in JavaScript - Explicit binding'
+seoDescription: Next we have explicit binding. This has plenty of uses in JavaScript, including hard binding. It's important to know how it works.
 ---
 
 Video version of this article: [https://youtu.be/0tPQRbWpbBY](https://youtu.be/0tPQRbWpbBY)

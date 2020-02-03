@@ -4,6 +4,11 @@ slug: programming-first-principles-premise-complexity-increases-exponentially-wi
 date: 2019-12-13
 author: 'Spyros Argalias'
 featuredImage: './programming-first-principles-premise-complexity-increases-exponentially-with-scale.png'
+category: 'Programming principles'
+excerpt: 'We need to keep in mind that software complexity increases exponentially with scale. Bad practices at a small level multiply when the project is larger.'
+
+seoTitle: 'Programming first principles - Premise - Complexity increases exponentially with scale'
+seoDescription: 'We need to keep in mind that software complexity increases exponentially with scale. Bad practices at a small level multiply when the project is larger.'
 ---
 
 Video version of this article: [https://youtu.be/taY8q29bUn0](https://youtu.be/taY8q29bUn0)

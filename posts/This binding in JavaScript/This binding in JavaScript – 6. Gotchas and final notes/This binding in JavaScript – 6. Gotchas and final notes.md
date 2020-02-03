@@ -4,6 +4,11 @@ slug: this-binding-in-javascript-6-gotchas-and-final-notes
 date: 2019-11-10
 author: 'Spyros Argalias'
 featuredImage: './this-binding-in-javascript-6-gotchas-and-final-notes.png'
+category: 'JavaScript'
+excerpt: There are a few gotchas, things that can catch us out, with `this` in JavaScript. It's important to know about them and how to handle them.
+
+seoTitle: 'This binding in JavaScript – Gotchas and final notes'
+seoDescription: There are a few gotchas, things that can catch us out, with `this` in JavaScript. It's important to know about them and how to handle them.
 ---
 
 Video version of this article: [https://youtu.be/MNa2yHY6jFk](https://youtu.be/MNa2yHY6jFk)
@@ -128,15 +133,15 @@ This section is just my thoughts / rant on `this` binding in JavaScript.
 
 In short, I don't like it.
 
-The reason is because it goes against common programming principles such as the [principle of least astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment) and [abstraction](https://en.wikipedia.org/wiki/Abstraction_(computer_science)).
+The reason is because it goes against common programming principles such as the [principle of least astonishment](/blog/programming-first-principles-first-principle-principle-of-least-astonishment/) and [abstraction](https://en.wikipedia.org/wiki/Abstraction_(computer_science)).
 
 Basically when we program, we do not want to be thinking about implementation details for handling `this` binding correctly. We're thinking at a level above those details, how to make our program work, not on how to handle the details of `this`.
 
 Additionally it's a feature that I've never used positively in any context. It has always been a feature which has gotten in my way, never a feature that has helped out.
 
-Disclaimer: This might be because I don't know functional programming very well yet. I'm currently learning Haskell, so who knows, my opinion may change in the future.
+I mean, sure, it's an implementation detail that's probably required for us to have dynamic classes. However I think things would be much easier for developers if the rest of the `this` binding details were hidden from us.
 
-However for now I personally always default to using arrow functions wherever possible to automatically ignore unexpected binding issues with `this`.
+Anyway, to combat this, I always default to using arrow functions, especially whenever `this` is involved and I don't want to deal with unexpected behaviour.
 
 
 And... That's all. I hope you enjoyed this series.

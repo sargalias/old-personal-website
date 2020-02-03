@@ -4,6 +4,11 @@ slug: programming-first-principles-purpose-what-this-series-is-about
 date: 2019-11-25
 author: 'Spyros Argalias'
 featuredImage: './programming-first-principles-purpose-what-this-series-is-about.png'
+category: 'Programming principles'
+excerpt: 'Why do we need programming principles? Programming principles are extremely helpful. They help us write better software that works and is easy to change.'
+
+seoTitle: 'Programming first principles - Purpose - What this series is about'
+seoDescription: 'Why do we need programming principles? Programming principles are extremely helpful. They help us write better software that works and is easy to change.'
 ---
 
 Video version of this article: [https://youtu.be/7BGVhMDxxA4](https://youtu.be/7BGVhMDxxA4)

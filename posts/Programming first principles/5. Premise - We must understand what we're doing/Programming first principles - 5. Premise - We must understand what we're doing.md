@@ -4,6 +4,11 @@ slug: programming-first-principles-premise-we-must-understand-what-were-doing
 date: 2019-12-06
 author: 'Spyros Argalias'
 featuredImage: './programming-first-principles-premise-we-must-understand-what-were-doing.png'
+category: 'Programming principles'
+excerpt: This premise says that we must understand what we're doing at all times. We can't program by coincidence until we stumble upon something that works.
+
+seoTitle: "Programming first principles - Premise - We must understand what we're doing"
+seoDescription: This premise says that we must understand what we're doing at all times. We can't program by coincidence until we stumble upon something that works.
 ---
 
 Video version of this article: [https://youtu.be/_SVpX6Q-6zs](https://youtu.be/_SVpX6Q-6zs)

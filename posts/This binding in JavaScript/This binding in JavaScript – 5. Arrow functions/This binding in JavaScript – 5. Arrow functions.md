@@ -4,6 +4,11 @@ slug: this-binding-in-javascript-5-arrow-functions
 date: 2019-11-08
 author: 'Spyros Argalias'
 featuredImage: './this-binding-in-javascript-5-arrow-functions.png'
+category: 'JavaScript'
+excerpt: Arrow functions are a way to avoid `this` binding. In my opinion this is one of the most important features of JavaScript, it makes things much easier.
+
+seoTitle: 'This binding in JavaScript – Arrow functions'
+seoDescription: Arrow functions are a way to avoid `this` binding. In my opinion this is one of the most important features of JavaScript, it makes things much easier.
 ---
 
 Video version of this article: [https://youtu.be/l4vyKjRL3ms](https://youtu.be/l4vyKjRL3ms)

@@ -4,6 +4,11 @@ slug: programming-first-principles-premise-minimize-propagating-changes
 date: 2019-12-08
 author: 'Spyros Argalias'
 featuredImage: './programming-first-principles-premise-minimize-propagating-changes.png'
+category: 'Programming principles'
+excerpt: 'One of the most important things we need to accomplish is to make software changes easy and safe. Propagating changes are a big obstacle to software development.'
+
+seoTitle: 'Programming first principles - Premise - Minimize propagating changes throughout the system'
+seoDescription: 'One of the most important things we need to accomplish is to make software changes easy and safe. Propagating changes are a big obstacle to software development.'
 ---
 
 Video version of this article: [https://youtu.be/Rd9FWbjf5ic](https://youtu.be/Rd9FWbjf5ic)

@@ -4,6 +4,11 @@ slug: why-clean-code-matters
 date: 2019-10-14
 author: 'Spyros Argalias'
 featuredImage: './why-clean-code-matters.png'
+category: Programming principles
+excerpt: Why does clean code matter for a project? What are the effects of bad code and what can we do to prevent them?
+
+seoTitle: 'Why clean code matters'
+seoDescription: Why does clean code matter for a project? What are the effects of bad code and what can we do to prevent them?
 ---
 
 Video version of this article: [https://youtu.be/Fr_VsMLvHP8](https://youtu.be/Fr_VsMLvHP8)
@@ -22,7 +27,7 @@ For a particular use-case of the very real negative impact of unclean code, plea
 
 So why does clean code matter?
 
-When code is clean, it is:
+When code is clean, it results in a codebase that's:
 - Simple.
 - Easy to understand.
 - Less buggy.
@@ -46,7 +51,7 @@ Here are the benefits / downsides in a bit more detail.
 How easy is the code to read and understand?
 
 
-### Problems with complex code
+**Problems with complex code**
 
 If the code is complex and difficult to understand:
 - It takes a significant amount of time for someone to understand it.
@@ -67,7 +72,7 @@ Consider it to be dozens of times per year that someone has to come back to this
 And if the code gets worse rather than better, the problem will become worse each time.
 
 
-### Benefits if code is simple
+**Benefits if code is simple**
 
 On the other hand, if the code is simple:
 - It probably takes minutes, not hours, to understand what it's doing.
@@ -76,12 +81,12 @@ On the other hand, if the code is simple:
 - It will keep development throughout the entire lifetime of the project as quick as possible.
 
 
-## Bugs
+## Bugs and maintenance
 
 Put simply, complex code tends to be much more buggy than simple code.
 
 
-### Why complex code results in bugs
+**Complicated code results in bugs**
 
 The thing is, bugs come from incomplete reasoning in the programmer's mind.
 
@@ -90,20 +95,26 @@ The bugs are in our minds first. We're the ones who forget to account for scenar
 That problem is significantly amplified if we can't even understand the thing. How could we possibly account for the correct scenarios and edge cases, when we can't even sufficiently follow how the thing works?
 
 
-### Less bugs with simple code
+**Code changes result in bugs, when code is not clean**
 
-If code is simple, easy to understand and easy to reason about, the chance of bugs is greatly reduced.
+If code does not have clear separations of concerns and minimal knowledge of other code, it means that changes can affect multiple things at once.
+
+In other words, changes will propagate.
+
+In this situation, a code change becomes very difficult:
+- We need to check multiple places to ensure we didn't make mistakes, and repetition is error-prone.
+- We need to make changes in multiple places.
+- The individual changes themselves may be complicated.
+
+
+**Less bugs with clean code**
+
+If code is simple, easy to understand and easy to reason about, and follows good programming principles in general, the chance of bugs is greatly reduced.
 
 You have a lot more capacity to think about edge cases of the code, because you're not using all your capacity trying to understand how it works.
 
 Another point is that simple code with clear responsibilities is much easier to test. Better tests will probably result in less bugs.
 
-
-## Ease of maintenance and adding features
-
-Since simple code is easier to understand, it's also easier to modify.
-- You'll spend less time reading it to understand it, which is less time wasted.
-- It's likely to be structured well, in a way that makes changes easier.
 
 
 ## Clean code is invisible
@@ -129,7 +140,7 @@ But that's fine, just keep going and keep writing good code.
 
 To summarize, clean code is very important.
 
-Here are the reasons again. Clean code is:
+When code is clean, it results in a codebase that's:
 - Simple.
 - Easy to understand.
 - Less buggy.
@@ -139,6 +150,7 @@ Here are the reasons again. Clean code is:
 
 ---
 
-This is a short series of posts on clean code:- [A tale of unclean code](/blog/tale-of-unclean-code/)
+This is a short series of posts on clean code:
+- [A tale of unclean code](/blog/tale-of-unclean-code/)
 - [Why clean code matters](/blog/why-clean-code-matters/) (this post)
 - [Code should be optimised for maintainability](/blog/code-should-be-optimised-for-maintainability/)

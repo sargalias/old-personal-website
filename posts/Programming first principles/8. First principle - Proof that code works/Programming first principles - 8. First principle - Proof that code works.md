@@ -4,6 +4,11 @@ slug: programming-first-principles-first-principle-proof-that-code-works
 date: 2019-12-15
 author: 'Spyros Argalias'
 featuredImage: './programming-first-principles-first-principle-proof-that-code-works.png'
+category: 'Programming principles'
+excerpt: 'Why do we test software? Why do we need proof that code works? It follows from our basic requirements of software.'
+
+seoTitle: 'Programming first principles - First principle - Proof that code works'
+seoDescription: 'Why do we test software? Why do we need proof that code works? It follows from our basic requirements of software.'
 ---
 
 Video version of this article: [https://youtu.be/k8Swf3apDVg](https://youtu.be/k8Swf3apDVg)

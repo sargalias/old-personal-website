@@ -4,6 +4,11 @@ slug: 'programming-first-principles-first-principle-principle-of-least-knowledge
 date: 2020-01-12
 author: 'Spyros Argalias'
 featuredImage: './programming-first-principles-first-principle-principle-of-least-knowledge.png'
+category: 'Programming principles'
+excerpt: 'The principle of least knowledge is an essential software development principle. The less software knows, the easier it is to work with.'
+
+seoTitle: 'Programming first principles - First principle - Principle of least knowledge'
+seoDescription: 'The principle of least knowledge is an essential software development principle. The less software knows, the easier it is to work with.'
 ---
 
 This article is part of the "Programming first principles series":

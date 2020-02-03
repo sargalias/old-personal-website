@@ -4,6 +4,11 @@ slug: tale-of-unclean-code
 date: 2019-10-13
 author: 'Spyros Argalias'
 featuredImage: './a-tale-of-unclean-code.png'
+category: Programming principles
+excerpt: Here is a story of some bad code in a codebase I worked at and the consequences it had.
+
+seoTitle: 'A tale of unclean code'
+seoDescription: Here is a story of some bad code in a codebase I worked at and the consequences it had.
 ---
 
 Video version of this article: [https://youtu.be/CPM2Tb2AfRQ](https://youtu.be/CPM2Tb2AfRQ)
@@ -28,9 +33,7 @@ Working with code that's difficult to understand is a nightmare, and it takes fo
 
 I remember one particular scenario where:
 - I was working with a class with three responsibilities, as well as multiple other classes it interacted with where responsibilities were blurry and overlapped.
-
 - The names describing what each thing did were awful.
-
 - And it was a lot of code.
 
 I legitimately had to read the entire code line by line, because there was no other way for me to know what the thing did... This took probably 45 minutes... Then at the end of it I didn't remember any of it. I mean it was a large piece of line by line code that had a very poor structure.

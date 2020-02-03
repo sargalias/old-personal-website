@@ -4,6 +4,11 @@ slug: this-binding-in-javascript-1-default-binding
 date: 2019-10-26
 author: 'Spyros Argalias'
 featuredImage: './this-binding-in-javascript-1-default-binding.png'
+category: 'JavaScript'
+excerpt: We start off with default binding, which is what happens if no other 'this' binding applies.
+
+seoTitle: 'This binding in JavaScript - Default binding'
+seoDescription: We start off with default binding, which is what happens if no other 'this' binding applies.
 ---
 
 Video version of this article: [https://youtu.be/bEcODp35k8I](https://youtu.be/bEcODp35k8I)

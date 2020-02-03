@@ -4,6 +4,11 @@ slug: programming-first-principles-audience-who-this-series-is-for
 date: 2019-11-27
 author: 'Spyros Argalias'
 featuredImage: './programming-first-principles-audience-who-this-series-is-for.png'
+category: 'Programming principles'
+excerpt: 'When should you learn programming principles? Beginner, intermediate, advanced? Everyone benefits, but one group of people may benefit the most.'
+
+seoTitle: 'Programming first principles - Audience - Who this series is for'
+seoDescription: 'When should you learn programming principles? Beginner, intermediate, advanced? Everyone benefits, but one group of people may benefit the most.'
 ---
 
 Video version of this article: [https://youtu.be/TutgrBoQKSw](https://youtu.be/TutgrBoQKSw)
