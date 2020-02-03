@@ -9,8 +9,7 @@ import styles from './PostPreview.module.scss';
 
 const PostPreview = ({
   frontmatter: { heading, category, featuredImage },
-  fields: { path },
-  excerpt,
+  fields: { path, excerpt },
   headingTag = 'h2',
   parentClass,
 }) => (
