@@ -5,13 +5,13 @@ import styles from './Button.module.scss';
 
 const className = `button is-link ${styles.Button}`;
 
-const Button = ({ children, path, type = 'button' }) =>
+const Button = ({ children, path, type = 'button', parentClass }) =>
   path ? (
-    <Link to={path} className={className}>
+    <Link to={path} className={`${className} ${parentClass}`}>
       {children}
     </Link>
   ) : (
-    <button type={type} className={className}>
+    <button type={type} className={`${className} ${parentClass}`}>
       {children}
     </button>
   );

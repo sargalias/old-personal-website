@@ -5,9 +5,7 @@ code {
 }
 
 .gatsby-highlight {
-  + * {
-    margin-top: 2.5rem;
-  }
+  margin-top: var(--space-7);
 }
 
 .language-text.language-text {

@@ -13,11 +13,10 @@ button {
 p,
 time,
 span,
-ul,
-pre,
-ol {
-  + *:not(ul),
-  + *:not(ol) {
-    margin-top: var(--space-7);
+pre {
+  margin-top: var(--space-7);
+
+  &:first-child {
+    margin-top: 0;
   }
 }
