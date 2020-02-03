@@ -16,7 +16,8 @@ span,
 ul,
 pre,
 ol {
-  + *:not(ul):not(ol) {
+  + *:not(ul),
+  + *:not(ol) {
     margin-top: var(--space-7);
   }
 }
