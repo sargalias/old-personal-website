@@ -9,6 +9,7 @@ featuredImage: './should-you-learn-front-end-development.png'
 Video version of this article: [https://youtu.be/shM2_UwVqRI](https://youtu.be/shM2_UwVqRI)
 
 This is a series of posts on whether or not you should learn front end development
+
 - [Pros of front end development](/blog/pros-of-front-end-development/)
 - [Cons of front end development](/blog/cons-of-front-end-development/)
 - [Should you learn front end development?](/blog/should-you-learn-front-end-development/) (this post)
@@ -24,16 +25,17 @@ Here is a short summary.
 ## Pros and cons of front end development
 
 Pros
+
 - It's probably the easiest to get started with.
 - More and more applications today are web applications, (which includes front end development).
 - Back end can be replaced in simple web applications, but it's much more difficult to replace front end.
 - Front end development will make you a better programmer in general. The skills will transfer to any other type of programming you do in the future.
 
 Cons:
+
 - Design skills are encouraged
 - Tons of things to learn
 - Solid front end development is extremely difficult.
-
 
 ## How to decide if you should learn front end development
 
@@ -45,7 +47,6 @@ However because of the pros of front end development, I think it's a very good c
 
 However you should probably consider all your other options as well. These could be learning back end instead, taking accredited classes, etc.
 
-
 ## Try lots of things out
 
 A general tip you'll hear often when deciding on what to learn next is (something along the lines of): Try stuff out for a bit and see what you like.
@@ -56,7 +57,6 @@ For example you may try out front end development by doing a very crash course o
 
 The thing is that learning a type of programming takes a long time, so spending a week or two upfront to make a better decision is something that could save you many months later (by helping you make a better choice).
 
-
 ## Overall
 
 Whether you learn front end development or something completely different is up to you.
@@ -64,6 +64,7 @@ Whether you learn front end development or something completely different is up 
 However (as long as you enjoy it), it's probably not a bad choice.
 
 It has some major perks, such as:
+
 1. It's probably the easiest to get started with.
 2. It has serious commercial demand (websites and web applications).
 3. It allows you to create complete projects using just front end development.
@@ -71,8 +72,8 @@ It has some major perks, such as:
 
 Take your time, try stuff out, and see what you like.
 
-
 This is a series of posts on whether or not you should learn front end development
+
 - [Pros of front end development](/blog/pros-of-front-end-development/)
 - [Cons of front end development](/blog/cons-of-front-end-development/)
 - [Should you learn front end development?](/blog/should-you-learn-front-end-development/) (this post)

@@ -26,6 +26,7 @@ A more semantic name may be `.page-heading` or `main-sidebar`. Something that de
 ## Why semantic naming is important
 
 It brings two important benefits:
+
 - Maintainability
 - Labels / notes for the programmer
 
@@ -50,10 +51,10 @@ Instead, consider:
 If it was just named `.page-heading`, then you only have to change the color in one place (in the CSS).
 
 This has tons of benefits:
+
 - Changes are only done in one place, so the process is simpler (read: harder to make a mistake).
 - It opens up the path for white-labelling (having a website where you can change the styling purely from the CSS).
 - Maintenance is much easier. The element has the class `.page-heading` today, and it will probably have the same class a year from now.
-
 
 ### Problem - Labels
 
@@ -69,7 +70,6 @@ You immediately know the purpose of the component. You can find it on the websit
 
 And remember, you don't have 5 components, you have 1000 components for a large website.
 
-
 ## It's a programming standard
 
 I'm sure you've heard the phrase "There are two difficult things in computer science: Naming and cache invalidation".
@@ -78,12 +78,12 @@ Yes naming is difficult, and it's not uncommon for programmers to spend a good a
 
 The reason this is necessary is because code must be optimised for maintainability. You will read code and modify it a huge number of times. Even if it takes 3x to write the code upfront, it will pay dividends in efficiency if the code is easily understandable. And it will not take 3x longer to write it, only 1.2x.
 
-
 ### Conclusion
 
 Use semantic naming that describes the purpose of an element, rather than its look.
 
 It provides lots of benefits:
+
 - Maintainability
 - Changes only happen in one place, so less error-prone.
 - Changes only happen in CSS (+ opens up white labelling).

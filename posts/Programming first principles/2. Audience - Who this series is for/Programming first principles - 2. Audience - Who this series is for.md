@@ -14,6 +14,7 @@ seoDescription: 'When should you learn programming principles? Beginner, interme
 Video version of this article: [https://youtu.be/TutgrBoQKSw](https://youtu.be/TutgrBoQKSw)
 
 This article is part of the "Programming first principles series":
+
 1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/)
 2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/) (this article)
 3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/)
@@ -69,6 +70,7 @@ However, there is probably something you'll pick up anyway. Also you may find th
 ---
 
 This article is part of the "Programming first principles series":
+
 1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/)
 2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/) (this article)
 3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/)

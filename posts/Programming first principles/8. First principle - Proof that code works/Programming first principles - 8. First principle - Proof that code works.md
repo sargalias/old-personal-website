@@ -14,6 +14,7 @@ seoDescription: 'Why do we test software? Why do we need proof that code works? 
 Video version of this article: [https://youtu.be/k8Swf3apDVg](https://youtu.be/k8Swf3apDVg)
 
 This article is part of the "Programming first principles series":
+
 1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/)
 2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/)
 3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/)
@@ -27,7 +28,6 @@ This article is part of the "Programming first principles series":
 11. [First principle - Separation of concerns](/blog/programming-first-principles-first-principle-separation-of-concerns/)
 
 ---
-
 
 We require proof that code works.
 
@@ -56,6 +56,7 @@ Currently the only thing I know of is a good test suite.
 ---
 
 This article is part of the "Programming first principles series":
+
 1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/)
 2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/)
 3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/)

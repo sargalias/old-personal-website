@@ -64,19 +64,23 @@ For example, imagine that you want every image in a blog post to be `2rem` below
 Since combinator selectors match the last element, you would be forced to use `margin-top`. **Example**
 
 ```scss
-img { margin-top: 2rem; }
-img + img { margin-top: 1rem; }
+img {
+  margin-top: 2rem;
+}
+img + img {
+  margin-top: 1rem;
+}
 ```
-
 
 **Margin-bottom**
 
 `margin-bottom` is better when something requires a specific `margin-bottom`, regardless of what element follows it. For example, if you want every `h2` to have a minimum space underneath it of `2rem`, you would use the `margin-bottom`property. **Example**
 
 ```scss
-h2 { margin-bottom: 2rem; }
+h2 {
+  margin-bottom: 2rem;
+}
 ```
-
 
 **Both**
 
@@ -102,7 +106,6 @@ img + img {
   margin-top: 1rem;
 }
 ```
-
 
 ### Variables and standardization
 
@@ -171,16 +174,16 @@ All a component has to do is care about itself. This means that: **Any component
 
 In comparison, if a component needs to change its `margin` and such depending on where it is and what's around it, then it will never be completely **reusable**. It will always need to CSS changes before it's placed anywhere.
 
-### Implementing decoupled containers and components**
+### Implementing decoupled containers and components\*\*
 
 **Using grid**
 
-`grid` provides _gutters_ and allows for exact positioning of child elements. So if `grid` is a reasonable `display` mode to use, it's very easy to achieve decoupled containers and components with it.
+`grid` provides *gutters* and allows for exact positioning of child elements. So if `grid` is a reasonable `display` mode to use, it's very easy to achieve decoupled containers and components with it.
 
 Pros:
 
 - Very good for positioning child components in a pattern.
-- Has _gutters_ (the `gap` property), so can position child components without them needing a `margin`.
+- Has *gutters* (the `gap` property), so can position child components without them needing a `margin`.
 
 Cons:
 
@@ -198,14 +201,12 @@ Implementation of this method is extremely simple.
 }
 ```
 
-
 Consider the pen below. Note how:
 
 - The parent sets the positioning of the components.
 - Each component takes up the full amount of space given to it and the components are right up against the _content-box_ of the container.
 
 See the Pen [Decoupled container and components - grid](https://codepen.io/sargalias/pen/pGvjmR/) by Spyros Argalias ([@sargalias](https://codepen.io/sargalias)) on [CodePen](https://codepen.io).
-
 
 **Without grid**
 
@@ -233,7 +234,7 @@ See the Pen [Decoupled container and components - flexbox](https://codepen.io/sa
 
 **Using BEM mix**
 
-A _mix_ in BEM is when an element has both a class for a _BEM block_ as well as a _BEM element_. (This concept is hardly ever mentioned in BEM, so I'm not sure whether its use is acceptable or frowned upon.)
+A *mix* in BEM is when an element has both a class for a _BEM block_ as well as a _BEM element_. (This concept is hardly ever mentioned in BEM, so I'm not sure whether its use is acceptable or frowned upon.)
 
 The BEM element is due to the parent container. The BEM block is because it's a self contained block. With this method, as long as the BEM block never sets its own margins, the parent container can have very good control over the block's positioning.
 
@@ -265,7 +266,6 @@ Cons:
 Implementation:
 
 Child block
-
 
 ### Alternative layouts for for containers and components
 
@@ -307,9 +307,10 @@ Cons:
 Implementation:
 
 ```scss
-.container > * { margin: 1rem; }
+.container > * {
+  margin: 1rem;
+}
 ```
-
 
 **Alternative layout 3 - Container strongly selects components**
 
@@ -328,8 +329,12 @@ Implementation:
 
 ```scss
 .container {
-  .component { margin: 1rem }
-  .component:last-child { margin: 2rem }
+  .component {
+    margin: 1rem;
+  }
+  .component:last-child {
+    margin: 2rem;
+  }
 }
 ```
 
@@ -339,9 +344,9 @@ In the end, we don't currently have a method which is perfect.
 
 The `grid` and `flexbox` display modes are not always usable.
 
-The _BEM mix_ method is pretty good, but it's not BEM best practice.
+The *BEM mix* method is pretty good, but it's not BEM best practice.
 
-The _specific containers_ method has extra HTML and CSS. So pick your poison, the method which you think is the least bad. Other than those methods, there are also the alternative layout methods to consider.
+The *specific containers* method has extra HTML and CSS. So pick your poison, the method which you think is the least bad. Other than those methods, there are also the alternative layout methods to consider.
 
 ### Positioning siblings within a single component
 

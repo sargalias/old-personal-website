@@ -11,9 +11,10 @@ seoTitle: "Programming first principles - Premise - We must understand what we'r
 seoDescription: This premise says that we must understand what we're doing at all times. We can't program by coincidence until we stumble upon something that works.
 ---
 
-Video version of this article: [https://youtu.be/_SVpX6Q-6zs](https://youtu.be/_SVpX6Q-6zs)
+Video version of this article: [https://youtu.be/\_SVpX6Q-6zs](https://youtu.be/_SVpX6Q-6zs)
 
 This article is part of the "Programming first principles series":
+
 1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/)
 2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/)
 3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/)
@@ -61,6 +62,7 @@ Therefore ideally we should understand what we're doing at all times.
 ---
 
 This article is part of the "Programming first principles series":
+
 1. [Purpose - What this series is about](/blog/programming-first-principles-purpose-what-this-series-is-about/)
 2. [Audience - Who this series is for](/blog/programming-first-principles-audience-who-this-series-is-for/)
 3. [Requirements of software](/blog/programming-first-principles-requirements-of-software/)
