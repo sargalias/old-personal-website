@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://sargalias-website.netlify.com/* https://www.sargalias.com/:splat 301!
