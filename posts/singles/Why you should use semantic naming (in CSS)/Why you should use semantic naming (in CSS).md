@@ -68,7 +68,7 @@ Compare this with `<div class="page-heading">` or `<div class="main-sidebar">`.
 
 You immediately know the purpose of the component. You can find it on the website (even with a simple search on the dev tools), and you can find it in the codebase.
 
-And remember, you don't have 5 components, you have 1000 components for a large website.
+And remember, you don't have 5 components, you have 100 components for a large website.
 
 ## It's a programming standard
 
@@ -89,4 +89,4 @@ It provides lots of benefits:
 - Changes only happen in CSS (+ opens up white labelling).
 - Labels for easily identifying elements.
 
-And remember the project tomorrow will have 1000s of components, so any problems you have today due to non-semantic names will greatly amplified tomorrow.
+And remember the project tomorrow will have 100s of components, so any problems you have today due to non-semantic names will greatly amplified tomorrow.
