@@ -42,7 +42,9 @@ const PostPreview = ({
             headingTag={headingTag}
           />
           <p className={styles.PostPreview_excerpt}>{excerpt}</p>
-          <Button path={path}>Continue reading</Button>
+          <Button path={path} parentClass={styles.PostPreview_readMore}>
+            Continue reading
+          </Button>
         </div>
       </article>
     </TextContainer>

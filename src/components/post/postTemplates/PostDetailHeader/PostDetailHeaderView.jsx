@@ -18,9 +18,16 @@ const PostDetailHeader = ({
       heading={heading}
       parentClass={styles.PostDetailHeader_postHeading}
     />
-    <PostMetadata author={author} date={date} />
+    <PostMetadata
+      author={author}
+      date={date}
+      parentClass={styles.PostDetailHeader_postMetadata}
+    />
     {featuredImageData && (
-      <PostFeaturedImage featuredImageData={featuredImageData} />
+      <PostFeaturedImage
+        featuredImageData={featuredImageData}
+        parentClass={styles.PostDetailHeader_postFeaturedImage}
+      />
     )}
   </header>
 );
