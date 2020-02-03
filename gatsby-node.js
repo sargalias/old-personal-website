@@ -12,13 +12,6 @@ const populateFieldsOnPosts = ({ node, actions }) => {
       name: 'path',
       value: postPath,
     });
-
-    const postExcerpt = node.frontmatter.excerpt || node.excerpt;
-    actions.createNodeField({
-      node,
-      name: 'excerpt',
-      value: postExcerpt,
-    });
   }
 };
 
