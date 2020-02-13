@@ -521,31 +521,7 @@ A simple example why we may want to do that is to display blog posts in a differ
 
 Understanding the motivation is the important part. Having that, we can use React custom hooks, higher order components or render props to be able to reuse functionality easily.
 
-## Sidenotes
-
-There are some counter-arguments against these points that I would like to address.
-
-### Refactor later
-
-It's definitely possible to start with code that's not fully separated and refactor later.
-
-However this can present difficulties:
-
-1. It's easiest to make changes at the time that you're creating the code.
-
-The code is fresh in your mind, you understand it quite well, you just created it so you know for a fact that nothing else is using it and that there will be no cascading changes if you change something.
-
-On the other hand, if you come back to it a year later, or if a colleague wrote the code and you're not familiar with it, or if the code was written before you joined the company, or if another colleague worked on the code after it was written and now other code depends on it... you'll have more stuff to do:
-
-- Ensure that your changes are safe to make.
-- Handle all possible cascading changes.
-- Etc.
-
-2. Longer code with multiple concerns is harder to understand. You'll also need to spend time to remember how the code works and what its intention was.
-
-3. The testability point probably applies from day 1.
-
-### Dependency injection
+## Sidenote on dependency injection
 
 If you use dependency injection you may have thought that the examples given could be improved with it.
 
