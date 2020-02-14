@@ -19,7 +19,7 @@ const useBlogPosts = () => {
                 }
               }
             }
-            manualExcerpt: excerpt
+            excerpt
           }
           fields {
             path
