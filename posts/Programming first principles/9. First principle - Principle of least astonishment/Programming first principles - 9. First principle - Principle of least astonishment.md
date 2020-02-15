@@ -31,7 +31,7 @@ This article is part of the "Programming first principles series":
 
 The principle of least astonishment means that the thing should behave exactly as we expect it to at first glance.
 
-This isn't just a programming principle, it's the life principle also referred to as KISS (keep it simple stupid).
+This isn't just a programming principle, it's the life principle also referred to as [KISS (keep it simple stupid)](https://en.wikipedia.org/wiki/KISS_principle). I personally consider them analogous in programming.
 
 It applies to everything in life, and it applies tremendously in programming as well.
 

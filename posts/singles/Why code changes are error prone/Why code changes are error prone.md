@@ -42,7 +42,7 @@ If we code the functionality incorrectly, it won't work, but anything we break i
 
 On the bright side:
 
-- The code is still fresh in our mind.
+- The code is still fresh to us.
 - The bug is in a small scope (compared to the entire system).
 
 Next, let's consider changes to existing functionality.
