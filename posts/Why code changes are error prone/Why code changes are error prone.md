@@ -3,7 +3,7 @@ title: 'Why code changes are error prone'
 slug: 'why-code-changes-are-error-prone'
 date: 2020-02-14
 author: 'Spyros Argalias'
-# featuredImage: './why-code-changes-are-error-prone.png'
+featuredImage: './why-code-changes-are-error-prone.png'
 category: 'Programming principles'
 excerpt: There are multiple reasons why code changes are error prone in programming. There is also a way to minimise the negative effects of changes.
 
