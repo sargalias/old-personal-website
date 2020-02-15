@@ -41,7 +41,7 @@ What does it mean that code should know as little as possible about other code?
 
 Just saying that phrase may not mean much alone, so let's start with a few examples to get a better idea.
 
-### Quick examples
+**Quick examples**
 
 - A class or module should have as few public or exported functions as possible. The absolute minimum required to get the job done.
 - A module / class should not expose any private functions.
@@ -55,23 +55,23 @@ This applies the principle of least knowledge. Code using the class only knows a
 
 Even though a language like JavaScript does not have a formal concept of private methods (yet), the principle and its importance are exactly the same. The same negative consequences will be paid by not adhering to the principle. The same concept should be introduced to avoid those consequences.
 
-### HashMap example
+**HashMap example**
 
-Another application of the principle is coding to interfaces instead of implementations.
+Another application of the principle is coding to [interfaces](<https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming)>) instead of implementations.
 
 When we use an interface we say something along the lines of "I don't care how you work internally or what other methods you have available, just that you have method X available on you".
 
-The interface segregation principle takes it even further by effectively saying "your interfaces should be as small as possible". I.e. code should know as little as possible.
+The [interface segregation principle](https://en.wikipedia.org/wiki/Interface_segregation_principle) takes it even further by effectively saying "your interfaces should be as small as possible". I.e. code should know as little as possible.
 
 But let's talk about some code.
 
-For example imagine some of our Java code needs a map (equivalent to an Object or Map in JavaScript). In Java, our code would accept an object which implements the map interface, it wouldn't care about how the map is implemented internally. It could be a HashMap, LinkedHashMap, CustomImplementation1, CustomImplementation2, etc. That is an implementation detail.
+For example imagine some of our Java code needs a `Map` (equivalent to an `object` or `Map` in JavaScript). In Java, our code would accept an object which implements the `Map` interface, it wouldn't care about how the map is implemented internally. It could be a `HashMap`, `LinkedHashMap`, `CustomImplementation1`, `CustomImplementation2`, etc. That is an implementation detail.
 
 All our code cares about is that it is _map-like_. That it has particular methods our code wants to use. In other words the minimal piece of information required. The internal implementation is something it does not need to know about.
 
-### Array.from example
+**Array.from example**
 
-A similar example of the Java HashMap in JavaScript is something like `Array.from`. If we look at the [MDN documentation for Array.from](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from) we see that under syntax it says:
+A similar example of the Java HashMap in JavaScript is something like `Array.from`. If we look at the [MDN documentation for Array.from](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from) (at the time of writing, January 2020) we see that under syntax it says:
 
 > `Array.from(arrayLike[, mapFn[, thisArg]])`
 
@@ -81,7 +81,7 @@ This is an application of the principle of least knowledge.
 
 Imagine if instead we could only use `Array.from` with a `Set` and nothing else. We would lose the majority of the power of that function.
 
-### Delivery example
+**Delivery example**
 
 As another contrived example, let's consider an imaginary delivery company.
 
@@ -133,7 +133,7 @@ The warehouse employee does not need to know about or care what the driver will 
 
 We want our code to be the same.
 
-### Shape example
+**Shape example**
 
 Let's examine a more code-like example. Still very simple and contrived...
 
@@ -253,7 +253,7 @@ So we examined what the principle of least knowledge means. We also saw some exa
 
 But so what? Why does it matter if we break this principle? Why are the code examples above considered bad?
 
-## Potential problems
+## Why is the principle of least knowledge important?
 
 Let's consider some practical consequences.
 
@@ -263,13 +263,17 @@ We would have to go through every function like the `main` function and add logi
 
 Imagine what a `main` function with 10 shapes would look like.
 
+This breaks the [principle of least astonishment / KISS](https://www.sargalias.com/blog/programming-first-principles-first-principle-principle-of-least-astonishment/).
+
+Also [code changes are error prone](https://www.sargalias.com/blog/why-code-changes-are-error-prone/) so we want to contain them in as small a scope as possible, not have them meddled up with 10 other things in a function.
+
 But with the clean example, we just add a new class for the shape and we're finished. Our `main` function only interfaces with the methods provided, so it doesn't need modification.
 
 **What if we wanted to change how Circle works?**
 
 E.g. we wanted to rename the `radius` to `diameter` for some reason.
 
-Or in a more real example, we have a class where we're storing a list of items. E.g. `this.points = [point1, point2, point3];`. What if we wanted to change to a `Set` for performance reasons?
+Or in a more real example, we have a class where we're storing a list of items. E.g. `this.points = [point1, point2, point3];`. What if we wanted to change to a `Set` for performance reasons for example?
 
 All the code that knows about these properties would have to be modified.
 
@@ -281,12 +285,20 @@ Of course code that doesn't know about these properties won't be affected at all
 
 **So we need to change a lot of code, why is that a problem?**
 
+Short answer: [Code changes are error prone](https://www.sargalias.com/blog/why-code-changes-are-error-prone/).
+
 1. We won't remember what code we need to change. We'll have to scour the codebase to search for what will be affected.
 2. It's very possible we'll miss something and break the system.
 3. It's a lot of repetitive work. We are bad with repetition. It's easy for us to make mistakes when doing repetitive work.
 4. It will take much longer than if we didn't need to change anything except the thing we're trying to modify.
 
 Not to mention that if we have cascading changes in one area, it's likely we'll have them all over the codebase. The classic case of needing to modify every file in the system for a simple change.
+
+So we only want to make the minimum changes possible.
+
+In the good shape example, we don't need to change any code to create a new shape.
+
+If we need to actually modify code, e.g. for performance, the necessary changes are as contained as possible.
 
 ## Relation to other principles
 
@@ -300,9 +312,13 @@ Not accessing (or not being able to access) "private" properties of things is al
 
 The [Law of Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter) applies the principle of least knowledge in the scope of methods and functions.
 
+The [open-closed principle](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle) formally emphasises the importance of minimizing changes to code, which the principle of least knowledge facilitates.
+
 The examples given above can also be thought of as applying separation of concerns or the principle of abstraction.
 
 Another application is not accessing global variables and such, a strong encouragement / requirement in functional programming.
+
+**Usage in non-OOP code**
 
 Not everything uses interfaces, such as functions or modules, but everything should be treated as though it formally has an interface. In other words the principle of least knowledge in code is universal, regardless of whether the language provides interfaces for classes, interfaces / types for functions outside of a class (e.g. something like TypeScript), or anything else.
 
@@ -326,7 +342,7 @@ Our premises are:
 - We must minimize propagating changes
 - Complexity increases exponentially with scale
 
-### Motivation for the principle of least astonishment
+**Motivation for the principle of least astonishment**
 
 Case: Code X knows about Y and Z.
 
@@ -347,7 +363,7 @@ We need to be aware of more things and understand more of the code so we can mak
 
 On the other hand, if any changes we made to Y never affected X or anything else, then we would fulfil our premises.
 
-### Guidelines
+**Guidelines**
 
 - Keep the principle in mind. By keeping it in mind you'll probably always make progress towards it. It will definitely be better than if you're not aware of the principle in the first place.
 - It is important to create systems using code with minimal communication and knowledge between it and other code.
@@ -355,7 +371,7 @@ On the other hand, if any changes we made to Y never affected X or anything else
 - Code should only know the minimum possible about its arguments, as the interface segregation principle and law of Demeter specify.
 - All communication and knowledge should be under an agreed contract of non-change and non-conflict (a.k.a. an interface). An interface is just a way of saying that certain things will always be available on the object. They're safe for use and are not intended to change.
 
-### Benefits
+**Benefits**
 
 - Minimal knowledge required by the programmer for what code knows and depends on.
 - Minimal knowledge required between code.

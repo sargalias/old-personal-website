@@ -64,9 +64,9 @@ Applying the principle doesn't take much. It only requires that you are aware of
 
 Here are some suggestions.
 
-### Default to writing dumb code, try to avoid writing clever code
+**Default to writing dumb code, try to avoid writing clever code**
 
-Clever code takes more time to decipher and understand. Juniors on your team may take a long time to understand it or even not understand it at all.
+Clever code takes more time to decipher and understand. Juniors in your team may take a long time to understand it or even not understand it at all.
 
 Regardless of experience clever code is usually more difficult to understand. It does things that need deciphering. It's also possible to decipher it wrong if you're in a rush.
 
@@ -74,7 +74,7 @@ A reason why this happens is perhaps because at the time of writing the code we 
 
 Keep code as simple and dumb as possible by default. Try to isolate and contain parts where clever optimisations are required.
 
-### Keep things short and concise
+**Keep things short and concise**
 
 A function with 5 lines of code is simpler and easier to understand than a function with 100 lines, 20 lines, or 10 lines.
 
