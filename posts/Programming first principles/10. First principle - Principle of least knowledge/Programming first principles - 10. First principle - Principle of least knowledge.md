@@ -25,6 +25,11 @@ This article is part of the "Programming first principles series":
 10. [First principle - Principle of least knowledge](/blog/programming-first-principles-first-principle-principle-of-least-knowledge/) (this article)
 11. [First principle - Separation of concerns](/blog/programming-first-principles-first-principle-separation-of-concerns/)
 
+Also suggested:
+
+- [When not to apply programming principles](/blog/when-not-to-apply-programming-principles/)
+- [Why code changes are error prone](/blog/why-code-changes-are-error-prone/)
+
 ---
 
 Video version of this article: [https://youtu.be/IIECT7Q5-Gk](https://youtu.be/IIECT7Q5-Gk)
@@ -392,3 +397,8 @@ This article is part of the "Programming first principles series":
 9. [First principle - Principle of least astonishment](/blog/programming-first-principles-first-principle-principle-of-least-astonishment/)
 10. [First principle - Principle of least knowledge](/blog/programming-first-principles-first-principle-principle-of-least-knowledge/) (this article)
 11. [First principle - Separation of concerns](/blog/programming-first-principles-first-principle-separation-of-concerns/)
+
+Also suggested:
+
+- [When not to apply programming principles](/blog/when-not-to-apply-programming-principles/)
+- [Why code changes are error prone](/blog/why-code-changes-are-error-prone/)

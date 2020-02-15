@@ -27,6 +27,11 @@ This article is part of the "Programming first principles series":
 10. [First principle - Principle of least knowledge](/blog/programming-first-principles-first-principle-principle-of-least-knowledge/)
 11. [First principle - Separation of concerns](/blog/programming-first-principles-first-principle-separation-of-concerns/)
 
+Also suggested:
+
+- [When not to apply programming principles](/blog/when-not-to-apply-programming-principles/)
+- [Why code changes are error prone](/blog/why-code-changes-are-error-prone/)
+
 ---
 
 The principle of least astonishment means that the thing should behave exactly as we expect it to at first glance.
@@ -109,3 +114,8 @@ This article is part of the "Programming first principles series":
 9. [First principle - Principle of least astonishment](/blog/programming-first-principles-first-principle-principle-of-least-astonishment/) (this article)
 10. [First principle - Principle of least knowledge](/blog/programming-first-principles-first-principle-principle-of-least-knowledge/)
 11. [First principle - Separation of concerns](/blog/programming-first-principles-first-principle-separation-of-concerns/)
+
+Also suggested:
+
+- [When not to apply programming principles](/blog/when-not-to-apply-programming-principles/)
+- [Why code changes are error prone](/blog/why-code-changes-are-error-prone/)
