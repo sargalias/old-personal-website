@@ -159,7 +159,7 @@ function main() {
 }
 ```
 
-Example with even better separation of concerns, although I wouldn't actually use this version because I think it's a bit overkill in this simple scenario.
+Example with even better separation of concerns, although I wouldn't actually use this version because I think it's a bit overkill in this simple scenario. (See [when not to apply programming principles](/blog/when-not-to-apply-programming-principles/) for more details on when to avoid applying programming principles.)
 
 ```js
 function fizzbuzz(n) {
@@ -475,7 +475,7 @@ On the other hand, if it was coupled with logic, we would lose all the benefits:
 
 - We wouldn't be able to reuse the view anywhere except in places that also required the exact same logic.
 - The code would be larger and have multiple concerns, so it would be more difficult to change.
-- (Testing would still be fine because the component is simple enough, but would quickly need to become more elaborate with more complicated components.)
+- Testing would still be fine because the component is simple enough, but would quickly need to become more elaborate with more complicated components.
 
 **Logic**
 
@@ -499,7 +499,7 @@ Here is some example container code:
 import React, { useState } from 'react';
 import CounterView from './CounterView';
 
-const Container = ({ initialCount } = { initialCount: 0 }) => {
+const Container = ({ initialCount = 0 }) => {
   const [count, setCount] = useState(initialCount);
   const handleIncrement = () => setCount(count + 1);
 
@@ -530,11 +530,9 @@ Understanding the motivation is the important part. Having that, we can use Reac
 
 If you use dependency injection you may have thought that the examples given could be improved with it.
 
-I completely agree.
+I agree. I think dependency injection is awesome, and you're welcome to use it.
 
-I think dependency injection is awesome, and you're welcome to use it.
-
-Dependency injection allows us to test using spies instead of mocks, which feels like a nicer and more natural way to test. It also allows us to modify aspects of the program through configuration rather than changing hardcoded source code.
+Dependency injection allows us to test using spies instead of mocks, which feels like a nicer and more natural way to test. It also allows us to modify aspects of the program in a dedicated layer rather than changing hardcoded source code.
 
 The reason I didn't use it in the examples is because it's not particularly popular in JavaScript and front end in general (except for Angular).
 
