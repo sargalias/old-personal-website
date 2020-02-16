@@ -20,6 +20,7 @@ const useLatestBlogPost = () => {
                 }
               }
             }
+            excerpt
           }
           fields {
             path
@@ -30,6 +31,7 @@ const useLatestBlogPost = () => {
   `);
 
   const post = data.allMarkdownRemark.nodes[0];
+  post.fields.excerpt = post.frontmatter.excerpt || post.exerpt;
   return post;
 };
 
