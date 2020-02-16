@@ -570,7 +570,7 @@ As required by the principle of least astonishment.
 
 **Functionality can change with minimal changes and no cascading changes**
 
-[Code changes are error prone](https://www.sargalias.com/blog/why-code-changes-are-error-prone/), so we want to minimise their scope and the amount of changes we have to make.
+[Code changes are error prone](/blog/why-code-changes-are-error-prone/), so we want to minimise their scope and the amount of changes we have to make.
 
 If we have clearly separated the display logic from the calculation logic, we can make independent changes to either one without worrying about affecting the other (assuming that the interface doesn't change).
 

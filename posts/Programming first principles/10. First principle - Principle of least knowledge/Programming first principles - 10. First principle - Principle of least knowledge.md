@@ -268,9 +268,9 @@ We would have to go through every function like the `main` function and add logi
 
 Imagine what a `main` function with 10 shapes would look like.
 
-This breaks the [principle of least astonishment / KISS](https://www.sargalias.com/blog/programming-first-principles-first-principle-principle-of-least-astonishment/).
+This breaks the [principle of least astonishment / KISS](/blog/programming-first-principles-first-principle-principle-of-least-astonishment/).
 
-Also [code changes are error prone](https://www.sargalias.com/blog/why-code-changes-are-error-prone/) so we want to contain them in as small a scope as possible, not have them meddled up with 10 other things in a function.
+Also [code changes are error prone](/blog/why-code-changes-are-error-prone/) so we want to contain them in as small a scope as possible, not have them meddled up with 10 other things in a function.
 
 But with the clean example, we just add a new class for the shape and we're finished. Our `main` function only interfaces with the methods provided, so it doesn't need modification.
 
@@ -290,7 +290,7 @@ Of course code that doesn't know about these properties won't be affected at all
 
 **So we need to change a lot of code, why is that a problem?**
 
-Short answer: [Code changes are error prone](https://www.sargalias.com/blog/why-code-changes-are-error-prone/).
+Short answer: [Code changes are error prone](/blog/why-code-changes-are-error-prone/).
 
 1. We won't remember what code we need to change. We'll have to scour the codebase to search for what will be affected.
 2. It's very possible we'll miss something and break the system.
