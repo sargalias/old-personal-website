@@ -91,7 +91,7 @@ The smaller the scope of a change we have to make, the easier and safer it will 
 
 This is for two reasons:
 
-- Following from the premises that we can only handle [minimal information](https://www.sargalias.com/blog/programming-first-principles-premise-minimal-information/) and [we must understand what we're doing](https://www.sargalias.com/blog/programming-first-principles-premise-we-must-understand-what-were-doing/)... Code that spans less area and requires less to read and understand is easier to change (everything else being equal).
+- Following from the premises that we can only handle [minimal information](/blog/programming-first-principles-premise-minimal-information/) and [we must understand what we're doing](/blog/programming-first-principles-premise-we-must-understand-what-were-doing/)... Code that spans less area and requires less to read and understand is easier to change (everything else being equal).
 - By following good programming principles, we minimize propagating changes. This means that we only have to make one change, rather than 10 changes.
 
   In comparison, in a system without good separation of concerns, making a change to something may mean we need to also change other things which used it. This process can repeat many times.
@@ -106,8 +106,8 @@ Programming principles don't mean we never have to make changes. Instead, what t
 
 Some particularly important principles are:
 
-- [Principle of least knowledge](https://www.sargalias.com/blog/programming-first-principles-first-principle-principle-of-least-knowledge/).
-- [Separation of concerns](https://www.sargalias.com/blog/programming-first-principles-first-principle-separation-of-concerns/).
-- [Abstraction](https://www.sargalias.com/blog/programming-first-principles-first-principle-abstraction/).
+- [Principle of least knowledge](/blog/programming-first-principles-first-principle-principle-of-least-knowledge/).
+- [Separation of concerns](/blog/programming-first-principles-first-principle-separation-of-concerns/).
+- [Abstraction](/blog/programming-first-principles-first-principle-abstraction/).
 
-For more information, also check out the [programming first principles series](https://www.sargalias.com/blog/programming-first-principles-purpose-what-this-series-is-about/).
+For more information, also check out the [programming first principles series](/blog/programming-first-principles-purpose-what-this-series-is-about/).

@@ -13,7 +13,11 @@ seoDescription: Sometimes applying programming principles can cause more harm th
 
 When examining each principle, we focused on how to strictly apply it.
 
-But we didn't really touch on pragmatism very much, or when we shouldn't apply some of the principles.
+But we didn't really touch on pragmatism as much, or when we shouldn't apply some of the principles.
+
+Well, except for the principle of abstraction. We touched on abstracting too early and over-generalizing a fair bit. For a lot more detail on that one, see [programming first principles - abstraction](/blog/programming-first-principles-first-principle-abstraction/).
+
+As for the rest...
 
 ## When should we not apply programming principles?
 
@@ -23,7 +27,7 @@ The subtlety is that sometimes the principle of least astonishment and KISS prin
 
 Particularly when the code we just wrote is quite small and simple, it may be detrimental to religiously apply separation of concerns or some of the other principles. It may actually make the code harder to understand and add more boilerplate.
 
-Another reason is, by refactoring or generalizing the code too early, we may over-generalize. This means we might create an abstraction we'll never need to reuse, effectively making the code more complicated with no benefit, or an incorrect abstraction that will need refactoring again later.
+Another reason is, as mentioned in the abstraction principle, we don't want to abstract or generalize the code too early, otherwise we might over-generalize. This means we might create an abstraction we'll never need to reuse, effectively making the code more complicated with no benefit, or an incorrect abstraction that will need refactoring again later.
 
 ## Downsides of not applying principles immediately
 
@@ -31,7 +35,7 @@ There are also downsides to waiting.
 
 **(Future) code changes are error prone**
 
-[Code changes are error prone](https://www.sargalias.com/blog/why-code-changes-are-error-prone/), meaning that a change to already existing functionality in the future is far more dangerous than changing brand new code right now.
+[Code changes are error prone](/blog/why-code-changes-are-error-prone/), meaning that a change to already existing functionality in the future is far more dangerous than changing brand new code when we first create it.
 
 **Future changes are more difficult to make**
 
@@ -55,37 +59,14 @@ Easier testability is one of the advantages of following good software developme
 
 **Rule of three**
 
-The aim of the [rule of three](<https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)>) is to avoid refactoring / abstracting code which really doesn't belong together. In other words having very tight coupling between code that shouldn't have it.
+Specifically for abstraction, use the [rule of three](<https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)>) as a good rule of thumb.
 
-This feels like a wishy-washy topic to discuss, but I believe the key here is **semantics**.
+Its benefits are:
 
-Code that is abstracted should be _semantically_ the same, rather than just coincidentally the same. It should have the same concerns. It should follow the single responsibility principle, meaning it only has one reason to change.
+- Creates more robust abstractions.
+- Increases the chance that the abstractions are semantically significant.
 
-For example, consider this code:
-
-```js
-function formatUsername(str) {
-  return str.split(' ').join('');
-}
-
-function formatShoppingList(str) {
-  return str.split(' ').join('');
-}
-```
-
-In the example, both of the function bodies are exactly the same.
-
-However in this case, the duplicate code is probably **coincidental**.
-
-The reason is because our two functions have different reasons to change.
-
-The `formatUsername` function will likely always need spaces stripped out of it. However, tomorrow the `formatShoppingList` function may want spaces replaced by hyphens or whatever. Perhaps it doesn't want spaces removed at all, and instead wants everything to be uppercase.
-
-If we saw the duplicate code and created a function `function format(str) { return str.split(' ').join(''); }`, and used it in both functions in the example, tomorrow when the shopping list changed we would have to go back and refactor everything again.
-
-Anyway, the rule of three basically helps prevent those situations. The situation where we refactor today, only to realise tomorrow that we refactored the wrong things and need to refactor again.
-
-But remember that the rule of three is a **rule of thumb**. Sometimes we may want to refactor things on the second occurrence. It may be too difficult to maintain both instances otherwise, and as long as we're confident that both instances have the same semantic meaning then it's fine.
+However remember that it is just a rule of thumb. Don't be afraid to break it in the rare cases where it's beneficial to do so.
 
 **Consider whether the code is simple enough that splitting it further may make it more difficult to work with, rather than easier**
 
@@ -127,6 +108,6 @@ Disadvantages to waiting before applying programming principles:
 
 Suggestions:
 
-- Consider the rule of three.
+- Use the rule of three, but remember that it's a rule of thumb which in rare cases is beneficial to break.
 - Consider whether the code is simple enough that splitting it further may make it more difficult to work with, rather than easier.
 - If in doubt, I personally suggest leaning towards applying principles early, rather than applying them late.
