@@ -7,7 +7,7 @@ featuredImage: './programming-first-principles-side-effects.png'
 category: 'Programming principles'
 excerpt: Find out what side effects are, why they are dangerous and how to handle them.
 
-seoTitle: 'Programming first principles - 13. Side effects'
+seoTitle: 'Programming first principles - Side effects'
 seoDescription: Find out what side effects are, why they are dangerous and how to handle them.
 ---
 

@@ -7,7 +7,7 @@ featuredImage: './programming-first-principles-first-principle-abstraction.png'
 category: 'Programming principles'
 excerpt: What is abstraction, why do we need it and what are its dangers? Find out how to do it correctly and prevent issues.
 
-seoTitle: 'Programming first principles - 12. First principle - Abstraction'
+seoTitle: 'Programming first principles - First principle - Abstraction'
 seoDescription: What is abstraction, why do we need it and what are its dangers? Find out how to prevent issues with abstraction and how to do it correctly.
 ---
 
