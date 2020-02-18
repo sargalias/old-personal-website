@@ -4,8 +4,6 @@ import Brand from 'components/Brand';
 import BrandIcons from 'components/BrandIcons';
 import styles from './Footer.module.scss';
 
-console.log(JSON.stringify(styles, null, 2));
-
 const Footer = ({ parentClass }) => (
   <footer className={`${styles.Footer} ${parentClass}`}>
     <Container>
