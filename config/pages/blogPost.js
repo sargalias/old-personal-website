@@ -4,7 +4,7 @@ const blogPost = Object.freeze({
   titleSuffix: site.title,
   titleDelimiter: '|',
   defaultSeoTitle: 'Blog post',
-  canonicalUrlPrefix: `${site.baseUrl}/blob/`,
+  canonicalUrlPrefix: `${site.baseUrl}/blog/`,
   doesUrlHaveTrailingSlash: true,
 });
 
