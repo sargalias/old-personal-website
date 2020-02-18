@@ -24,6 +24,8 @@ This article is part of the "Programming first principles series":
 9. [First principle - Principle of least astonishment](/blog/programming-first-principles-first-principle-principle-of-least-astonishment/)
 10. [First principle - Principle of least knowledge](/blog/programming-first-principles-first-principle-principle-of-least-knowledge/)
 11. [First principle - Separation of concerns](/blog/programming-first-principles-first-principle-separation-of-concerns/) (this article)
+12. [First principle - Abstraction](/blog/programming-first-principles-first-principle-abstraction/)
+13. [Side effects](/blog/programming-first-principles-side-effects/)
 
 Also suggested:
 
@@ -658,6 +660,8 @@ This article is part of the "Programming first principles series":
 9. [First principle - Principle of least astonishment](/blog/programming-first-principles-first-principle-principle-of-least-astonishment/)
 10. [First principle - Principle of least knowledge](/blog/programming-first-principles-first-principle-principle-of-least-knowledge/)
 11. [First principle - Separation of concerns](/blog/programming-first-principles-first-principle-separation-of-concerns/) (this article)
+12. [First principle - Abstraction](/blog/programming-first-principles-first-principle-abstraction/)
+13. [Side effects](/blog/programming-first-principles-side-effects/)
 
 Also suggested:
 
