@@ -302,19 +302,13 @@ That's all, nothing magic.
 
 Code that has side effects is not inherently bad or dangerous.
 
-The only problem is that it's difficult to track, and as a result has the potential to conflict with other code.
+It just has some problematic qualities that makes it easier to conflict with other code.
 
-E.g. if we modify a global variable, we might break other code that depends on it.
+Side effects:
 
-Additionally, tracking the history of that global variable (how it changed and where) would be difficult. After all, the entire application can change it.
-
-So that's why we try to avoid / minimize side effects as much as possible. We don't want to accidentally do something that conflicts with other code.
-
-Further, side effects have the following problematic qualities:
-
-- They are difficult to handle.
-- They are difficult to track.
-- They often come in pairs.
+- Are difficult to handle.
+- Are difficult to track.
+- Often come in pairs.
 - They break referential transparency.
 
 (Credits to Uncle Bob for most of these by the way. I'm pretty sure I've gathered the majority of these points from listening to his talks and videos.)
@@ -515,7 +509,7 @@ I consider this an application of the principle of least astonishment and separa
 
 Consider that our function X calls another function Y with its internal state as arguments. It would be quite unexpected if function Y mutated the internal state of X. This would break the principle of least astonishment (at least for me).
 
-Even if a different programmer expected that, then remember that the function should also selfish and should not like sharing (separation of concerns). It may call another function, but in no way does it want the other function to do absolutely anything to its internal state other than read it. It does not want to share its state for others to modify.
+Even if a different programmer expected that, then remember that the function should also be selfish and should not like sharing (separation of concerns). It may call another function, but in no way does it want the other function to do absolutely anything to its internal state other than read it. It does not want to share its state for others to modify.
 
 Anyway, immutability just helps enforce these concepts.
 
@@ -526,14 +520,14 @@ Anyway, immutability just helps enforce these concepts.
 
 **Summary**
 
-- Always be diligent with side effects and never use unsafe side effects.
-- Try to minimise your use of side effects in general.
 - Apply the programming principles.
 - Try to only use local state, or instance / module state if necessary. Anything higher than that should be passed as an argument. Avoid using globals.
 - Ensure side effects are as clear and contained (in terms of scope) as possible.
 - Always make sure there are clear areas of control with no possibility of conflict when modifying globals like the DOM or databases.
 - For side effects which come in pairs, the function that created the side effect must also close it. Use the technique "passing a block" for this.
 - Default to using immutability.
+- Always be diligent with side effects and never use unsafe side effects.
+- Try to minimise your use of side effects in general.
 
 ## Side note on side effects in functional programming
 

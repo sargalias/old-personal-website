@@ -42,7 +42,7 @@ Before we start, I would like to recap that a lot of our first principles overla
 
 This is a bit difficult to describe.
 
-You know how with OOP we think of objects as though they are simulating a real-life thing? E.g. we have a `Car` class that represents a car, or a `Person` class that represents information and about a person and what they can do.
+You know how with OOP we think of objects as though they are simulating a real-life thing? E.g. we have a `Car` class that represents a car, or a `Person` class that represents information about a person and what they can do.
 
 I'll try to use that spirit to explain separation of concerns.
 
@@ -82,7 +82,7 @@ In terms of separation of concerns:
 
 - You do not care how the post office does the delivery. It is not your concern. You just trust it will be fine.
 - You do not care where your friend lives (well, maybe I'm reaching here, but anyway...). They could live in the UK, or in the North Pole. You just get the address from them and write it on the package.
-- You just do the smallest amount of work required (ask for the address and prepare the package), and then delegate the rest to other stuff.
+- You just do the smallest amount of work required (ask for the address and prepare the package), and then delegate the rest.
 
 (Okay we're simplifying the situation by ignoring weird addresses, insurance, etc. but otherwise the situation is fairly analogous to programming.)
 
@@ -241,9 +241,9 @@ Let's talk about what consequences these might have:
 
 **Reusability**
 
-In the first example we can take `fizzbuzz` and re-use it anywhere in the codebase.
+In the first examples we can take `fizzbuzz` and re-use it anywhere in the codebase.
 
-In the second example, `fizzbuzz` is impossible to re-use unless we also need to `console.log` it every time.
+In the later examples, `fizzbuzz` is impossible to re-use unless we also need to `console.log` it every time.
 
 And of course the more concerns we mix together, the more difficult it is to reuse code.
 
