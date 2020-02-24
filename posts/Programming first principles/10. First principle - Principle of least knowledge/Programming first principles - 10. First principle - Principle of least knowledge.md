@@ -52,7 +52,7 @@ Just saying that phrase may not mean much alone, so let's start with a few examp
 
 - A class or module should have as few public or exported functions as possible. The absolute minimum required to get the job done.
 - A module / class should not expose any private functions.
-- It should not expose any properties unless absolutely necessary.
+- It should not expose any attributes unless absolutely necessary.
 - There should be a clear distinction between what's considered the "public API" of a module or class.
 - Etc.
 
@@ -60,7 +60,7 @@ For example, if we were using a language like Java... Java is class based and ha
 
 This applies the principle of least knowledge. Code using the class only knows about a few public functions and nothing else. Everything else is hidden and inaccessible.
 
-Even though a language like JavaScript does not have a formal concept of private methods (yet), the principle and its importance are exactly the same. The same negative consequences will be paid by not adhering to the principle. The same concept should be introduced to avoid those consequences.
+Even though a language like JavaScript does not have a formal concept of private methods (yet), the principle and its importance are exactly the same. The same negative consequences will be paid by not adhering to the principle. The same concept should be applied to avoid those consequences.
 
 **HashMap example**
 
@@ -205,7 +205,7 @@ function main(shape, canvas) {
 
 The code above tries to follow the principle of least knowledge.
 
-The main function knows the minimum required to work. The design is made in a way to try and minimize the knowledge required for our main function to work.
+The main function knows the minimum required to work. The code is designed to try and minimize the knowledge required for our main function to work.
 
 If the language supported interfaces, each class would implement a `Shape` interface with the methods required on each shape for our main function to work. Notice that no _private_ properties or helper methods will ever be used outside of those classes.
 
@@ -250,7 +250,7 @@ function main(shape, canvas) {
 Above we have a main function that knows way too much:
 
 - It has to specifically inquire what shape it's currently using.
-- It needs to know about differently named properties about each shape (which should be private).
+- It needs to know about differently named attributes on each shape (which should be private).
 - It needs to know how to calculate the area of every shape.
 - It needs to know how to draw every shape.
 
@@ -280,13 +280,13 @@ But with the clean example, we just add a new class for the shape and we're fini
 
 E.g. we wanted to rename the `radius` to `diameter` for some reason.
 
-Or in a more real example, we have a class where we're storing a list of items. E.g. `this.points = [point1, point2, point3];`. What if we wanted to change to a `Set` for performance reasons for example?
+We would have to change all the functions like `main` which use this property, and also modify the logic in every place to now divide it by 2 (because diameter is 2x the radius).
 
-All the code that knows about these properties would have to be modified.
+How about another example? We we have a class where we're storing a collection of items. E.g. `this.points = [point1, point2, point3];`. What if we wanted to change to a `Set` for performance reasons, for example?
 
-If we change the `radius` to `diameter` we have to change all the functions like `main` which use this property, and also modify the logic in every place to now divide it by 2 (because diameter is 2x the radius).
+We would have to make changes in a lot of places to update the methods they are using.
 
-Similarly with changing from `Array` to `Set`. We would have to make changes in a lot of places to update the methods they are using.
+In short, we would have to modify all code that knows about the properties we're trying to change.
 
 Of course code that doesn't know about these properties won't be affected at all.
 
@@ -294,6 +294,7 @@ Of course code that doesn't know about these properties won't be affected at all
 
 Short answer: [Code changes are error prone](/blog/why-code-changes-are-error-prone/).
 
+To recap some of the problems with code changes:
 1. We won't remember what code we need to change. We'll have to scour the codebase to search for what will be affected.
 2. It's very possible we'll miss something and break the system.
 3. It's a lot of repetitive work. We are bad with repetition. It's easy for us to make mistakes when doing repetitive work.
@@ -307,7 +308,7 @@ In the good shape example, we don't need to change any code to create a new shap
 
 If we need to actually modify code, e.g. for performance, the necessary changes are as contained as possible.
 
-## Relation to other principles
+## Additional applications
 
 The principle of least knowledge is applied in different forms and also overlaps with other principles.
 
@@ -315,23 +316,31 @@ Using [interfaces](<https://en.wikipedia.org/wiki/Interface_(computing)>) is an 
 
 The [interface segregation principle](https://en.wikipedia.org/wiki/Interface_segregation_principle) is a stricter application, encouraging even less knowledge.
 
-Not accessing (or not being able to access) "private" properties of things is also known as [information hiding](https://en.wikipedia.org/wiki/Information_hiding) and is also an application of [encapsulation](<https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)>).
+We shouldn't be able to access "private" properties of things. The official name for this is  [information hiding](https://en.wikipedia.org/wiki/Information_hiding) and it's also how we create [encapsulation](<https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)>).
 
 The [Law of Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter) applies the principle of least knowledge in the scope of methods and functions.
 
-The [open-closed principle](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle) formally emphasises the importance of minimizing changes to code, which the principle of least knowledge facilitates.
+The [open-closed principle](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle) formally emphasises the importance of minimizing changes to code. It essentially consists of the programming first principles, where the principle of least knowledge plays an important role.
+
+Not accessing global variables and such is an application of the principle of least knowledge. Ideally we don't want our functions to know anything except things directly in their scope. If necessary, we can reach up to instance scope or module scope. This falls under the concept of [side effects](/blog/programming-first-principles-side-effects/), which is also an important topic in [functional programming](https://en.wikipedia.org/wiki/Functional_programming).
 
 The examples given above can also be thought of as applying separation of concerns or the principle of abstraction.
 
-Another application is not accessing global variables and such, a strong encouragement / requirement in functional programming.
-
 **Usage in non-OOP code**
 
-Not everything uses interfaces, such as functions or modules, but everything should be treated as though it formally has an interface. In other words the principle of least knowledge in code is universal, regardless of whether the language provides interfaces for classes, interfaces / types for functions outside of a class (e.g. something like TypeScript), or anything else.
+Not everything uses interfaces, such as functions or modules. However everything should be treated as though it formally has an interface.
 
-What all these principles have in common is that they can be thought of as applications of principle of least knowledge in different contexts.
+In other words the principle of least knowledge in code is universal, regardless of whether the language provides interfaces for classes, parameter types for functions (e.g. TypeScript), or anything else.
 
-What works for me personally is to think of the principle of least knowledge as one of the root principles. It can be used to derive others such as interfaces, interface segregation principle, law of Demeter, information hiding, etc. That way I know the **why**, the principle behind those principles, and can make intelligent decisions on how to apply it even in cases where the other principles may not specify. That's not necessarily what you have to do, it's just what works for me.
+**Suggestion for use**
+
+What works for me personally is to think of the principle of least knowledge as one of the root principles. It can be used to derive others such as interfaces, interface segregation principle, law of Demeter, information hiding, etc.
+
+That way I know the **why**, the motivation behind the principles. This means I can make intelligent decisions on how to structure my code more naturally, even without directly thinking of principles such as interfaces, law of Demeter, etc.
+
+If anything, those principles serve more as ideas on how to proceed or confirmations that I'm thinking along the right lines. Additionally, it allows me to understand those principles much better, because through the principle of least knowledge I can see the motivation behind them, what they're trying to solve, and what their purpose is.
+
+That's not necessarily what you have to do, it's just what works for me.
 
 ## Theory
 
@@ -375,7 +384,7 @@ On the other hand, if any changes we made to Y never affected X or anything else
 - Keep the principle in mind. By keeping it in mind you'll probably always make progress towards it. It will definitely be better than if you're not aware of the principle in the first place.
 - It is important to create systems using code with minimal communication and knowledge between it and other code.
 - Ideally code should either know nothing, or only know things that exist in its local scope and things it has explicitly received (arguments).
-- Code should only know the minimum possible about its arguments, as the interface segregation principle and law of Demeter specify.
+- Code should only know the minimum possible about its arguments, as the interface segregation principle and law of Demeter suggest.
 - All communication and knowledge should be under an agreed contract of non-change and non-conflict (a.k.a. an interface). An interface is just a way of saying that certain things will always be available on the object. They're safe for use and are not intended to change.
 
 **Benefits**

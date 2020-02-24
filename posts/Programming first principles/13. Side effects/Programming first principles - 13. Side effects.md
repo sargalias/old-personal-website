@@ -101,11 +101,11 @@ We primarily ignore those because they don't realistically influence our program
 The side effects we're concerned with are:
 
 - Anything that changes state in our application, particularly state outside of our local scope:
-- - Reassigning values of variables.
-- - Mutating objects.
-- - Writing to databases.
-- - Writing to the DOM.
-- - Writing to stdout.
+  - Reassigning values of variables.
+  - Mutating objects.
+  - Writing to databases.
+  - Writing to the DOM.
+  - Writing to stdout.
 - Accessing state outside of our local scope.
 
 The reason we refer to them as side effects, is because they can cause unexpected errors later in the program.

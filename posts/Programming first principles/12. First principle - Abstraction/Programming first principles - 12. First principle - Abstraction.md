@@ -41,7 +41,7 @@ At surface value, abstraction results in the following things:
 - We don't repeat ourselves, or in other words create similar / duplicate code.
 - We don't have duplicate knowledge in our code.
 
-Abstraction (other functions / methods) is also how we apply separation of concerns. We take other code we don't want to worry about in the given context, and put it in a function or such. That way we can just call the function and not worry about its internals. I won't touch on this point any more in this post. For more details on that please see [first principle - separation of concerns](/blog/programming-first-principles-first-principle-separation-of-concerns/).
+Abstraction (creating other functions) is also how we apply separation of concerns. We take other code we don't want to worry about in the given context, and put it in a function or such. That way we can just call the function and not worry about its internals. I won't touch on this point any more in this post. For more details on that please see [first principle - separation of concerns](/blog/programming-first-principles-first-principle-separation-of-concerns/).
 
 So abstraction helps because we don't have to repeat ourselves. That's great and all, but why is that important?
 
@@ -157,7 +157,7 @@ function format(str) {
 
 However in this case, the duplicate code is probably **coincidental**. It's not semantically the same, because our two functions have different reasons to change. They have different concerns.
 
-Semantically the `formatUsername` and `formatShoppingList` concerns are not really related. There is no particular reason to be confident that that `formatUsername` and `formatShoppingList` will use the same formatting tomorrow. Currently, they just happen to be coincidentally the same.
+Semantically the `formatUsername` and `formatShoppingList` concerns are not really related. There is no particular reason to be confident that that `formatUsername` and `formatShoppingList` will use the same formatting tomorrow, even if they use the same formatting today.
 
 The `formatUsername` function will likely always need spaces stripped out of it. But tomorrow the `formatShoppingList` function may want spaces replaced by hyphens or whatever, or perhaps it doesn't want spaces removed at all and instead wants everything to be uppercase.
 
@@ -202,7 +202,7 @@ They were definitely related, in the sense that one was unlikely to change witho
 
 The worst part was that maintaining both of them separately was very error prone. They were fairly large pieces of code, so making a change to the first one and having to make similar changes to the second one required a lot of time and attention.
 
-After we refactored them into a single abstraction, which accepted arguments for the differences, working in that area was significantly easier.
+Eventually we refactored them into a single abstraction which accepted arguments for the differences. Afterwards, working in that area was significantly easier.
 
 Breaking the rule of three in this case was acceptable because:
 
@@ -273,7 +273,7 @@ From the definition and requirements of software:
 
 Abstraction results in:
 
-- Safer changes. Helping the requirement software should work as intended.
+- Safer changes. Helping the requirement that software should work as intended.
 - Easier changes. Helping the requirement that software should be easy to change.
 - Faster changes. Helping the requirement that software should be easy to change.
 

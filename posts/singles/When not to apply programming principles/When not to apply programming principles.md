@@ -59,7 +59,7 @@ Easier testability is one of the advantages of following good software developme
 
 **Rule of three**
 
-Specifically for abstraction, use the [rule of three](<https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)>) as a good rule of thumb.
+As mentioned in [abstraction](/blog/programming-first-principles-first-principle-abstraction/), use the [rule of three](<https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)>) as a good rule of thumb.
 
 Its benefits are:
 

@@ -86,7 +86,7 @@ Yes I vaguely knew about the principles of separation of concerns, interface seg
 
 But I faced many problems:
 
-### 1. In many situations I didn't know how to apply them.
+**1. In many situations I didn't know how to apply them.**
 
 Doing front end development, I don't particularly use OOP.
 
@@ -104,7 +104,7 @@ However I didn't have that, because I wasn't using OOP so I couldn't use similar
 
 As a result I could only vaguely, kind of apply these principles.
 
-### 2. In other situations I knew of an existing solution, but I had no idea if or why it was good, and what principles it was applying.
+**2. In other situations I knew of an existing solution, but I had no idea if or why it was good, and what principles it was applying.**
 
 For example in React (the front end framework), we had the concept of containers (now they've been replaced by React hooks, but they perform the same function of separating logic from dumb components).
 
@@ -115,11 +115,11 @@ But I had questions:
 - What principles did it apply?
 - Why was it considered a good solution?
 - Would it really be so much worse to have the logic mixed in with the component?
-- What about if we kept the dumb component, but removed the container, then had the caller handle the logic to call the dumb with the correct props. Yes it means there could be duplication if we have different callers, but was the additional layer of abstraction (the container) worth it?
+- What about if we kept the dumb component, but removed the container, then had the caller handle the logic to call the dumb component with the correct props. Yes it means there could be duplication if we have different callers, but was the additional layer of abstraction (the container) worth it?
 
 I had a feeling that separation of concerns was at play here. But it was vague.
 
-### 3. I was not able to make compelling arguments for using them.
+**3. I was not able to make compelling arguments for using them.**
 
 This wasn't as much of an issue because most of my colleagues and me usually accept existing programming principles.
 

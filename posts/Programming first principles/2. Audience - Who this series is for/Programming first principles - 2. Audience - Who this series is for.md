@@ -46,9 +46,7 @@ In this post we'll talk about who this series is for / who will benefit from thi
 
 I would like to address three types of developers. Let's call them beginner, intermediate and advanced developers.
 
-These are not intended as an insult to anyone.
-
-They're just a broad categorization of programming experience for the purposes of this post.
+These are not intended as an insult to anyone. They're just a broad categorization of programming experience for the purposes of this post.
 
 Let's get right to it.
 
@@ -60,11 +58,11 @@ At this point it's probably more valuable to focus on overcoming those problems 
 
 Programming principles are more about code organisation, which begins to matter more as a project grows in size. Yes it's important to apply principles from the beginning, but if a project will stay small for its entire lifetime then it's less important.
 
-Having said that, I highly recommend this series anyway if you have the time. While you may not be able to apply these principles immediately, you'll gain great exposure on programming principles in general. I really believe this will give you a great head-start and a natural aptitude for when you attempt to learn programming principles more seriously in the future.
+Having said that, I highly recommend this series anyway if you have the time. While you may not be able to apply these principles immediately, you'll gain good early exposure on them. I really believe this will give you a great head-start and a natural aptitude for when you attempt to learn programming principles more seriously in the future.
 
 ## Intermediate developers
 
-In this post what I mean by intermediate developers is developers who can get small projects working and can successfully work on large projects but feel like their code structure and organisation could benefit.
+For this post, what I mean by intermediate developers is developers who can get small projects working and can successfully work on large projects but feel like their code structure and organisation could benefit.
 
 I feel intermediate developers will benefit most from this series, particularly if they actively want to learn about programming principles.
 
@@ -72,7 +70,7 @@ I feel intermediate developers will benefit most from this series, particularly 
 
 For advanced developers, I think it depends. If you're already very comfortable with programming principles, there will be less value for you in this series.
 
-However, there is probably something you'll pick up anyway. Also you may find the different approach in explaining these beneficial.
+However, there is probably something you'll pick up anyway. Also you enjoy the different angle I use to try to explain the principles.
 
 ---
 

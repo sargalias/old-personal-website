@@ -53,13 +53,27 @@ The principle of least astonishment is necessary, almost by definition, for meet
 
 Also the more complicated something is, the less likely it is that we'll understand it. This breaks our premise that we must understand what we're doing at all times.
 
-Here are some more example problems:
+Consider:
 
-- Maybe we're tired on a particular day and are not focusing 100%. If the code is not clearly understandable we're going to miss aspects of how it works and make mistakes.
-- Maybe we're in a rush to finish the story we're working on for whatever reason. We'll skim-read the code and if it's not immediately obvious, we may make mistakes.
-- Maybe the code is complicated, so we can't fully understand what it does. Perhaps we switch back to trying things out until our manual testing shows that it works. We're back to programming by coincidence and not understanding what we're doing, potentially creating bugs.
-- Maybe we're diligent and we'll spend the required time to understand what the code does. In this case it's not uncommon to spend up to a day reading complicated code and trying to decipher and map out what it does, especially if it's code you haven't worked on before.
-- (The best one:) Maybe we'll spend a day trying to understand what the code does so we can make our changes. We then make our changes. Afterwards our change isn't actually working because it turns out a piece of code a bit further down the line completely overrides everything we just did, asynchronously, with no indication or reason. Upon further investigation it was added along with the original code because due to implementation details the thing wouldn't work without it.
+**Maybe you're tired on a particular day and are not focusing 100%.**
+
+If the code is not clearly understandable, it's possible to miss aspects of how it works and make mistakes.
+
+**Maybe you're in a rush to finish the story you're working on for whatever reason.**
+
+You may skim-read the code. If what it does is not immediately obvious, it's possible to make mistakes.
+
+**Maybe the code is complicated, so it's difficult to fully understand what it does.**
+
+The easiest thing to do in this case is to switch to just trying things out until manual testing shows that it works. That's programming by coincidence and not understanding what we're doing, potentially creating bugs.
+
+**Maybe you're diligent and you'll spend the required time to understand what the code does.**
+
+In this case it's not uncommon to spend up to a day reading complicated code and trying to decipher and map out what it does, especially if it's code you haven't worked on before.
+
+**Maybe you'll spend a day reading and understanding the code, making your changes, then realise they get overridden later.**
+
+This has happened to me. I made a change which ended up not working because a piece of code a bit further down the line overrode everything I changed, asynchronously, with no indication or reason. Upon further investigation it was added along with the original code to fix a problematic implementation detail in the particular code.
 
 These are realistic scenarios.
 
@@ -75,7 +89,7 @@ Here are some suggestions.
 
 Clever code takes more time to decipher and understand. Juniors in your team may take a long time to understand it or even not understand it at all.
 
-Regardless of experience clever code is usually more difficult to understand. It does things that need deciphering. It's also possible to decipher it wrong if you're in a rush.
+Regardless of experience, clever code is usually more difficult to understand. It does things that need deciphering. It's also possible to decipher it wrong if you're in a rush.
 
 A reason why this happens is perhaps because at the time of writing the code we **know what we're trying to accomplish**. It's the future self we have to worry about who doesn't know what we were trying to accomplish + has to decipher the code we wrote.
 
@@ -89,9 +103,9 @@ This also aligns with the spirit of functional programming, separation of concer
 
 Try and keep your functions short and your code short in general.
 
-As a word of warning remember that the end goal is simplicity and readability. Writing a slightly longer functions that is easier to understand is acceptable. It's just that short functions are commonly the most readable.
+As a word of warning remember that the end goal is simplicity and readability. Writing a slightly longer function that is easier to understand is acceptable. It's just that short functions are commonly the most readable.
 
-## Overall
+## Summary
 
 To summarize, it's essential that we follow the principle of least astonishment (making the code work exactly as would be expected, keeping it as simple as possible, etc.).
 

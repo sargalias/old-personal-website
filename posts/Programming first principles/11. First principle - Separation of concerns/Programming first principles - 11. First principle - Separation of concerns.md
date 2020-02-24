@@ -73,7 +73,7 @@ You just don't care and it doesn't affect your life in any way.
 
 If you're delivering an item to a friend, here's how the process might go:
 
-1. The post office has certain rules you need to follow, specifications for things it accepts, etc.
+1. The post office has certain rules you need to follow, specifications for things it accepts, etc. You keep those in mind.
 2. You get your friend's exact address.
 3. You prepare the package as required by the post office.
 4. You go to the post office, give them the package, and they send it.
@@ -81,7 +81,7 @@ If you're delivering an item to a friend, here's how the process might go:
 In terms of separation of concerns:
 
 - You do not care how the post office does the delivery. It is not your concern. You just trust it will be fine.
-- You do not care where your friend lives (well, maybe I'm reaching here, but anyway...). They could live in the UK, or in the North Pole. You just get the address from them and write it on the package.
+- You do not care where your friend lives (well, in the context of this exercise at least...). They could live in the UK, or in the North Pole. You just get the address from them and write it on the package.
 - You just do the smallest amount of work required (ask for the address and prepare the package), and then delegate the rest.
 
 (Okay we're simplifying the situation by ignoring weird addresses, insurance, etc. but otherwise the situation is fairly analogous to programming.)
@@ -161,7 +161,7 @@ function main() {
 }
 ```
 
-Example with even better separation of concerns, although I wouldn't actually use this version because I think it's a bit overkill in this simple scenario. (See [when not to apply programming principles](/blog/when-not-to-apply-programming-principles/) for more details on when to avoid applying programming principles.)
+Example with even better separation of concerns, although I wouldn't actually use this version because I think it's a bit overkill in this simple scenario. (See [when not to apply programming principles](/blog/when-not-to-apply-programming-principles/).)
 
 ```js
 function fizzbuzz(n) {
@@ -247,7 +247,7 @@ In the later examples, `fizzbuzz` is impossible to re-use unless we also need to
 
 And of course the more concerns we mix together, the more difficult it is to reuse code.
 
-Separating concerns increases re-usability. Separation of concerns can also be thought of as extreme application of abstraction.
+Separating concerns increases re-usability. This can also be thought of as an application of abstraction.
 
 **Changeability**
 
@@ -350,11 +350,11 @@ Notice that:
 
 So what?
 
-**Changeability**
-
 In the good examples we had to make minimal changes.
 
 In the bad examples we had to make more changes to more things.
+
+And [code changes are error prone](/blog/why-code-changes-are-error-prone/).
 
 This hardly matters when the example is so small and simple.
 
@@ -540,9 +540,9 @@ The reason I didn't use it in the examples is because it's not particularly popu
 
 If you don't use dependency injection then don't worry too much about it. But feel free to check it out regardless and see if you like it.
 
-## Why should we care about separation of concerns?
+## Summary - Why should we care about separation of concerns?
 
-The examples given already cover this, so this will be a summary.
+The examples given already cover this, so here is a brief summary.
 
 With separation of concerns, we get the following benefits:
 
