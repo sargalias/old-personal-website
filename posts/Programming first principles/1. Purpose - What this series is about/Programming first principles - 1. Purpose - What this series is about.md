@@ -148,9 +148,9 @@ Here we'll learn the motivation / principles behind the principles, so we can ap
 
 **The process**
 
-We'll start with things like what software requires, moving on to some "postulates" (assumptions) about how developers work with software, and from those we'll invent the principles of software development.
+We'll start with things like what software requires, moving on to some premises about how developers work with software, and from those we'll invent the principles of software development.
 
-We'll use mental examples to help us do so, similar to how [Galileo used a thought experiment which helped him establish the law of free fall in physics](https://en.wikipedia.org/wiki/Galileo%27s_Leaning_Tower_of_Pisa_experiment).
+We'll use many examples, as well as examine the principles from a theoretical point of view.
 
 Overall, this will help with understanding principles better.
 
