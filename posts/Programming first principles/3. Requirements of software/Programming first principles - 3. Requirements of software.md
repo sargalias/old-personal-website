@@ -77,21 +77,21 @@ Because it needs to change so often, we must make sure it is easy for us to chan
 
 Here are the reasons code needs to change in more detail:
 
-### Requirements change all the time
+**Requirements change all the time**
 
-Point 1 is just how it goes. Stakeholders come up with new features or changes they want. Scope creep is a common occurrence. See [feature creep](https://en.wikipedia.org/wiki/Feature_creep) and [scope creep](https://en.wikipedia.org/wiki/Scope_creep).
+This is just how it is. Stakeholders come up with new features or changes they want. Scope creep is a common occurrence. See [feature creep](https://en.wikipedia.org/wiki/Feature_creep) and [scope creep](https://en.wikipedia.org/wiki/Scope_creep).
 
-### We constantly revise the code during development
+**We constantly revise the code during development**
 
-Point 2 is also just how it goes.
+This is how we work.
 
 If we could design the code upfront perfectly and then just write it, we would be done significantly faster. We would also use [waterfall](https://en.wikipedia.org/wiki/Waterfall_model) and be happy.
 
-The reason we have to use [agile](https://en.wikipedia.org/wiki/Agile_software_development) at all is because we don't know the final form of the code. We are constantly revising and modifying it.
+This is one reason why small development cycles are very helpful to us, which [agile](https://en.wikipedia.org/wiki/Agile_software_development) advocates. It's just the nature of our work that we constantly need to revise our code and modify it.
 
 [Gall's law](<https://en.wikipedia.org/wiki/John_Gall_(author)>) also supports this. It essentially states that we can't create a system of code in one go, we have to continually revise and build it up.
 
-### Software needs constant maintenance
+**Software needs constant maintenance**
 
 Even after initial development is finished and the stakeholders have accepted the product, software still needs constant maintenance and improvement. See [software evolution](https://en.wikipedia.org/wiki/Software_evolution).
 

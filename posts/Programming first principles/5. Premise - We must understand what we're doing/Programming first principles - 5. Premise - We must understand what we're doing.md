@@ -40,31 +40,47 @@ Our next premise is that we must understand what we're doing when programming.
 
 This is also mentioned in the book [The Pragmatic Programmer](https://pragprog.com/book/tpp20/the-pragmatic-programmer-20th-anniversary-edition). It's the tip "don't program by coincidence".
 
-## Meaning
+## We must understand what we're doing
 
 It means that we must program deliberately.
 
 We should not be "trying things out" until we get something that _seems_ to work.
 
-## Explanation
+## Why must we understand?
 
-From the definition of software, our requirement is to produce working systems of code.
+From the definition of software, our requirement is to produce a system of code that works as intended.
 
 As we build systems we need to understand what we're doing, because we're the ones doing it and building the system.
 
-If we don't understand, then it follows that we don't know what we are doing. Therefore we are unaware of whether we're doing the wrong thing or creating something useful out of absolute luck.
+If we don't understand what we're doing, then it follows that we're programming by coincidence.
+
+Therefore we are unaware of whether we're doing the wrong thing or creating something useful out of absolute luck.
 
 This is a slope.
 
-At first we're only missing a small bit of understanding and have faith that things will work. We do some manual testing and see that things are working and we're satisfied. But note that even at this stage we're programming with luck and hoping it works. It's just that it's easy to verify things still work on a small scale using manual testing.
+At first we're only missing a small bit of understanding and have faith that things will work. We do some manual testing and see that things are working and we're satisfied. When the project is small, it's easy to verify things work using manual testing.
 
 As the system grows bigger, there is a higher chance of error, missing something crucial and breaking something unrelated.
 
-This goes against our requirement that we must create a working system. This is because we don't know whether we are creating things that work, which means they may not work, which means we may have broken our requirement.
+This goes against our requirement that we must create a working system.
 
-However, if we understand what we're doing, it means our code is much more likely to work and we're much less likely to forget or miss something. This is closer to our requirement.
+However, if we understand what we're doing, it means we have the highest possible confidence that our code works as intended and does not break anything.
 
-Therefore ideally we should understand what we're doing at all times.
+This is the closest we can get to fulfilling our requirement.
+
+Therefore, ideally we should understand what we're doing at all times.
+
+Here's an alternative way of looking at it.
+
+Deliberate approach: "To the best of my ability, I am confident the code works as intended and that I didn't break anything."
+
+Luck approach: "I randomly tried some stuff until the new feature seemed to work. Did I break anything? I have absolutely no clue, but I didn't find anything in my little manual testing."
+
+Which one provides more confidence that the code works as intended and nothing was broken? Obviously the deliberate approach.
+
+Therefore understanding what we're doing is more likely to fulfill our requirement that our software works as intended.
+
+Therefore, ideally we should understand what we're doing at all times.
 
 ---
 

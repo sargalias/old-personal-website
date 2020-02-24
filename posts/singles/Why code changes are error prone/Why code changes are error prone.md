@@ -22,10 +22,10 @@ There are problems with changes:
 - Changes can break the system easily.
 - Statistics.
 - Human characteristics:
-- - Memory.
-- - Attention to detail, or the amount of focus we can muster.
-- - Impatience.
-- - Etc.
+  - Memory.
+  - Attention to detail, or the amount of focus we can muster.
+  - Impatience.
+  - Etc.
 - Scope
 
 ## Changes can break the system

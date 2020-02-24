@@ -13,7 +13,7 @@ seoDescription: 'Our first premise is that as human beings we can only remember 
 
 Video version of this article: [https://youtu.be/PozIEc4IApM](https://youtu.be/PozIEc4IApM)
 
-Now that we have our requirements, we examine our premises / postulates / assumptions.
+Now that we have our requirements, we examine our premises (assumptions).
 
 The first premise is that we can only hold limited information.
 
