@@ -26,13 +26,13 @@ There are problems with changes:
   - Attention to detail, or the amount of focus we can muster.
   - Impatience.
   - Etc.
-- Scope
+- Scope.
 
 ## Changes can break the system
 
 To clarify this...
 
-Let's distinguish between new code that does a brand new thing, and **changes / modifications** to functionality that already exists in the system.
+Let's distinguish between new code that does a brand new thing, and **changes or modifications** to functionality that already exists in the system.
 
 The key distinguisher is the **changes** part.
 
@@ -56,7 +56,9 @@ Potential problems are:
 - We may not have a sufficient test suite, further decreasing the chance that we'll know if we broke anything.
 - We may not remember the code. Before attempting to fix anything we would have to spend time to read and understand old code.
 
-All of these cases are far worse than breaking something brand new that we're working on right now. Particularly the case where we don't know something is broken. Elusive bugs and incorrect behaviour are widely considered as the worst kind of bugs. At least if something crashes you know you have a bug and it's relatively easy to find it, but if something is running incorrectly that can be a disaster.
+All of these cases are far worse than breaking something brand new that we're working on right now. Particularly the case where we don't know something is broken.
+
+Elusive bugs and incorrect behaviour are widely considered as the worst kind of bugs. At least if something crashes you know you have a bug and it's relatively easy to find it, but if something is running incorrectly that can be a disaster.
 
 ## Statistics
 

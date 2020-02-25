@@ -384,7 +384,7 @@ Notes:
 
 - This will be more of a flow of my thoughts if I was to develop this, rather than a pre-made example and description.
 - I think refactoring later is perfectly applicable here, especially with code that's very small.
-- There is value in pragmatism here. Previously in the fizzbuzz example, in the first example I mentioned that I wouldn't extract the `console.log` statement into a separate function. It's probably just not worth it at a scale that small. If things are too small, there is no need to split them. However I think applying separation of concerns early is better than applying it later. We should apply separation of concerns quickly if we feel we should. In this example I'll mention my thoughts on what I may separate or not separate.
+- There is value in pragmatism here. Previously in the fizzbuzz example, in the first example I mentioned that I wouldn't extract the `console.log` statement into a separate function. It's probably just not worth it at a scale that small. If things are too small, there is no need to split them. However I think applying separation of concerns early is better than applying it later. We should apply separation of concerns quickly if we feel we should.
 
 The scenario is quite simple, even if you don't know React.
 

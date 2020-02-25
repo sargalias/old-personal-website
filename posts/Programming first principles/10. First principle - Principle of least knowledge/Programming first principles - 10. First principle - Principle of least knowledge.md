@@ -282,19 +282,18 @@ E.g. we wanted to rename the `radius` to `diameter` for some reason.
 
 We would have to change all the functions like `main` which use this property, and also modify the logic in every place to now divide it by 2 (because diameter is 2x the radius).
 
-How about another example? We we have a class where we're storing a collection of items. E.g. `this.points = [point1, point2, point3];`. What if we wanted to change to a `Set` for performance reasons, for example?
-
-We would have to make changes in a lot of places to update the methods they are using.
+How about another example? We have a class where we're storing a collection of items. E.g. `this.points = [point1, point2, point3];`. What if we wanted to change to a `Set` for performance reasons, for example?
 
 In short, we would have to modify all code that knows about the properties we're trying to change.
 
-Of course code that doesn't know about these properties won't be affected at all.
+Of course, in either example, code that doesn't know about those private properties won't be affected at all if we change them.
 
 **So we need to change a lot of code, why is that a problem?**
 
 Short answer: [Code changes are error prone](/blog/why-code-changes-are-error-prone/).
 
-To recap some of the problems with code changes:
+To summarise some of the problems with code changes:
+
 1. We won't remember what code we need to change. We'll have to scour the codebase to search for what will be affected.
 2. It's very possible we'll miss something and break the system.
 3. It's a lot of repetitive work. We are bad with repetition. It's easy for us to make mistakes when doing repetitive work.
@@ -316,7 +315,7 @@ Using [interfaces](<https://en.wikipedia.org/wiki/Interface_(computing)>) is an 
 
 The [interface segregation principle](https://en.wikipedia.org/wiki/Interface_segregation_principle) is a stricter application, encouraging even less knowledge.
 
-We shouldn't be able to access "private" properties of things. The official name for this is  [information hiding](https://en.wikipedia.org/wiki/Information_hiding) and it's also how we create [encapsulation](<https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)>).
+We shouldn't be able to access "private" properties of things. The official name for this is [information hiding](https://en.wikipedia.org/wiki/Information_hiding) and it's also how we create [encapsulation](<https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)>).
 
 The [Law of Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter) applies the principle of least knowledge in the scope of methods and functions.
 
