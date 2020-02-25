@@ -73,7 +73,7 @@ In this case it's not uncommon to spend up to a day reading complicated code and
 
 **Maybe you'll spend a day reading and understanding the code, making your changes, then realise they get overridden later.**
 
-This has happened to me. I made a change which ended up not working because a piece of code a bit further down the line overrode everything I changed, asynchronously, with no indication or reason. Upon further investigation it was added along with the original code to fix a problematic implementation detail in the particular code.
+This has happened to me. I made a change which ended up not working because a piece of code a bit further down the line overrode everything I changed, asynchronously, with no indication. Upon further investigation it was added along with the original code to fix a problematic implementation detail in the particular code.
 
 These are realistic scenarios.
 
