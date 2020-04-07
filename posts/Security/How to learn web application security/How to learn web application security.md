@@ -15,7 +15,7 @@ Learning web application security doesn't have to be painful. In fact, I think i
 
 ## Why should developers learn about web application security?
 
-Every application needs to be secure, because every application can and will be attacked in absolutely any way imaginable, particularly as they become more popular. There are probably hundreds of ways to attack an application and absolutely anything can be attacked.
+Every application needs to be secure, because every application can and will be attacked in absolutely any way imaginable, particularly as it becomes more popular. There are probably hundreds of ways to attack an application and absolutely anything can be attacked.
 
 So at least knowing how to avoid the most severe security vulnerabilities is essential.
 
@@ -39,9 +39,9 @@ Here are the resources I used, in order, to learn web application security as a 
 
 I love [Frontend Masters](https://frontendmasters.com/). I find their courses to be the best introductions to topics. The web security course with Mike North is no different.
 
-It's a really good introduction to web security for front end developers. It tackles very important issues. I would only suggest skipping this if you don't do front end web development at all.
+It's a really good introduction to web security for front end developers. It tackles very important issues. I would only suggest skipping this course if you don't do front end web development at all.
 
-It's only a few hours long, so it can be completed quite quickly.
+It's only a few hours long, so it won't take very long to complete.
 
 **2. [The basics of web application security by Martin Fowler](https://martinfowler.com/articles/web-security-basics.html).**
 
@@ -55,7 +55,7 @@ Also, unless you want to learn web application security quite well, or there is 
 
 This next one is a lot of work, but if you really want to learn a ton about web application security, go to this page and read through the cheatsheets.
 
-You can skip the ones that aren't relevant to you. You can also skim read what you want. And you can also pick just one or two and read through them. Anything you read will be useful knowledge. If you're not sure which ones to read, it might be best to prioritise the ones related to the [OWASP top 10](https://owasp.org/www-project-top-ten/).
+You can skip the ones that aren't relevant to you. You can also skim read what you want. And you can also just pick one or two and read through them. Anything you read will be useful knowledge. If you're not sure which ones to read, it might be best to prioritise the ones related to the [OWASP top 10](https://owasp.org/www-project-top-ten/).
 
 But overall, this series has probably everything that you would ever need to know about web application security. Anything else is probably best left to security specialists to audit and tell you about.
 
